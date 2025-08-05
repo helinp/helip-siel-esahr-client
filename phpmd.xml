@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<ruleset name="Helip Symfony Ruleset"
+         xmlns="https://phpmd.org/ruleset/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://phpmd.org/ruleset/1.0.0
+                             https://phpmd.org/ruleset/1.0.0.xsd">
+
+    <description>PHPMD config adaptée à Symfony 6, PHP 8, DTOs et clients REST</description>
+
+    <!-- CodeSize : contrôle la taille des méthodes/classes -->
+    <rule ref="rulesets/codesize.xml">
+        <exclude name="TooManyMethods"/>
+        <exclude name="TooManyPublicMethods"/>
+        <exclude name="TooManyChildren"/>
+        <exclude name="TooManyParameters"/> <!-- Toléré pour les DTOs -->
+    </rule>
+
+    <!-- CleanCode : bonnes pratiques générales -->
+    <rule ref="rulesets/cleancode.xml">
+        <exclude name="StaticAccess"/> <!-- OK pour fromArray() sur DTOs -->
+        <exclude name="LongVariable"/> <!-- DTOs explicites -->
+        <exclude name="LongClassName"/> <!-- Ex: InscriptionRegulariteDomaineResponseDto -->
+    </rule>
+
+    <!-- Design : architecture, dépendances -->
+    <rule ref="rulesets/design.xml">
+        <exclude name="CouplingBetweenObjects"/> <!-- autorisé pour les services regroupés -->
+        <exclude name="TooManyFields"/>
+    </rule>
+
+    <!-- Code mort -->
+    <rule ref="rulesets/unusedcode.xml" />
+
+    <!-- Nommage -->
+    <rule ref="rulesets/naming.xml">
+        <exclude name="ShortVariable"/> <!-- autorise $id, $dt, etc. -->
+    </rule>
+
+    <!-- Exclusions de dossiers -->
+    <exclude-pattern>*/tests/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+</ruleset>

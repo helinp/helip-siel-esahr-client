@@ -1,0 +1,62 @@
+{
+    "name": "helip/siel-esahr-client",
+    "description": "Client for Siel ESAHR API (REST v1.5.18)",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "LGPL-3.0",
+    "require": {
+      "php": "^8.1",
+      "helip/niss": "^2.0",
+      "symfony/http-client": "^6.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.45",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "phpmd/phpmd": "^2.15",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-symfony": "^2.0",
+        "phpunit/phpunit": "^10.0",
+        "squizlabs/php_codesniffer": "^3.7",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+      "psr-4": {
+        "Helip\\SielEsahrClient\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Helip\\SielEsahrClient\\Tests\\": "tests/"
+      }
+    },
+    "scripts": {
+      "test": [
+        "./vendor/phpunit/phpunit/phpunit tests/Integration/Http/Auth",
+        "./vendor/phpunit/phpunit/phpunit tests/Integration/Service",
+        "./vendor/phpunit/phpunit/phpunit tests/Integration/Http"
+      ],
+      "check-psr12": "phpcs --standard=PSR12 --warning-severity=0 src",
+      "fix-psr12": "phpcbf -p src",
+      "cs-fix": "php-cs-fixer fix src",
+      "analyse-1": "phpstan analyse --memory-limit=2G --level=1 src",
+      "analyse-2": "phpstan analyse --memory-limit=2G --level=2 src",
+      "mess-detector": "phpmd src,tests html phpmd.xml > report.html"
+    },
+    "config": {
+      "sort-packages": true,
+      "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+      {
+        "name": "Pierre Helin",
+        "email": "pierre.helin@gmail.com"
+      }
+    ],
+    "support": {
+      "email": "support@helip.be",
+      "issues": "https://github.com/helip/siel-esahr-client/issues",
+      "source": "https://github.com/helip/siel-esahr-client"
+    }
+  }
