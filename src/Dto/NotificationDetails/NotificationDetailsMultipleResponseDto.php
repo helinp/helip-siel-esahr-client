@@ -13,7 +13,7 @@ final readonly class NotificationDetailsMultipleResponseDto extends AbstractResp
 {
     /**
      * @param array<int, array{
-     *     notifications: NotificationItemResponseDto[],
+     *     notifications: NotificationDetailsResponseDto[],
      *     total: int
      * }> $groups
      */
