@@ -14,7 +14,6 @@ use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
  */
 final readonly class InscriptionRegulariteDomaineItemResponseDto extends AbstractResponseDto
 {
-
     public function __construct(
         public string $idEsahr,
         public int $idEtab,

@@ -13,7 +13,6 @@ use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
  */
 final readonly class ValidationSearchItemResponseDto extends AbstractResponseDto
 {
-
     public function __construct(
         public string $validationType,
         public string $source,

@@ -8,7 +8,6 @@ use Helip\SielEsahrClient\Contract\AbstractResponseDto;
 use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
 use Helip\SielEsahrClient\ValueObject\IdEsahr;
 
-
 /**
  * Single student response DTO
  */
@@ -41,4 +40,3 @@ final readonly class StudentResponseDto extends AbstractResponseDto
         );
     }
 }
-

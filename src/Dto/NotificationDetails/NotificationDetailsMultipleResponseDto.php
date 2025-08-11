@@ -41,4 +41,3 @@ final readonly class NotificationDetailsMultipleResponseDto extends AbstractResp
         return new self($groups);
     }
 }
-

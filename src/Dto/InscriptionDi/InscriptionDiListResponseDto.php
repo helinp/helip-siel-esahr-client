@@ -47,5 +47,4 @@ final readonly class InscriptionDiListResponseDto extends AbstractResponseDto
             comptabilisation: isset($data['comptabilisation']) ? ComptabilisationDto::fromArray($data['comptabilisation']) : null
         );
     }
-
 }

@@ -8,7 +8,6 @@ use DateTimeImmutable;
 use Helip\SielEsahrClient\Contract\AbstractResponseDto;
 use Helip\SielEsahrClient\Dto\Common\PrivateAddressDto;
 
-
 /**
  * @internal
  */
@@ -59,5 +58,4 @@ final readonly class StudentDetailResponseDto extends AbstractResponseDto
                 : []
         );
     }
-
 }

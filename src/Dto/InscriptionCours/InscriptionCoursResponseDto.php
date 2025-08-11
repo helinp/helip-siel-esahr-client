@@ -34,9 +34,9 @@ final readonly class InscriptionCoursResponseDto extends AbstractResponseDto
                 $data
             );
         }
-        
+
         $data = $data['inscription'];
-        
+
         return new self(
             idEsahr: $data['idEsahr'],
             idEtab: $data['idEtab'],

@@ -12,7 +12,7 @@ enum GuardianCodeEnum: string
 
     public function label(): string
     {
-        return match($this) {
+        return match ($this) {
             self::OTHER => 'Autre',
             self::PARENT => 'Parent',
             self::TUTOR => 'Tuteur',

@@ -9,7 +9,6 @@ use Helip\SielEsahrClient\Dto\ValidationSearch\ValidationSearchRequestDto;
 
 final class ValidationSearchClient extends AbstractClient
 {
-
     public function search(
         string $accessToken,
         ValidationSearchRequestDto $request,

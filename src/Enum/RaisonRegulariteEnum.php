@@ -13,7 +13,7 @@ enum RaisonRegulariteEnum: int
 
     public function label(): string
     {
-        return match($this) {
+        return match ($this) {
             self::ABANDON => 'Abandon',
             self::PRESENCE_INSUFFISANTE => 'Présences insuffisantes',
             self::PAS_DROIT_INSCRIPTION => "Pas en ordre de droit d'inscription",

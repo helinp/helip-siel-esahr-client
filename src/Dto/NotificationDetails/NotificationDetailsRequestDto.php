@@ -25,5 +25,4 @@ final readonly class NotificationDetailsRequestDto implements RequestDtoInterfac
             'dateFrom' => $this->dateFrom->format('Y-m-d'),
         ];
     }
-
 }

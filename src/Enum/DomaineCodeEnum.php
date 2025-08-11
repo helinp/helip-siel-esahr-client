@@ -13,7 +13,7 @@ enum DomaineCodeEnum: string
 
     public function label(): string
     {
-        return match($this) {
+        return match ($this) {
             self::MU   => 'Musique',
             self::DA   => 'Danse',
             self::APT  => 'Arts de la parole',

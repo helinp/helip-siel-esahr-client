@@ -12,7 +12,7 @@ use Helip\SielEsahrClient\Dto\InscriptionRegulariteDomaineUpdate\InscriptionRegu
  */
 final class InscriptionRegulariteDomaineUpdateClient extends AbstractClient
 {
-    public function Update(
+    public function update(
         string $accessToken,
         InscriptionRegulariteDomaineRequestDto $request
     ): InscriptionRegulariteDomaineResponseDto {

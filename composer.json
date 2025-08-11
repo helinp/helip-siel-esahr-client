@@ -36,7 +36,7 @@
         "./vendor/phpunit/phpunit/phpunit tests/Integration/Http"
       ],
       "check-psr12": "phpcs --standard=PSR12 --warning-severity=0 src",
-      "fix-psr12": "phpcbf -p src",
+      "fix-psr12": "phpcbf --standard=PSR12 src",
       "cs-fix": "php-cs-fixer fix src",
       "analyse-1": "phpstan analyse --memory-limit=2G --level=1 src",
       "analyse-2": "phpstan analyse --memory-limit=2G --level=2 src",

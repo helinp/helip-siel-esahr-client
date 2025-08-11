@@ -12,7 +12,7 @@ enum GenderCodeEnum: string
 
     public function label(): string
     {
-        return match($this) {
+        return match ($this) {
             self::MALE => 'Masculin',
             self::FEMALE => 'Féminin',
             self::UNKNOWN => 'Autre / Indéfini',

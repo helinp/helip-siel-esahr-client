@@ -33,4 +33,3 @@ final readonly class InscriptionCoursSearchMultipleResponseDto extends AbstractR
         );
     }
 }
-

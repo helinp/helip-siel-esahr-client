@@ -27,7 +27,8 @@ final class OAuthTokenProvider
      */
     public function getAccessToken(): string
     {
-        if ($this->accessToken !== null
+        if (
+            $this->accessToken !== null
             && $this->expiresAt !== null
             && $this->expiresAt > new DateTimeImmutable()
         ) {
