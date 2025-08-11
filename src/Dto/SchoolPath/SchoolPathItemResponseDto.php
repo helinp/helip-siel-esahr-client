@@ -36,10 +36,7 @@ final readonly class SchoolPathItemResponseDto extends AbstractResponseDto
 
         if (!isset($data['schoolPath']) || !is_array($data['schoolPath'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "schoolPath" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "schoolPath" key is missing or not an array.'
             );
         }
 

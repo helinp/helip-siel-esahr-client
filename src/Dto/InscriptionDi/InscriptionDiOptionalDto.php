@@ -27,10 +27,7 @@ final readonly class InscriptionDiOptionalDto extends AbstractResponseDto
         foreach (['payment', 'attestation'] as $key) {
             if (isset($data[$key]) && !is_array($data[$key])) {
                 throw new EsahrApiResponseException(
-                    sprintf('Invalid response format: "%s" key is not an array.', $key),
-                    0,
-                    null,
-                    $data
+                    sprintf('Invalid response format: "%s" key is not an array.', $key)
                 );
             }
         }

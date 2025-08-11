@@ -32,10 +32,7 @@ final readonly class InscriptionCoursSearchResponseDto extends AbstractResponseD
     {
         if (!isset($data['inscription']) || !is_array($data['inscription'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "inscription" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "inscription" key is missing or not an array.'
             );
         }
 

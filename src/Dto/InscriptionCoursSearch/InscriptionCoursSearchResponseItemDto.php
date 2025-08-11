@@ -28,10 +28,7 @@ final readonly class InscriptionCoursSearchResponseItemDto extends AbstractRespo
 
         if (!isset($data['statusCode'], $data['idInscr'], $data['inscriptionCoursData'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: required keys are missing.',
-                0,
-                null,
-                $data
+                'Invalid response format: required keys are missing.'
             );
         }
 

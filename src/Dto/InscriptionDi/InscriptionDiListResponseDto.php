@@ -29,10 +29,7 @@ final readonly class InscriptionDiListResponseDto extends AbstractResponseDto
         foreach (['idEsahr', 'schoolYear', 'idEtab', 'statusCode', 'inscriptionRight'] as $key) {
             if (!isset($data[$key]) || !is_scalar($data[$key])) {
                 throw new EsahrApiResponseException(
-                    sprintf('Invalid response format: "%s" key is missing or not a scalar.', $key),
-                    0,
-                    null,
-                    $data
+                    sprintf('Invalid response format: "%s" key is missing or not a scalar.', $key)
                 );
             }
         }
