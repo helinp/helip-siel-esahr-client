@@ -48,7 +48,7 @@ final class OAuthTokenProvider
         try {
             $response = $this->httpClient->request(
                 'POST',
-                $this->credentials->namUrl . 'token',
+                $this->credentials->namUrl . '/token',
                 [
                 'body' => [
                     'grant_type'    => $this->credentials->grantType,

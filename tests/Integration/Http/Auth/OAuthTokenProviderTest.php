@@ -9,6 +9,7 @@ use Symfony\Component\HttpClient\HttpClient;
 
 /**
  * @group integration
+ * @covers \Helip\SielEsahrClient\Http\OAuth\OAuthTokenProvider
  */
 final class OAuthTokenProviderTest extends TestCase
 {
