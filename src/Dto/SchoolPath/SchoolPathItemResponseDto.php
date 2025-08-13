@@ -23,7 +23,7 @@ final readonly class SchoolPathItemResponseDto extends AbstractResponseDto
         public int $schoolYear,
         public int $idEtab,
         public DomaineCodeEnum $domaineCode,
-        public string $coursCode,
+        public int $coursCode,
         public FiliereCodeEnum $filiere,
         public string $annee, // Année de la formation
         public string $periode, // Nombre de périodes suivies
@@ -43,7 +43,7 @@ final readonly class SchoolPathItemResponseDto extends AbstractResponseDto
         $data = $data['schoolPath'];
 
         return new self(
-            idEsahr: $data['idEsahr'],
+            idEsahr: new IdEsahr($data['idEsahr']),
             schoolYear: $data['schoolYear'],
             idEtab: $data['idEtab'],
             domaineCode: DomaineCodeEnum::from($data['domaineCode']),

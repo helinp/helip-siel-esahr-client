@@ -8,6 +8,7 @@ use Helip\SielEsahrClient\Contract\RequestDtoInterface;
 use Helip\SielEsahrClient\Dto\InscriptionCours\InscriptionCoursDataDto;
 use Helip\SielEsahrClient\Dto\InscriptionCours\InscriptionCoursSpecificityDto;
 use Helip\SielEsahrClient\Dto\Common\RegulariteInputDto;
+use Helip\SielEsahrClient\Enum\StatusCodeEnum;
 
 /**
  * Original type in doc: InscriptionCoursInput (see 4.8.1.3)
@@ -17,7 +18,7 @@ use Helip\SielEsahrClient\Dto\Common\RegulariteInputDto;
 final readonly class InscriptionCoursRequestItemDto implements RequestDtoInterface
 {
     public function __construct(
-        public int $statusCode,
+        public StatusCodeEnum $statusCode,
         public InscriptionCoursDataDto $inscriptionCoursData,
         public ?InscriptionCoursSpecificityDto $inscriptionCoursSpecificity,
         public ?RegulariteInputDto $regularity
@@ -27,7 +28,7 @@ final readonly class InscriptionCoursRequestItemDto implements RequestDtoInterfa
     public function toArray(): array
     {
         return [
-            'statusCode' => $this->statusCode,
+            'statusCode' => $this->statusCode->value,
             'inscriptionCoursData' => $this->inscriptionCoursData->toArray(),
             'inscriptionCoursSpecificity' => $this->inscriptionCoursSpecificity?->toArray(),
             'regularity' => $this->regularity?->toArray(),

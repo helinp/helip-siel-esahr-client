@@ -23,7 +23,7 @@ final readonly class InscriptionDiSearchRequestDto implements RequestDtoInterfac
     {
         return [
             'idEsahr'     => $this->idEsahr->value(),
-            'etabResponsable'      => $this->etabResponsable,
+            'idEtab'      => $this->etabResponsable,
             'schoolYear'  => $this->schoolYear,
         ];
     }
