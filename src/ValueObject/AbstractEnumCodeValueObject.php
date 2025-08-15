@@ -8,7 +8,13 @@ use Helip\SielEsahrClient\Contract\EnumCodeValueObjectInterface;
 use BackedEnum;
 use Helip\SielEsahrClient\Contract\LabeledEnumInterface;
 use InvalidArgumentException;
+use LogicException;
 
+/**
+ * Base pour Value Objects encapsulant un BackedEnum.
+ * Valide la valeur, fournit value(), label() et choices().
+ * La sous-classe doit définir l'enum cible via getEnumClass().
+ */
 abstract class AbstractEnumCodeValueObject implements EnumCodeValueObjectInterface
 {
     protected BackedEnum $enum;
@@ -16,6 +22,21 @@ abstract class AbstractEnumCodeValueObject implements EnumCodeValueObjectInterfa
     public function __construct(string|int $value)
     {
         $enumClass = static::getEnumClass();
+
+        // Vérifications runtime minimales
+        if (!enum_exists($enumClass)) {
+            throw new LogicException(sprintf(
+                '%s::getEnumClass() doit retourner une classe enum valide, reçu : %s',
+                static::class,
+                $enumClass
+            ));
+        }
+        if (!is_subclass_of($enumClass, BackedEnum::class)) {
+            throw new LogicException(sprintf(
+                'L’enum %s doit être un BackedEnum (enum à valeur).',
+                $enumClass
+            ));
+        }
 
         try {
             $this->enum = $enumClass::from($value);
@@ -53,7 +74,7 @@ abstract class AbstractEnumCodeValueObject implements EnumCodeValueObjectInterfa
     }
 
     /**
-      * @return class-string<BackedEnum>
-      */
+     * @return class-string<BackedEnum>
+     */
     abstract protected static function getEnumClass(): string;
 }

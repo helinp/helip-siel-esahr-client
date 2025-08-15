@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace Helip\SielEsahrClient\Contract;
 
-use BackedEnum;
-
-interface LabeledEnumInterface extends BackedEnum
+interface LabeledEnumInterface
 {
+    /**
+     * Libellé humain lisible pour la case de l'enum.
+     */
     public function label(): string;
 }
