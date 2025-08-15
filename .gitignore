@@ -4,8 +4,6 @@ composer.lock
 
 # PHPUnit
 .phpunit.result.cache
-/phpunit.xml
-/phpunit.xml.dist
 .phpunit.cache/*
 
 # PHPStan
