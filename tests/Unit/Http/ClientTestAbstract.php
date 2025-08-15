@@ -71,7 +71,6 @@ abstract class ClientTestAbstract extends TestCase
             ->with(
                 $this->endpoint,
                 'mock-access-token'
-
             )
             ->willReturn($mockData);
 

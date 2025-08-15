@@ -7,7 +7,6 @@ namespace Helip\SielEsahrClient\Dto\InscriptionDi;
 use Helip\SielEsahrClient\Contract\AbstractResponseDto;
 use Helip\SielEsahrClient\Dto\Common\ComptabilisationDto;
 use Helip\SielEsahrClient\Dto\Common\OrdreDiInputDto;
-use Helip\SielEsahrClient\Dto\InscriptionDi\InscriptionDiOptionalDto;
 use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
 use Helip\SielEsahrClient\ValueObject\IdEsahr;
 

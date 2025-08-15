@@ -63,7 +63,7 @@ final class DroitInscriptionUpdateClientTest extends ClientTestAbstract
         );
 
         $this->expectException(EsahrApiException::class);
-        
+
         try {
             $this->getClientResponse(
                 testedMethodName: 'update',

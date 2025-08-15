@@ -11,7 +11,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 final class OAuthTokenProvider
 {
-    private ?string $accessToken = null;
+    private ?string $accessToken          = null;
     private ?DateTimeImmutable $expiresAt = null;
 
     public function __construct(
@@ -28,7 +28,7 @@ final class OAuthTokenProvider
     public function getAccessToken(): string
     {
         if (
-            $this->accessToken !== null
+            $this->accessToken  !== null
             && $this->expiresAt !== null
             && $this->expiresAt > new DateTimeImmutable()
         ) {
@@ -72,7 +72,7 @@ final class OAuthTokenProvider
             }
 
             $this->accessToken = $data['access_token'];
-            $this->expiresAt = (new DateTimeImmutable())
+            $this->expiresAt   = (new DateTimeImmutable())
                 ->modify('+' . ((int) $data['expires_in'] - 60) . ' seconds'); // 1 minute before expiration
 
             return $this->accessToken;

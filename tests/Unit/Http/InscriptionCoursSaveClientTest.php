@@ -32,12 +32,12 @@ final class InscriptionCoursSaveClientTest extends ClientTestAbstract
             inscription: new InscriptionCoursRequestItemDto(
                 statusCode: StatusCodeEnum::ACTIVE,
                 inscriptionCoursData: new InscriptionCoursDataDto(
-                        inscriptionDate: new DateTimeImmutable('2023-09-01'),
-                        domaineCode: DomaineCodeEnum::APT,
-                        coursCode: 123,
-                        filiere: FiliereCodeEnum::QUAL,
-                        annee: "P1",
-                        periode: 1
+                    inscriptionDate: new DateTimeImmutable('2023-09-01'),
+                    domaineCode: DomaineCodeEnum::APT,
+                    coursCode: 123,
+                    filiere: FiliereCodeEnum::QUAL,
+                    annee: "P1",
+                    periode: 1
                 ),
                 inscriptionCoursSpecificity: new InscriptionCoursSpecificityDto(
                     abandonDate: new DateTimeImmutable('2023-09-15'),
@@ -45,7 +45,7 @@ final class InscriptionCoursSaveClientTest extends ClientTestAbstract
                     timetable: 'Emploi du temps',
                     professor: 'Professeur X',
                     impl: 'Implémentation Y',
-                    success: true   
+                    success: true
                 ),
                 regularity: new RegulariteInputDto(
                     regularityFlag: true,

@@ -9,9 +9,9 @@ namespace Helip\SielEsahrClient\Enum;
  */
 enum StudentSearchEnum: string
 {
-    case SSIN = 'ssin';
-    case LAST_NAME = 'lastName';
-    case FIRST_NAME = 'firstName';
-    case BIRTH_DATE = 'birthDate';
+    case SSIN        = 'ssin';
+    case LAST_NAME   = 'lastName';
+    case FIRST_NAME  = 'firstName';
+    case BIRTH_DATE  = 'birthDate';
     case GENDER_CODE = 'genderCode';
 }

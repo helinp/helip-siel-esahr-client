@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Helip\SielEsahrClient\Service;
 
-use Helip\SielEsahrClient\Dto\Student\StudentResponseDto;
 use Helip\SielEsahrClient\Dto\StudentAdd\StudentDetailsRequestDto;
+use Helip\SielEsahrClient\Dto\Student\StudentDetailsResponseDto;
 use Helip\SielEsahrClient\Dto\StudentSearch\StudentSearchCombinaisonRequestDto;
 use Helip\SielEsahrClient\Enum\GenderCodeEnum;
 use Helip\SielEsahrClient\Exception\EsahrApiException;
@@ -36,7 +36,7 @@ final class StudentManagerService
      * @param StudentDetailsRequestDto $studentDto  Les détails de l'élève à
      *                                              créer.
      *
-     * @return StudentResponseDto L'élève trouvé ou créé.
+     * @return StudentDetailsResponseDto L'élève trouvé ou créé.
      *
      * @throws RuntimeException Si une erreur survient lors de la recherche ou de la création de l'élève.
      * @throws EsahrApiResponseException Si la réponse de l'API ESAHR est inattendue.
@@ -48,23 +48,15 @@ final class StudentManagerService
     public function createIfNotExists(
         string $accessToken,
         StudentDetailsRequestDto $studentDto
-    ): StudentResponseDto {
+    ): StudentDetailsResponseDto {
 
-        $genderEnum = $studentDto->genderCode ? GenderCodeEnum::tryFrom($studentDto->genderCode) : null;
-        $genderCode = $genderEnum ? new GenderCode($genderEnum->value) : null;
-
-        $searchDto = new StudentSearchCombinaisonRequestDto(
-            ssin: new Ssin($studentDto->ssin),
-            lastName: new LastName($studentDto->lastName),
-            firstName: $studentDto->firstName ? new FirstName($studentDto->firstName) : null,
-            birthDate: $studentDto->birth ? new BirthDate($studentDto->birth->format('Y-m-d')) : null,
-            genderCode: $genderCode
-        );
+        // On crée un DTO de recherche basé sur les informations de l'élève
+        $searchCombinationDto = $this->getSearchDtoFromStudentDetails($studentDto);
 
         try {
             $multipleResponses = $this->searchClient->searchByCombination(
                 $accessToken,
-                $searchDto
+                $searchCombinationDto
             );
 
             if ($multipleResponses->total === 1) {
@@ -95,5 +87,22 @@ final class StudentManagerService
         } catch (Throwable $e) {
             throw new RuntimeException('Erreur lors de la recherche ou de la création de l’élève : ' . $e->getMessage(), 0, $e);
         }
+    }
+
+    private function getSearchDtoFromStudentDetails(
+        StudentDetailsRequestDto $studentDto
+    ): StudentSearchCombinaisonRequestDto {
+        $genderEnum = $studentDto->genderCode ? GenderCodeEnum::tryFrom($studentDto->genderCode) : null;
+        $genderCode = $genderEnum ? new GenderCode($genderEnum->value) : null;
+
+        $searchDto = new StudentSearchCombinaisonRequestDto(
+            ssin: new Ssin($studentDto->ssin),
+            lastName: new LastName($studentDto->lastName),
+            firstName: $studentDto->firstName ? new FirstName($studentDto->firstName) : null,
+            birthDate: $studentDto->birth ? new BirthDate($studentDto->birth->format('Y-m-d')) : null,
+            genderCode: $genderCode
+        );
+
+        return $searchDto;
     }
 }

@@ -21,7 +21,7 @@ final readonly class NotificationDetailsRequestDto implements RequestDtoInterfac
     public function toArray(): array
     {
         return [
-            'idEtab' => $this->idEtab,
+            'idEtab'   => $this->idEtab,
             'dateFrom' => $this->dateFrom->format('Y-m-d'),
         ];
     }

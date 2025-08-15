@@ -30,19 +30,19 @@ final readonly class UserInfoResponseDto extends AbstractResponseDto
     {
         return new self(
             sub: $data['sub'],
-            roles: $data['role'] ?? [],
-            groups: $data['Groups'] ?? '',
-            nickname: $data['nickname'] ?? '',
-            name: $data['name'] ?? '',
-            claims: $data['claims'] ?? [],
+            roles: $data['role']                           ?? [],
+            groups: $data['Groups']                        ?? '',
+            nickname: $data['nickname']                    ?? '',
+            name: $data['name']                            ?? '',
+            claims: $data['claims']                        ?? [],
             preferredUsername: $data['preferred_username'] ?? '',
-            givenName: $data['given_name'] ?? '',
-            familyName: $data['family_name'] ?? '',
-            employeeNumber: $data['employeeNumber'] ?? '',
-            username: $data['username'] ?? '',
-            population: $data['population'] ?? '',
-            cfwbULoginName: $data['cfwbULoginName'] ?? '',
-            email: $data['email'] ?? '',
+            givenName: $data['given_name']                 ?? '',
+            familyName: $data['family_name']               ?? '',
+            employeeNumber: $data['employeeNumber']        ?? '',
+            username: $data['username']                    ?? '',
+            population: $data['population']                ?? '',
+            cfwbULoginName: $data['cfwbULoginName']        ?? '',
+            email: $data['email']                          ?? '',
         );
     }
 }

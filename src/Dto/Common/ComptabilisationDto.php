@@ -37,10 +37,10 @@ final readonly class ComptabilisationDto
     {
         return array_filter(
             [
-            'comptabilisationFlag'     => $this->comptabilisationFlag->value(),
-            'reasonComptabilisation'   => $this->reasonComptabilisation?->value,
-            'reasonOther'              => $this->reasonOther,
-            'date'                     => $this->date?->format('Y-m-d'),
+            'comptabilisationFlag'   => $this->comptabilisationFlag->value(),
+            'reasonComptabilisation' => $this->reasonComptabilisation?->value,
+            'reasonOther'            => $this->reasonOther,
+            'date'                   => $this->date?->format('Y-m-d'),
             ]
         );
     }

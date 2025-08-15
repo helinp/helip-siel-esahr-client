@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Helip\SielEsahrClient\Dto\Student;
 
 use Helip\SielEsahrClient\Contract\AbstractResponseDto;
-use Helip\SielEsahrClient\Dto\Student\StudentDetailResponseDto;
 use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
 use Helip\SielEsahrClient\ValueObject\IdEsahr;
 

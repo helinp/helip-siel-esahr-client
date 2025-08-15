@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Helip\SielEsahrClient\Dto\InscriptionDi;
 
 use Helip\SielEsahrClient\Contract\AbstractResponseDto;
-use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
 use Helip\SielEsahrClient\ValueObject\Indicator;
 use Helip\SielEsahrClient\ValueObject\IndicatorNA;
 
@@ -34,7 +33,7 @@ final readonly class InscriptionDiOptionalDto extends AbstractResponseDto
     {
         return array_filter(
             [
-            'payment' => $this->payment->value(),
+            'payment'     => $this->payment->value(),
             'attestation' => $this->attestation->value()
             ]
         );

@@ -43,11 +43,11 @@ class EsahrHttpClient implements EsahrHttpClientInterface
         $url = $this->baseUrl . '/' . ltrim($path, '/');
 
         $options['headers']['Authorization'] = 'Bearer ' . $accessToken;
-        $options['headers']['Accept'] = 'application/json';
+        $options['headers']['Accept']        = 'application/json';
 
         try {
             $response = $this->httpClient->request($method, $url, $options);
-            $status = $response->getStatusCode();
+            $status   = $response->getStatusCode();
 
             // Catche les erreurs 4xx et 5xx et renvoie une exception EsahrApiException
             if ($status >= 400) {

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Helip\SielEsahrClient\Contract;
 
-use Helip\SielEsahrClient\Contract\ResponseDtoInterface;
 use InvalidArgumentException;
 use Throwable;
 

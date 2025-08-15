@@ -19,12 +19,10 @@ class InscriptionRegulariteDomaineSearchClient extends AbstractClient
 
         // Endpoint: {{baseUrl}}/inscriptionRegulariteDomaine?idEsahr=<string>&idEtab=<integer>&schoolYear=<integer>
         $parameters = [
-            'idEsahr' => $request->idEsahr->value(),
-            'idEtab' => $request->idEtab,
+            'idEsahr'    => $request->idEsahr->value(),
+            'idEtab'     => $request->idEtab,
             'schoolYear' => $request->schoolYear,
         ];
-
-        $parameters = array_filter($parameters, static fn ($value) => $value !== null);
 
         $data = $this->esahrHttpClient->get(
             'inscriptionRegulariteDomaine' . '?' . http_build_query($parameters),

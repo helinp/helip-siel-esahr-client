@@ -35,10 +35,10 @@ final readonly class SubventionResponseDto
     public function toArray(): array
     {
         return [
-            'subventionFlag'    => $this->subventionFlag->value(), // renvoie 'O' ou 'N'
-            'reasonSubvention'  => $this->reasonSubvention?->value,
-            'reasonOther'       => $this->reasonOther,
-            'date'              => $this->date?->format('Y-m-d'),
+            'subventionFlag'   => $this->subventionFlag->value(), // renvoie 'O' ou 'N'
+            'reasonSubvention' => $this->reasonSubvention?->value,
+            'reasonOther'      => $this->reasonOther,
+            'date'             => $this->date?->format('Y-m-d'),
         ];
     }
 

@@ -28,9 +28,9 @@ final readonly class RegulariteInputDto
     public function toArray(): array
     {
         return [
-            'regularityFlag' => $this->regularityFlag ? 'O' : 'N',
+            'regularityFlag'   => $this->regularityFlag ? 'O' : 'N',
             'reasonRegularity' => $this->reasonRegularity?->value,
-            'reasonOther' => $this->reasonOther
+            'reasonOther'      => $this->reasonOther
         ];
     }
 

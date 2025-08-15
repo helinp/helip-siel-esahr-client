@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Helip\SielEsahrClient\ValueObject;
 
 use Helip\SielEsahrClient\Contract\EnumCodeValueObjectInterface;
-use UnitEnum;
 use BackedEnum;
 use Helip\SielEsahrClient\Contract\LabeledEnumInterface;
 use InvalidArgumentException;
@@ -45,17 +44,16 @@ abstract class AbstractEnumCodeValueObject implements EnumCodeValueObjectInterfa
     public static function choices(): array
     {
         $enumClass = static::getEnumClass();
-
-        $choices = [];
+        $choices   = [];
         foreach ($enumClass::cases() as $case) {
-            $choices[$case->label()] = $case->value;
+            $label           = $case instanceof LabeledEnumInterface ? $case->label() : (string) $case->value;
+            $choices[$label] = $case->value;
         }
-
         return $choices;
     }
 
     /**
-     * @return class-string<LabeledEnumInterface>
-     */
+      * @return class-string<BackedEnum>
+      */
     abstract protected static function getEnumClass(): string;
 }

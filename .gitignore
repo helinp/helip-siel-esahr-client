@@ -12,6 +12,8 @@ composer.lock
 phpstan.neon
 phpstan.neon.dist
 /phpstan-result.cache
+/var
+
 
 # PHP CS Fixer
 .php-cs-fixer.cache

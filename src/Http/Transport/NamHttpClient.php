@@ -32,8 +32,8 @@ final class NamHttpClient implements NamHttpClientInterface
                 [
                 'headers' => [
                     'Authorization' => 'Bearer ' . $accessToken,
-                    'Accept' => 'application/json',
-                    'Content-Type' => 'application/json',
+                    'Accept'        => 'application/json',
+                    'Content-Type'  => 'application/json',
                 ],
                 'json' => $json,
                 ]
@@ -66,7 +66,7 @@ final class NamHttpClient implements NamHttpClientInterface
                 [
                 'headers' => [
                     'Authorization' => 'Bearer ' . $accessToken,
-                    'Accept' => 'application/json',
+                    'Accept'        => 'application/json',
                 ],
                 'query' => array_filter($query),
                 ]

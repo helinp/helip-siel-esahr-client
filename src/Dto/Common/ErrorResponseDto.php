@@ -25,7 +25,8 @@ final readonly class ErrorResponseDto
         public ?string $detail,
         public ?string $instance,
         public array $invalidParams = []
-    ) {}
+    ) {
+    }
 
     /**
      * Hydrate un objet d’erreur à partir d’un tableau brut (ex : réponse HTTP JSON).
@@ -47,10 +48,10 @@ final readonly class ErrorResponseDto
         }
 
         return new self(
-            type: $data['type'] ?? null,
+            type: $data['type']   ?? null,
             title: $data['title'] ?? null,
             status: isset($data['status']) ? (int) $data['status'] : 0,
-            detail: $data['detail'] ?? null,
+            detail: $data['detail']     ?? null,
             instance: $data['instance'] ?? null,
             invalidParams: $invalidParams
         );

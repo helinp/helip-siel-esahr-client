@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Helip\SielEsahrClient\Dto\InscriptionCours;
 
 use Helip\SielEsahrClient\Contract\AbstractResponseDto;
-use Helip\SielEsahrClient\Dto\InscriptionCours\InscriptionCoursDataDto;
-use Helip\SielEsahrClient\Dto\InscriptionCours\InscriptionCoursSpecificityDto;
 use Helip\SielEsahrClient\Dto\Common\RegulariteInputDto;
 use Helip\SielEsahrClient\Dto\Common\SubventionResponseDto;
 use Helip\SielEsahrClient\Exception\EsahrApiResponseException;

@@ -19,9 +19,9 @@ class CommuneSearchClient extends AbstractClient
 
         //commune?nameLocality=Bruxelles&postalCode=1190',
         $parameters = [
-            'nameCommune' => $request->nameCommune ?? null,
+            'nameCommune'  => $request->nameCommune  ?? null,
             'nameLocality' => $request->nameLocality ?? null,
-            'postalCode' => $request->postalCode ?? null,
+            'postalCode'   => $request->postalCode   ?? null,
         ];
 
         $parameters = array_filter($parameters, static fn ($value) => $value !== null);

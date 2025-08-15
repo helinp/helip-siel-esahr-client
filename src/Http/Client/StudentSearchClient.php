@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Helip\SielEsahrClient\Http\Client;
 
 use Helip\SielEsahrClient\Dto\Student\StudentMultipleResponseDto;
-use Helip\SielEsahrClient\Dto\StudentAdd\StudentDetailsResponseDto;
+use Helip\SielEsahrClient\Dto\Student\StudentDetailsResponseDto;
 use Helip\SielEsahrClient\Dto\StudentSearch\StudentSearchCombinaisonRequestDto;
 use Helip\SielEsahrClient\Dto\StudentSearch\StudentSearchIdEsahrRequestDto;
 
@@ -45,10 +45,10 @@ class StudentSearchClient extends AbstractClient
 
         // endpoint: students?ssin=97277120835&lastName=Doe&firstName=John&birthDate=2000-01-01&genderCode=M
         $parameters = [
-            'ssin' => $student->ssin?->value(),
-            'lastName' => $student->lastName?->value(),
-            'firstName' => $student->firstName?->value(),
-            'birthDate' => $student->birthDate?->format(),
+            'ssin'       => $student->ssin->value(),
+            'lastName'   => $student->lastName->value(),
+            'firstName'  => $student->firstName?->value(),
+            'birthDate'  => $student->birthDate?->format(),
             'genderCode' => $student->genderCode?->value(),
         ];
 

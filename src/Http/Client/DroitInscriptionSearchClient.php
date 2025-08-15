@@ -19,12 +19,10 @@ class DroitInscriptionSearchClient extends AbstractClient
 
         // endpoint: 'inscriptionDi?idEsahr=123456-01&idEtab=123456&schoolYear=2023',
         $parameters = [
-            'idEsahr' => $request->idEsahr?->value(),
-            'idEtab' => $request->etabResponsable,
+            'idEsahr'    => $request->idEsahr->value(),
+            'idEtab'     => $request->etabResponsable,
             'schoolYear' => $request->schoolYear,
         ];
-
-        $parameters = array_filter($parameters, static fn ($value) => $value !== null);
 
         $data = $this->esahrHttpClient->get(
             'inscriptionDi' . '?' . http_build_query($parameters),

@@ -6,7 +6,6 @@ namespace Helip\SielEsahrClient\Http\OAuth;
 
 use Helip\SielEsahrClient\Dto\OAuth\UserInfoRequestDto as OAuthUserInfoRequestDto;
 use Helip\SielEsahrClient\Dto\OAuth\UserInfoResponseDto;
-use Helip\SielEsahrClient\Dto\SchoolPath\UserInfoRequestDto;
 use Helip\SielEsahrClient\Http\Transport\NamHttpClient;
 
 final class UserInfoClient

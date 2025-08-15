@@ -36,7 +36,7 @@ final readonly class PrivateAddressDto
         return new self(
             addressStreet: $data['addressStreet'] ?? '',
             addressNumber: $data['addressNumber'] ?? null,
-            addressBox: $data['addressBox'] ?? null,
+            addressBox: $data['addressBox']       ?? null,
             addressPostal: $data['addressPostal'] ?? '',
             addressCity: isset($data['addressCity']) && is_array($data['addressCity'])
                 ? CityDto::fromArray($data['addressCity'])
@@ -48,11 +48,11 @@ final readonly class PrivateAddressDto
     public function toArray(): array
     {
         return [
-            'addressStreet' => $this->addressStreet,
-            'addressNumber' => $this->addressNumber,
-            'addressBox' => $this->addressBox,
-            'addressPostal' => $this->addressPostal,
-            'addressCity' => $this->addressCity->toArray(),
+            'addressStreet'  => $this->addressStreet,
+            'addressNumber'  => $this->addressNumber,
+            'addressBox'     => $this->addressBox,
+            'addressPostal'  => $this->addressPostal,
+            'addressCity'    => $this->addressCity->toArray(),
             'addressCountry' => $this->addressCountry,
         ];
     }

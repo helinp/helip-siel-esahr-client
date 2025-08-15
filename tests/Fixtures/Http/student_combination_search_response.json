@@ -5,19 +5,19 @@
                 "idEsahr": "123456-01",
                 "cfwbDetails": {
                     "ssin": "70810100166",
-                    "lastName": "<string>",
-                    "firstName": "<string>",
+                    "lastName": "Dupont",
+                    "firstName": "Jean",
                     "otherFirstNames": [
-                        "<string>",
-                        "<string>"
+                        "Pierre",
+                        "Marie"
                     ],
                     "genderCode": "M",
                     "birth": "1986",
-                    "phoneNumber": "<string>",
-                    "gsmNumber": "<string>",
-                    "email": "<string>",
-                    "encodePar": "<string>",
-                    "encodeParParam": "<string>",
+                    "phoneNumber": "0123456789",
+                    "gsmNumber": "0123456789",
+                    "email": "jean.dupont@example.com",
+                    "encodePar": "encoded",
+                    "encodeParParam": "param",
                     "privateAddress": {
                         "addressStreet": "<string>",
                         "addressPostal": "<string>",
@@ -31,12 +31,12 @@
                     },
                     "guardians": [
                         {
-                            "lastName": "<string>",
-                            "firstName": "<string>",
+                            "lastName": "Dupont",
+                            "firstName": "Alice",
                             "guardianCode": "A",
-                            "phoneNumber": "<string>",
-                            "gsmNumber": "<string>",
-                            "email": "<string>",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "alice.dupont@example.com",
                             "privateAddress": {
                                 "addressStreet": "<string>",
                                 "addressPostal": "<string>",
@@ -51,12 +51,12 @@
                             "sameAddressFlag": true
                         },
                         {
-                            "lastName": "<string>",
-                            "firstName": "<string>",
+                            "lastName": "Dupont",
+                            "firstName": "Paul",
                             "guardianCode": "T",
-                            "phoneNumber": "<string>",
-                            "gsmNumber": "<string>",
-                            "email": "<string>",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "paul.dupont@example.com",
                             "privateAddress": {
                                 "addressStreet": "<string>",
                                 "addressPostal": "<string>",
@@ -74,11 +74,11 @@
                 },
                 "rnDetails": {
                     "ssin": "347685-87718",
-                    "lastName": "<string>",
-                    "firstName": "<string>",
+                    "lastName": "Dupont",
+                    "firstName": "Jean",
                     "otherFirstNames": [
-                        "<string>",
-                        "<string>"
+                        "Pierre",
+                        "Marie"
                     ],
                     "genderCode": "M",
                     "birth": "1974-05-10",
@@ -100,12 +100,12 @@
                     },
                     "guardians": [
                         {
-                            "lastName": "<string>",
-                            "firstName": "<string>",
+                            "lastName": "Dupont",
+                            "firstName": "Alice",
                             "guardianCode": "A",
-                            "phoneNumber": "<string>",
-                            "gsmNumber": "<string>",
-                            "email": "<string>",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "alice.dupont@example.com",
                             "privateAddress": {
                                 "addressStreet": "<string>",
                                 "addressPostal": "<string>",
@@ -120,12 +120,12 @@
                             "sameAddressFlag": true
                         },
                         {
-                            "lastName": "<string>",
-                            "firstName": "<string>",
+                            "lastName": "Dupont",
+                            "firstName": "Paul",
                             "guardianCode": "A",
-                            "phoneNumber": "<string>",
-                            "gsmNumber": "<string>",
-                            "email": "<string>",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "paul.dupont@example.com",
                             "privateAddress": {
                                 "addressStreet": "<string>",
                                 "addressPostal": "<string>",
@@ -148,11 +148,11 @@
                 "idEsahr": "123456-04",
                 "cfwbDetails": {
                     "ssin": "383043-485-98",
-                    "lastName": "<string>",
-                    "firstName": "<string>",
+                    "lastName": "Dupont",
+                    "firstName": "Marie",
                     "otherFirstNames": [
-                        "<string>",
-                        "<string>"
+                        "Alice",
+                        "Paul"
                     ],
                     "genderCode": "F",
                     "birth": "1648-04-11",
@@ -174,12 +174,12 @@
                     },
                     "guardians": [
                         {
-                            "lastName": "<string>",
-                            "firstName": "<string>",
+                            "lastName": "Dupont",
+                            "firstName": "Alice",
                             "guardianCode": "P",
-                            "phoneNumber": "<string>",
-                            "gsmNumber": "<string>",
-                            "email": "<string>",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "alice.dupont@example.com",
                             "privateAddress": {
                                 "addressStreet": "<string>",
                                 "addressPostal": "<string>",
@@ -194,12 +194,12 @@
                             "sameAddressFlag": true
                         },
                         {
-                            "lastName": "<string>",
-                            "firstName": "<string>",
+                            "lastName": "Dupont",
+                            "firstName": "Paul",
                             "guardianCode": "T",
-                            "phoneNumber": "<string>",
-                            "gsmNumber": "<string>",
-                            "email": "<string>",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "paul.dupont@example.com",
                             "privateAddress": {
                                 "addressStreet": "<string>",
                                 "addressPostal": "<string>",
@@ -217,11 +217,11 @@
                 },
                 "rnDetails": {
                     "ssin": "15740531455",
-                    "lastName": "<string>",
-                    "firstName": "<string>",
+                    "lastName": "Dupont",
+                    "firstName": "Marie",
                     "otherFirstNames": [
-                        "<string>",
-                        "<string>"
+                        "Alice",
+                        "Paul"
                     ],
                     "genderCode": "A",
                     "birth": "1180-08-18",
@@ -243,12 +243,12 @@
                     },
                     "guardians": [
                         {
-                            "lastName": "<string>",
-                            "firstName": "<string>",
+                            "lastName": "Dupont",
+                            "firstName": "Alice",
                             "guardianCode": "A",
-                            "phoneNumber": "<string>",
-                            "gsmNumber": "<string>",
-                            "email": "<string>",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "alice.dupont@example.com",
                             "privateAddress": {
                                 "addressStreet": "<string>",
                                 "addressPostal": "<string>",
@@ -263,12 +263,12 @@
                             "sameAddressFlag": true
                         },
                         {
-                            "lastName": "<string>",
-                            "firstName": "<string>",
+                            "lastName": "Dupont",
+                            "firstName": "Alice",
                             "guardianCode": "T",
-                            "phoneNumber": "<string>",
-                            "gsmNumber": "<string>",
-                            "email": "<string>",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "alice.dupont@example.com",
                             "privateAddress": {
                                 "addressStreet": "<string>",
                                 "addressPostal": "<string>",

@@ -22,9 +22,9 @@ final readonly class InscriptionDiSearchRequestDto implements RequestDtoInterfac
     public function toArray(): array
     {
         return [
-            'idEsahr'     => $this->idEsahr->value(),
-            'idEtab'      => $this->etabResponsable,
-            'schoolYear'  => $this->schoolYear,
+            'idEsahr'    => $this->idEsahr->value(),
+            'idEtab'     => $this->etabResponsable,
+            'schoolYear' => $this->schoolYear,
         ];
     }
 }

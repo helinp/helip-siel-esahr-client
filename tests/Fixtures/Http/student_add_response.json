@@ -28,8 +28,8 @@
     },
     "guardians": [
       {
-        "lastName": "<string>",
-        "firstName": "<string>",
+        "lastName": "Dupont",
+        "firstName": "Alice",
         "guardianCode": "T",
         "phoneNumber": "<string>",
         "gsmNumber": "<string>",
@@ -48,8 +48,8 @@
         "sameAddressFlag": true
       },
       {
-        "lastName": "<string>",
-        "firstName": "<string>",
+        "lastName": "Dupont",
+        "firstName": "Paul",
         "guardianCode": "A",
         "phoneNumber": "<string>",
         "gsmNumber": "<string>",
@@ -97,8 +97,8 @@
     },
     "guardians": [
       {
-        "lastName": "<string>",
-        "firstName": "<string>",
+        "lastName": "Dupont",
+        "firstName": "Alice",
         "guardianCode": "T",
         "phoneNumber": "<string>",
         "gsmNumber": "<string>",
@@ -117,8 +117,8 @@
         "sameAddressFlag": true
       },
       {
-        "lastName": "<string>",
-        "firstName": "<string>",
+        "lastName": "Dupont",
+        "firstName": "Paul",
         "guardianCode": "P",
         "phoneNumber": "<string>",
         "gsmNumber": "<string>",

@@ -22,12 +22,12 @@ final readonly class Credentials implements RequestDtoInterface
     public function toArray(): array
     {
         return [
-            'client_id' => $this->clientId,
+            'client_id'     => $this->clientId,
             'client_secret' => $this->clientSecret,
-            'username' => $this->username,
-            'password' => $this->password,
-            'scope' => $this->scope,
-            'grant_type' => $this->grantType,
+            'username'      => $this->username,
+            'password'      => $this->password,
+            'scope'         => $this->scope,
+            'grant_type'    => $this->grantType,
         ];
     }
 }

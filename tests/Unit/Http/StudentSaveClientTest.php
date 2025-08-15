@@ -8,7 +8,7 @@ use DateTimeImmutable;
 use Helip\SielEsahrClient\Dto\Student\GuardianDetailDto;
 use Helip\SielEsahrClient\Dto\Student\StudentDetailResponseDto;
 use Helip\SielEsahrClient\Dto\StudentAdd\StudentDetailsRequestDto;
-use Helip\SielEsahrClient\Dto\StudentAdd\StudentDetailsResponseDto;
+use Helip\SielEsahrClient\Dto\Student\StudentDetailsResponseDto;
 use Helip\SielEsahrClient\Enum\GuardianCodeEnum;
 use Helip\SielEsahrClient\Http\Client\NotificationListClient;
 use Helip\SielEsahrClient\Http\Client\StudentSaveClient;

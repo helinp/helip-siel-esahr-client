@@ -32,7 +32,7 @@ final class EsahrApiException extends RuntimeException
             '[%d] %s%s%s',
             $pd->status,
             $pd->title ?? 'HTTP Error',
-            isset($pd->detail) && $pd->detail !== '' ? ' — ' . $pd->detail : '',
+            isset($pd->detail)   && $pd->detail     !== '' ? ' — ' . $pd->detail : '',
             isset($pd->instance) && $pd->instance !== '' ? ' (' . $pd->instance . ')' : ''
         );
 
@@ -48,18 +48,18 @@ final class EsahrApiException extends RuntimeException
     {
         $pd = $this->problemDetails;
 
-        $title = htmlspecialchars($pd->title ?? 'HTTP Error', ENT_QUOTES, 'UTF-8');
-        $detail = $pd->detail ? ' — ' . htmlspecialchars($pd->detail, ENT_QUOTES, 'UTF-8') : '';
+        $title    = htmlspecialchars($pd->title ?? 'HTTP Error', ENT_QUOTES, 'UTF-8');
+        $detail   = $pd->detail ? ' — ' . htmlspecialchars($pd->detail, ENT_QUOTES, 'UTF-8') : '';
         $instance = $pd->instance ? ' (' . htmlspecialchars($pd->instance, ENT_QUOTES, 'UTF-8') . ')' : '';
 
         $header = sprintf('[%d] %s%s%s', $pd->status, $title, $detail, $instance);
 
         $lis = '';
         foreach ($this->normalizedInvalidParams() as $p) {
-            $in = htmlspecialchars((string)($p['in'] ?? ''), ENT_QUOTES, 'UTF-8');
-            $name = htmlspecialchars((string)($p['name'] ?? ''), ENT_QUOTES, 'UTF-8');
-            $reason = htmlspecialchars((string)($p['reason'] ?? ''), ENT_QUOTES, 'UTF-8');
-            $value = array_key_exists('value', $p) ? $this->stringifyValue($p['value']) : null;
+            $in        = htmlspecialchars((string)($p['in'] ?? ''), ENT_QUOTES, 'UTF-8');
+            $name      = htmlspecialchars((string)($p['name'] ?? ''), ENT_QUOTES, 'UTF-8');
+            $reason    = htmlspecialchars((string)($p['reason'] ?? ''), ENT_QUOTES, 'UTF-8');
+            $value     = array_key_exists('value', $p) ? $this->stringifyValue($p['value']) : null;
             $valueHtml = $value !== null ? ' (value: ' . htmlspecialchars($value, ENT_QUOTES, 'UTF-8') . ')' : '';
             $lis .= sprintf('<li>%s.%s: %s%s</li>', $in, $name, $reason, $valueHtml);
         }
@@ -100,10 +100,10 @@ final class EsahrApiException extends RuntimeException
     {
         $lines = [];
         foreach ($this->normalizedInvalidParams() as $p) {
-            $in = (string)($p['in'] ?? '');
-            $name = (string)($p['name'] ?? '');
+            $in     = (string)($p['in'] ?? '');
+            $name   = (string)($p['name'] ?? '');
             $reason = (string)($p['reason'] ?? '');
-            $value = array_key_exists('value', $p) ? $this->stringifyValue($p['value']) : null;
+            $value  = array_key_exists('value', $p) ? $this->stringifyValue($p['value']) : null;
 
             $prefix = trim($in . '.' . $name, '.');
             $suffix = $value !== null ? ' (value: ' . $value . ')' : '';

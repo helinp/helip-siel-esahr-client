@@ -6,8 +6,8 @@ namespace Helip\SielEsahrClient\Tests\Unit\Http;
 
 use DateTimeImmutable;
 use Helip\SielEsahrClient\Dto\Student\StudentMultipleResponseDto;
+use Helip\SielEsahrClient\Dto\Student\StudentDetailsResponseDto;
 use Helip\SielEsahrClient\Dto\StudentAdd\StudentDetailsRequestDto;
-use Helip\SielEsahrClient\Dto\StudentAdd\StudentDetailsResponseDto;
 use Helip\SielEsahrClient\Dto\StudentSearch\StudentSearchCombinaisonRequestDto;
 use Helip\SielEsahrClient\Dto\StudentSearch\StudentSearchIdEsahrRequestDto;
 use Helip\SielEsahrClient\Http\Client\StudentSearchClient;

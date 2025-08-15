@@ -18,7 +18,8 @@ final class OAuthTokenProviderTest extends TestCase
     protected function setUp(): void
     {
         // Skip if integration env vars are not set
-        if (empty($_ENV['ESAHR_NAM_URL'] ?? '')
+        if (
+            empty($_ENV['ESAHR_NAM_URL'] ?? '')
             || empty($_ENV['ESAHR_CLIENT_ID'] ?? '')
             || empty($_ENV['ESAHR_CLIENT_SECRET'] ?? '')
             || empty($_ENV['ESAHR_USERNAME'] ?? '')

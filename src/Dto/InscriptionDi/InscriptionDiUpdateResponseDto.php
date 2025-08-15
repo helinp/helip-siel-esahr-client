@@ -42,7 +42,7 @@ final readonly class InscriptionDiUpdateResponseDto extends AbstractResponseDto
             idEsahr: new IdEsahr($data['idEsahr']),
             schoolYear: $data['schoolYear'],
             idEtab: $data['idEtab'],
-            statusCode: $data['statusCode'] ?? null,
+            statusCode: $data['statusCode']       ?? null,
             exemptionCode: $data['exemptionCode'] ?? null,
             inscriptionDiOptional: isset($data['inscriptionDiOptional']) ? InscriptionDiOptionalDto::fromArray($data['inscriptionDiOptional']) : null,
             ordreDi: isset($data['ordreDi']) ? OrdreDiInputDto::fromArray($data['ordreDi']) : null,

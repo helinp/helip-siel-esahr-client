@@ -45,6 +45,5 @@ final class DroitInscriptionSearchClientTest extends ClientTestAbstract
         );
 
         $this->assertInstanceOf(InscriptionDiSearchResponseDto::class, $response);
-        
     }
 }

@@ -22,8 +22,6 @@ class PaysSearchClient extends AbstractClient
             'name' => $request->name,
         ];
 
-        $parameters = array_filter($parameters, static fn ($value) => $value !== null);
-
         $data = $this->esahrHttpClient->get(
             'country' . '?' . http_build_query($parameters),
             $accessToken,

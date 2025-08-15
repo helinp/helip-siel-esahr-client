@@ -40,7 +40,7 @@ final readonly class NotificationDetailsMultipleResponseDto extends AbstractResp
 
             $groups[] = [
                 'notifications' => $notifications,
-                'total' => (int) ($groupData['total'] ?? 0),
+                'total'         => (int) ($groupData['total'] ?? 0),
             ];
         }
 

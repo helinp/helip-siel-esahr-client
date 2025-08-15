@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Helip\SielEsahrClient\Http\Client;
 
-use Helip\SielEsahrClient\Dto\StudentAdd\StudentDetailsResponseDto;
+use Helip\SielEsahrClient\Dto\Student\StudentDetailsResponseDto;
 use Helip\SielEsahrClient\Dto\StudentAdd\StudentDetailsRequestDto;
 
 /**

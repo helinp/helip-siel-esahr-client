@@ -13,7 +13,7 @@ use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
 final readonly class StudentMultipleResponseDto extends AbstractResponseDto
 {
     /**
-     * @param StudentResponseDto[] $items
+     * @param StudentDetailsResponseDto[] $items
      */
     public function __construct(
         public array $items,

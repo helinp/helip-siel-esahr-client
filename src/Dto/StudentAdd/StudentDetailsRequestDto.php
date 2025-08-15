@@ -48,19 +48,19 @@ final readonly class StudentDetailsRequestDto implements RequestDtoInterface
     public function toArray(): array
     {
         return [
-            'ssin' => $this->ssin,
-            'lastName' => $this->lastName,
-            'firstName' => $this->firstName,
+            'ssin'            => $this->ssin,
+            'lastName'        => $this->lastName,
+            'firstName'       => $this->firstName,
             'otherFirstNames' => $this->otherFirstNames,
-            'genderCode' => $this->genderCode,
-            'birth' => $this->birth?->format('Y-m-d'),
-            'phoneNumber' => $this->phoneNumber,
-            'gsmNumber' => $this->gsmNumber,
-            'email' => $this->email,
-            'encodePar' => $this->encodePar,
-            'encodeParParam' => $this->encodeParParam,
-            'privateAddress' => $this->privateAddress?->toArray(),
-            'guardians' => array_map(
+            'genderCode'      => $this->genderCode,
+            'birth'           => $this->birth?->format('Y-m-d'),
+            'phoneNumber'     => $this->phoneNumber,
+            'gsmNumber'       => $this->gsmNumber,
+            'email'           => $this->email,
+            'encodePar'       => $this->encodePar,
+            'encodeParParam'  => $this->encodeParParam,
+            'privateAddress'  => $this->privateAddress?->toArray(),
+            'guardians'       => array_map(
                 fn (GuardianDetailDto $g) => $g->toArray(),
                 $this->guardians ?? []
             ),

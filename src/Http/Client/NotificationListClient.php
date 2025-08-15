@@ -19,11 +19,9 @@ class NotificationListClient extends AbstractClient
 
         // Endpoint: notifications?idEtab=1&dateFrom=2023-01-01'
         $parameters = [
-            'idEtab' => $request->idEtab,
-            'dateFrom' => $request->dateFrom?->format('Y-m-d'),
+            'idEtab'   => $request->idEtab,
+            'dateFrom' => $request->dateFrom->format('Y-m-d'),
         ];
-
-        $parameters = array_filter($parameters, static fn ($value) => $value !== null);
 
         $data = $this->esahrHttpClient->get(
             'notifications' . '?' . http_build_query($parameters),

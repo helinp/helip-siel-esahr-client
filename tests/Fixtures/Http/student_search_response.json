@@ -2,11 +2,11 @@
   "idEsahr": "123456-01",
   "cfwbDetails": {
     "ssin": "187851-06648",
-    "lastName": "<string>",
-    "firstName": "<string>",
+    "lastName": "Dupont",
+    "firstName": "Jean",
     "otherFirstNames": [
-      "<string>",
-      "<string>"
+      "Pierre",
+      "Marie"
     ],
     "genderCode": "M",
     "birth": "1495",
@@ -28,12 +28,12 @@
     },
     "guardians": [
       {
-        "lastName": "<string>",
-        "firstName": "<string>",
+        "lastName": "Dupont",
+        "firstName": "Alice",
         "guardianCode": "T",
-        "phoneNumber": "<string>",
-        "gsmNumber": "<string>",
-        "email": "<string>",
+        "phoneNumber": "0123456789",
+        "gsmNumber": "0123456789",
+        "email": "alice.dupont@example.com",
         "privateAddress": {
           "addressStreet": "<string>",
           "addressPostal": "<string>",
@@ -48,12 +48,12 @@
         "sameAddressFlag": true
       },
       {
-        "lastName": "<string>",
-        "firstName": "<string>",
+        "lastName": "Dupont",
+        "firstName": "Paul",
         "guardianCode": "A",
-        "phoneNumber": "<string>",
-        "gsmNumber": "<string>",
-        "email": "<string>",
+        "phoneNumber": "0123456789",
+        "gsmNumber": "0123456789",
+        "email": "paul.dupont@example.com",
         "privateAddress": {
           "addressStreet": "<string>",
           "addressPostal": "<string>",
@@ -71,11 +71,11 @@
   },
   "rnDetails": {
     "ssin": "672256828-57",
-    "lastName": "<string>",
-    "firstName": "<string>",
+    "lastName": "Dupont",
+    "firstName": "Jean",
     "otherFirstNames": [
-      "<string>",
-      "<string>"
+      "Pierre",
+      "Marie"
     ],
     "genderCode": "A",
     "birth": "2688",
@@ -97,8 +97,8 @@
     },
     "guardians": [
       {
-        "lastName": "<string>",
-        "firstName": "<string>",
+        "lastName": "Dupont",
+        "firstName": "Alice",
         "guardianCode": "T",
         "phoneNumber": "<string>",
         "gsmNumber": "<string>",
@@ -117,8 +117,8 @@
         "sameAddressFlag": true
       },
       {
-        "lastName": "<string>",
-        "firstName": "<string>",
+        "lastName": "Bernard",
+        "firstName": "Paul",
         "guardianCode": "P",
         "phoneNumber": "<string>",
         "gsmNumber": "<string>",

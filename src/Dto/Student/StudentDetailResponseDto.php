@@ -36,25 +36,22 @@ final readonly class StudentDetailResponseDto extends AbstractResponseDto
     protected static function fromArrayInterne(array $data): static
     {
         return new self(
-            ssin: $data['ssin'] ?? null,
-            lastName: $data['lastName'] ?? null,
+            ssin: $data['ssin']           ?? null,
+            lastName: $data['lastName']   ?? null,
             firstName: $data['firstName'] ?? null,
             otherFirstNames: isset($data['otherFirstNames']) && is_array($data['otherFirstNames']) ? $data['otherFirstNames'] : null,
             genderCode: $data['genderCode'] ?? null,
             birth: isset($data['birth']) ? new DateTimeImmutable($data['birth']) : null,
-            phoneNumber: $data['phoneNumber'] ?? null,
-            gsmNumber: $data['gsmNumber'] ?? null,
-            email: $data['email'] ?? null,
-            encodePar: $data['encodePar'] ?? null,
+            phoneNumber: $data['phoneNumber']       ?? null,
+            gsmNumber: $data['gsmNumber']           ?? null,
+            email: $data['email']                   ?? null,
+            encodePar: $data['encodePar']           ?? null,
             encodeParParam: $data['encodeParParam'] ?? null,
             privateAddress: isset($data['privateAddress']) && is_array($data['privateAddress'])
                 ? PrivateAddressDto::fromArray($data['privateAddress'])
                 : null,
             guardians: isset($data['guardians']) && is_array($data['guardians'])
-                ? array_map(
-                    fn (array $guardian) => GuardianDetailDto::fromArray(...),
-                    $data['guardians']
-                )
+                ? array_map([GuardianDetailDto::class, 'fromArray'], $data['guardians'])
                 : []
         );
     }
