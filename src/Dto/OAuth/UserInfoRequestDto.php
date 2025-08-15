@@ -21,9 +21,9 @@ final readonly class UserInfoRequestDto implements RequestDtoInterface
     public function toArray(): array
     {
         return [
-            'client_id' => $this->clientId,
+            'client_id'     => $this->clientId,
             'client_secret' => $this->clientSecret,
-            'token' => $this->token,
+            'token'         => $this->token,
         ];
     }
 }

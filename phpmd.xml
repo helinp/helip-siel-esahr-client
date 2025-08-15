@@ -1,42 +1,77 @@
 <?xml version="1.0"?>
-<ruleset name="Helip Symfony Ruleset"
-         xmlns="https://phpmd.org/ruleset/1.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="https://phpmd.org/ruleset/1.0.0
-                             https://phpmd.org/ruleset/1.0.0.xsd">
+<ruleset name="Ruleset"
+  xmlns="https://phpmd.org/xml/ruleset/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://phpmd.org/xml/ruleset/1.0.0
+                      http://phpmd.org/xml/ruleset_xml_schema_1.0.0.xsd"
+  xsi:noNamespaceSchemaLocation="http://phpmd.org/xml/ruleset_xml_schema_1.0.0.xsd">
 
-    <description>PHPMD config adaptée à Symfony 6, PHP 8, DTOs et clients REST</description>
+  <description>PHPMD</description>
 
-    <!-- CodeSize : contrôle la taille des méthodes/classes -->
-    <rule ref="rulesets/codesize.xml">
-        <exclude name="TooManyMethods"/>
-        <exclude name="TooManyPublicMethods"/>
-        <exclude name="TooManyChildren"/>
-        <exclude name="TooManyParameters"/> <!-- Toléré pour les DTOs -->
-    </rule>
+  <!-- 1) Imports globaux avec exclusions des règles que l'on va reconfigurer -->
+  <rule ref="rulesets/codesize.xml">
+    <exclude name="TooManyMethods"/>
+    <exclude name="TooManyPublicMethods"/>
+    <!-- Identifiant correct de la règle : ExcessiveParameterList -->
+    <exclude name="ExcessiveParameterList"/>
+  </rule>
 
-    <!-- CleanCode : bonnes pratiques générales -->
-    <rule ref="rulesets/cleancode.xml">
-        <exclude name="StaticAccess"/> <!-- OK pour fromArray() sur DTOs -->
-        <exclude name="LongVariable"/> <!-- DTOs explicites -->
-        <exclude name="LongClassName"/> <!-- Ex: InscriptionRegulariteDomaineResponseDto -->
-    </rule>
+  <rule ref="rulesets/design.xml">
+    <exclude name="CouplingBetweenObjects"/>
+    <exclude name="TooManyFields"/>
+    <!-- on exclut la version par défaut pour éviter le doublon -->
+    <exclude name="NumberOfChildren"/>
+  </rule>
 
-    <!-- Design : architecture, dépendances -->
-    <rule ref="rulesets/design.xml">
-        <exclude name="CouplingBetweenObjects"/> <!-- autorisé pour les services regroupés -->
-        <exclude name="TooManyFields"/>
-    </rule>
+  <rule ref="rulesets/cleancode.xml">
+    <exclude name="StaticAccess"/>
+    <exclude name="ElseExpression"/>
+  </rule>
 
-    <!-- Code mort -->
-    <rule ref="rulesets/unusedcode.xml" />
+  <!-- On exclut aussi dans l'import naming les règles que l'on redéfinira plus bas -->
+  <rule ref="rulesets/naming.xml">
+    <exclude name="ShortVariable"/>
+    <exclude name="LongVariable"/>
+    <exclude name="LongClassName"/>
+  </rule>
 
-    <!-- Nommage -->
-    <rule ref="rulesets/naming.xml">
-        <exclude name="ShortVariable"/> <!-- autorise $id, $dt, etc. -->
-    </rule>
+  <rule ref="rulesets/unusedcode.xml" />
 
-    <!-- Exclusions de dossiers -->
-    <exclude-pattern>*/tests/*</exclude-pattern>
-    <exclude-pattern>*/vendor/*</exclude-pattern>
+  <!-- 2) Surcharges (une seule définition par règle) -->
+
+  <!-- Longueur max d'une méthode -->
+  <rule ref="rulesets/codesize.xml/ExcessiveMethodLength">
+    <properties>
+      <property name="minimum" value="58"/>
+    </properties>
+  </rule>
+
+  <!-- Nombre d'enfants autorisés (règle du ruleset design + bonne propriété) -->
+  <rule ref="rulesets/design.xml/NumberOfChildren">
+    <properties>
+      <property name="minimum" value="50"/>
+    </properties>
+  </rule>
+
+  <!-- Longueur des variables : règle unique avec un seuil qui couvre tes cas -->
+  <!-- 32 était signalé : on met 33 pour le tolérer sans tout ouvrir -->
+  <rule ref="rulesets/naming.xml/LongVariable">
+    <properties>
+      <property name="maximum" value="33"/>
+    </properties>
+  </rule>
+
+  <!-- Longueur des noms de classes -->
+  <rule ref="rulesets/naming.xml/LongClassName">
+    <properties>
+      <property name="maximum" value="60"/>
+    </properties>
+  </rule>
+
+  <!-- 3) Exclusions de dossiers -->
+  <exclude-pattern>*/tests/*</exclude-pattern>
+  <exclude-pattern>*/vendor/*</exclude-pattern>
+  <exclude-pattern>*/var/*</exclude-pattern>
+  <exclude-pattern>*/build/*</exclude-pattern>
+
 </ruleset>

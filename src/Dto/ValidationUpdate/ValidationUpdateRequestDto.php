@@ -21,11 +21,11 @@ final readonly class ValidationUpdateRequestDto implements RequestDtoInterface
     public function toArray(): array
     {
         return [
-            'idEtab' => $this->idEtab,
-            'schoolYear' => $this->schoolYear,
+            'idEtab'         => $this->idEtab,
+            'schoolYear'     => $this->schoolYear,
             'validationType' => $this->validationType,
-            'source' => $this->source,
-            'date' => $this->date->format('Y-m-d'),
+            'source'         => $this->source,
+            'date'           => $this->date->format('Y-m-d'),
         ];
     }
 }

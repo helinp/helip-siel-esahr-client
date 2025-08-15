@@ -13,7 +13,6 @@ use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
  */
 final readonly class ValidationSearchItemResponseDto extends AbstractResponseDto
 {
-
     public function __construct(
         public string $validationType,
         public string $source,
@@ -26,10 +25,7 @@ final readonly class ValidationSearchItemResponseDto extends AbstractResponseDto
 
         if (!isset($data['validation']) || !is_array($data['validation'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "validation" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "validation" key is missing or not an array.'
             );
         }
 

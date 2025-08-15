@@ -29,10 +29,7 @@ final readonly class NotificationDetailsResponseDto extends AbstractResponseDto
         foreach (['notificationId', 'idEsahr', 'notificationDt', 'notificationCode', 'notificationMsgType', 'notificationMsg'] as $key) {
             if (!isset($data[$key])) {
                 throw new EsahrApiResponseException(
-                    sprintf('Invalid response format: "%s" key is missing.', $key),
-                    0,
-                    null,
-                    $data
+                    sprintf('Invalid response format: "%s" key is missing.', $key)
                 );
             }
         }

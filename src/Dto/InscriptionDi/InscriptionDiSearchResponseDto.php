@@ -7,7 +7,6 @@ namespace Helip\SielEsahrClient\Dto\InscriptionDi;
 use Helip\SielEsahrClient\Contract\AbstractResponseDto;
 use Helip\SielEsahrClient\Dto\Common\ComptabilisationDto;
 use Helip\SielEsahrClient\Dto\Common\OrdreDiInputDto;
-use Helip\SielEsahrClient\Dto\InscriptionDi\InscriptionDiOptionalDto;
 use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
 use Helip\SielEsahrClient\ValueObject\IdEsahr;
 
@@ -21,7 +20,7 @@ final readonly class InscriptionDiSearchResponseDto extends AbstractResponseDto
         public int $schoolYear,
         public int $idEtab,
         public int $statusCode,
-        public int $inscriptionRight,
+        public int $exemptionCode, // 'InscriptionRight' dans la DOC Etnic
         public ?InscriptionDiOptionalDto $inscriptionDiOptional,
         public ?OrdreDiInputDto $ordreDi,
         public ?ComptabilisationDto $comptabilisation,
@@ -33,10 +32,7 @@ final readonly class InscriptionDiSearchResponseDto extends AbstractResponseDto
 
         if (!isset($data['inscription']) || !is_array($data['inscription'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "inscription" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "inscription" key is missing or not an array.'
             );
         }
 
@@ -47,7 +43,7 @@ final readonly class InscriptionDiSearchResponseDto extends AbstractResponseDto
             schoolYear: $data['schoolYear'],
             idEtab: $data['idEtab'],
             statusCode: $data['statusCode'],
-            inscriptionRight: $data['inscriptionRight'],
+            exemptionCode: $data['exemptionCode'], // Anciennement 'InscriptionRight'
             inscriptionDiOptional: isset($data['inscriptionDiOptional']) ? InscriptionDiOptionalDto::fromArray($data['inscriptionDiOptional']) : null,
             ordreDi: isset($data['ordreDi']) ? OrdreDiInputDto::fromArray($data['ordreDi']) : null,
             comptabilisation: isset($data['comptabilisation']) ? ComptabilisationDto::fromArray($data['comptabilisation']) : null

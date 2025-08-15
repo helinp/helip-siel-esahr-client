@@ -12,7 +12,7 @@ enum IndicatorOnHoldEnum: string
 
     public function label(): string
     {
-        return match($this) {
+        return match ($this) {
             self::O => 'Oui',
             self::N => 'Non',
             self::A => 'En attente',

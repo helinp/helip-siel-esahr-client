@@ -14,7 +14,6 @@ use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
  */
 final readonly class InscriptionRegulariteDomaineItemResponseDto extends AbstractResponseDto
 {
-
     public function __construct(
         public string $idEsahr,
         public int $idEtab,
@@ -31,10 +30,7 @@ final readonly class InscriptionRegulariteDomaineItemResponseDto extends Abstrac
 
         if (!isset($data['inscription']) || !is_array($data['inscription'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "inscription" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "inscription" key is missing or not an array.'
             );
         }
 

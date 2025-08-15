@@ -1,0 +1,291 @@
+{
+    "items": [
+        {
+            "students": {
+                "idEsahr": "123456-01",
+                "cfwbDetails": {
+                    "ssin": "70810100166",
+                    "lastName": "Dupont",
+                    "firstName": "Jean",
+                    "otherFirstNames": [
+                        "Pierre",
+                        "Marie"
+                    ],
+                    "genderCode": "M",
+                    "birth": "1986",
+                    "phoneNumber": "0123456789",
+                    "gsmNumber": "0123456789",
+                    "email": "jean.dupont@example.com",
+                    "encodePar": "encoded",
+                    "encodeParParam": "param",
+                    "privateAddress": {
+                        "addressStreet": "<string>",
+                        "addressPostal": "<string>",
+                        "addressCountry": "<string>",
+                        "addressNumber": "123",
+                        "addressBox": "<string>",
+                        "addressCity": {
+                            "placeCode": "<string>",
+                            "placeText": "<string>"
+                        }
+                    },
+                    "guardians": [
+                        {
+                            "lastName": "Dupont",
+                            "firstName": "Alice",
+                            "guardianCode": "A",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "alice.dupont@example.com",
+                            "privateAddress": {
+                                "addressStreet": "<string>",
+                                "addressPostal": "<string>",
+                                "addressCountry": "<string>",
+                                "addressNumber": "123",
+                                "addressBox": "<string>",
+                                "addressCity": {
+                                    "placeCode": "<string>",
+                                    "placeText": "<string>"
+                                }
+                            },
+                            "sameAddressFlag": true
+                        },
+                        {
+                            "lastName": "Dupont",
+                            "firstName": "Paul",
+                            "guardianCode": "T",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "paul.dupont@example.com",
+                            "privateAddress": {
+                                "addressStreet": "<string>",
+                                "addressPostal": "<string>",
+                                "addressCountry": "<string>",
+                                "addressNumber": "123",
+                                "addressBox": "<string>",
+                                "addressCity": {
+                                    "placeCode": "<string>",
+                                    "placeText": "<string>"
+                                }
+                            },
+                            "sameAddressFlag": true
+                        }
+                    ]
+                },
+                "rnDetails": {
+                    "ssin": "347685-87718",
+                    "lastName": "Dupont",
+                    "firstName": "Jean",
+                    "otherFirstNames": [
+                        "Pierre",
+                        "Marie"
+                    ],
+                    "genderCode": "M",
+                    "birth": "1974-05-10",
+                    "phoneNumber": "<string>",
+                    "gsmNumber": "<string>",
+                    "email": "<string>",
+                    "encodePar": "<string>",
+                    "encodeParParam": "<string>",
+                    "privateAddress": {
+                        "addressStreet": "<string>",
+                        "addressPostal": "<string>",
+                        "addressCountry": "<string>",
+                        "addressNumber": "123",
+                        "addressBox": "<string>",
+                        "addressCity": {
+                            "placeCode": "<string>",
+                            "placeText": "<string>"
+                        }
+                    },
+                    "guardians": [
+                        {
+                            "lastName": "Dupont",
+                            "firstName": "Alice",
+                            "guardianCode": "A",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "alice.dupont@example.com",
+                            "privateAddress": {
+                                "addressStreet": "<string>",
+                                "addressPostal": "<string>",
+                                "addressCountry": "<string>",
+                                "addressNumber": "123",
+                                "addressBox": "<string>",
+                                "addressCity": {
+                                    "placeCode": "<string>",
+                                    "placeText": "<string>"
+                                }
+                            },
+                            "sameAddressFlag": true
+                        },
+                        {
+                            "lastName": "Dupont",
+                            "firstName": "Paul",
+                            "guardianCode": "A",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "paul.dupont@example.com",
+                            "privateAddress": {
+                                "addressStreet": "<string>",
+                                "addressPostal": "<string>",
+                                "addressCountry": "<string>",
+                                "addressNumber": "123",
+                                "addressBox": "<string>",
+                                "addressCity": {
+                                    "placeCode": "<string>",
+                                    "placeText": "<string>"
+                                }
+                            },
+                            "sameAddressFlag": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "students": {
+                "idEsahr": "123456-04",
+                "cfwbDetails": {
+                    "ssin": "383043-485-98",
+                    "lastName": "Dupont",
+                    "firstName": "Marie",
+                    "otherFirstNames": [
+                        "Alice",
+                        "Paul"
+                    ],
+                    "genderCode": "F",
+                    "birth": "1648-04-11",
+                    "phoneNumber": "<string>",
+                    "gsmNumber": "<string>",
+                    "email": "<string>",
+                    "encodePar": "<string>",
+                    "encodeParParam": "<string>",
+                    "privateAddress": {
+                        "addressStreet": "<string>",
+                        "addressPostal": "<string>",
+                        "addressCountry": "<string>",
+                        "addressNumber": "123",
+                        "addressBox": "<string>",
+                        "addressCity": {
+                            "placeCode": "<string>",
+                            "placeText": "<string>"
+                        }
+                    },
+                    "guardians": [
+                        {
+                            "lastName": "Dupont",
+                            "firstName": "Alice",
+                            "guardianCode": "P",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "alice.dupont@example.com",
+                            "privateAddress": {
+                                "addressStreet": "<string>",
+                                "addressPostal": "<string>",
+                                "addressCountry": "<string>",
+                                "addressNumber": "123",
+                                "addressBox": "<string>",
+                                "addressCity": {
+                                    "placeCode": "<string>",
+                                    "placeText": "<string>"
+                                }
+                            },
+                            "sameAddressFlag": true
+                        },
+                        {
+                            "lastName": "Dupont",
+                            "firstName": "Paul",
+                            "guardianCode": "T",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "paul.dupont@example.com",
+                            "privateAddress": {
+                                "addressStreet": "<string>",
+                                "addressPostal": "<string>",
+                                "addressCountry": "<string>",
+                                "addressNumber": "123",
+                                "addressBox": "<string>",
+                                "addressCity": {
+                                    "placeCode": "<string>",
+                                    "placeText": "<string>"
+                                }
+                            },
+                            "sameAddressFlag": true
+                        }
+                    ]
+                },
+                "rnDetails": {
+                    "ssin": "15740531455",
+                    "lastName": "Dupont",
+                    "firstName": "Marie",
+                    "otherFirstNames": [
+                        "Alice",
+                        "Paul"
+                    ],
+                    "genderCode": "A",
+                    "birth": "1180-08-18",
+                    "phoneNumber": "<string>",
+                    "gsmNumber": "<string>",
+                    "email": "<string>",
+                    "encodePar": "<string>",
+                    "encodeParParam": "<string>",
+                    "privateAddress": {
+                        "addressStreet": "<string>",
+                        "addressPostal": "<string>",
+                        "addressCountry": "<string>",
+                        "addressNumber": "123",
+                        "addressBox": "<string>",
+                        "addressCity": {
+                            "placeCode": "<string>",
+                            "placeText": "<string>"
+                        }
+                    },
+                    "guardians": [
+                        {
+                            "lastName": "Dupont",
+                            "firstName": "Alice",
+                            "guardianCode": "A",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "alice.dupont@example.com",
+                            "privateAddress": {
+                                "addressStreet": "<string>",
+                                "addressPostal": "<string>",
+                                "addressCountry": "<string>",
+                                "addressNumber": "123",
+                                "addressBox": "<string>",
+                                "addressCity": {
+                                    "placeCode": "<string>",
+                                    "placeText": "<string>"
+                                }
+                            },
+                            "sameAddressFlag": true
+                        },
+                        {
+                            "lastName": "Dupont",
+                            "firstName": "Alice",
+                            "guardianCode": "T",
+                            "phoneNumber": "0123456789",
+                            "gsmNumber": "0123456789",
+                            "email": "alice.dupont@example.com",
+                            "privateAddress": {
+                                "addressStreet": "<string>",
+                                "addressPostal": "<string>",
+                                "addressCountry": "<string>",
+                                "addressNumber": "123",
+                                "addressBox": "<string>",
+                                "addressCity": {
+                                    "placeCode": "<string>",
+                                    "placeText": "<string>"
+                                }
+                            },
+                            "sameAddressFlag": true
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "total": 2
+}

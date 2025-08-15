@@ -7,18 +7,15 @@ namespace Helip\SielEsahrClient\Http\Client;
 use Helip\SielEsahrClient\Dto\ValidationSearch\ValidationSearchMultipleResponseDto;
 use Helip\SielEsahrClient\Dto\ValidationSearch\ValidationSearchRequestDto;
 
-final class ValidationSearchClient extends AbstractClient
+class ValidationSearchClient extends AbstractClient
 {
-
     public function search(
         string $accessToken,
         ValidationSearchRequestDto $request,
-        int $idEtab,
-        int $schoolYear
     ): ValidationSearchMultipleResponseDto {
 
         $data = $this->esahrHttpClient->get(
-            $this->getUri($idEtab, $schoolYear),
+            $this->getUri($request->schoolYear, $request->idEtab),
             $accessToken,
             $request->toArray()
         );
@@ -26,11 +23,11 @@ final class ValidationSearchClient extends AbstractClient
         return ValidationSearchMultipleResponseDto::fromArray($data);
     }
 
-    private function getUri(int $idEtab, int $schoolYear): string
+    private function getUri(int $schoolYear, ?int $idEtab): string
     {
         return sprintf(
-            'validation?idEtab=%d&schoolYear=%d',
-            $idEtab,
+            'validation?idEtab=%s&schoolYear=%d',
+            $idEtab !== null ? (string)$idEtab : 'null',
             $schoolYear
         );
     }

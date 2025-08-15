@@ -1,0 +1,25 @@
+{
+    "type": "about:blank",
+    "title": "Invalid Request",
+    "status": 400,
+    "detail": "One or more parameters are invalid.",
+    "instance": "/api/communes",
+    "invalidParams": [
+        {
+            "in": "header",
+            "name": "Authorization",
+            "reason": "Missing or invalid token",
+            "value": {
+                "description": "Bearer xyz..."
+            }
+        },
+        {
+            "in": "path",
+            "name": "idCommune",
+            "reason": "Commune not found",
+            "value": {
+                "description": "99999"
+            }
+        }
+    ]
+}

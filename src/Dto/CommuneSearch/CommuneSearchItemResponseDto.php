@@ -27,10 +27,7 @@ final readonly class CommuneSearchItemResponseDto extends AbstractResponseDto
 
         if (!isset($data['commune']) || !is_array($data['commune'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "commune" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "commune" key is missing or not an array.'
             );
         }
         $data = $data['commune'];

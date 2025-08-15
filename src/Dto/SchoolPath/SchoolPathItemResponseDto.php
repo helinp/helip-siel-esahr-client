@@ -23,10 +23,10 @@ final readonly class SchoolPathItemResponseDto extends AbstractResponseDto
         public int $schoolYear,
         public int $idEtab,
         public DomaineCodeEnum $domaineCode,
-        public string $coursCode,
+        public int $coursCode,
         public FiliereCodeEnum $filiere,
         public string $annee, // Année de la formation
-        public string $periode, // Nombre de périodes suivies
+        public int $periode, // Nombre de périodes suivies
         public SuccessFlagEnum $success, // 'O' ou 'N'
     ) {
     }
@@ -36,17 +36,14 @@ final readonly class SchoolPathItemResponseDto extends AbstractResponseDto
 
         if (!isset($data['schoolPath']) || !is_array($data['schoolPath'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "schoolPath" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "schoolPath" key is missing or not an array.'
             );
         }
 
         $data = $data['schoolPath'];
 
         return new self(
-            idEsahr: $data['idEsahr'],
+            idEsahr: new IdEsahr($data['idEsahr']),
             schoolYear: $data['schoolYear'],
             idEtab: $data['idEtab'],
             domaineCode: DomaineCodeEnum::from($data['domaineCode']),

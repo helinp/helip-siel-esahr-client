@@ -18,8 +18,6 @@ final readonly class InscriptionCoursSearchResponseDto extends AbstractResponseD
         public IdEsahr $idEsahr,
         public int $schoolYear,
         public int $idEtab,
-        public int $statusCode,
-        public string $idInscr,
         public InscriptionCoursDataDto $inscriptionCoursData,
         public ?InscriptionCoursSpecificityDto $inscriptionCoursSpecificity,
         public ?RegulariteInputDto $regularity,
@@ -32,10 +30,13 @@ final readonly class InscriptionCoursSearchResponseDto extends AbstractResponseD
     {
         if (!isset($data['inscription']) || !is_array($data['inscription'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "inscription" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "inscription" key is missing or not an array.'
+            );
+        }
+
+        if (!isset($data['inscription']['inscription']) || !is_array($data['inscription']['inscription'])) {
+            throw new EsahrApiResponseException(
+                'Invalid response format: "inscription.inscription" key is missing or not an array.'
             );
         }
 
@@ -45,13 +46,11 @@ final readonly class InscriptionCoursSearchResponseDto extends AbstractResponseD
             idEsahr: new IdEsahr($insc['idEsahr']),
             schoolYear: (int) $insc['schoolYear'],
             idEtab: (int) $insc['idEtab'],
-            statusCode: (int) $insc['statusCode'],
-            idInscr: $insc['idInscr'],
-            inscriptionCoursData: InscriptionCoursDataDto::fromArray($insc['inscriptionCoursData']),
-            inscriptionCoursSpecificity: InscriptionCoursSpecificityDto::fromArray($insc['inscriptionCoursSpecificity'] ?? []),
-            regularity: RegulariteInputDto::fromArray($insc['regularity'] ?? []),
-            subvention: SubventionResponseDto::fromArray($insc['subvention'] ?? []),
-            warning: $insc['warning'] ?? null
+            inscriptionCoursData: InscriptionCoursDataDto::fromArray($insc['inscription']['inscriptionCoursData']),
+            inscriptionCoursSpecificity: InscriptionCoursSpecificityDto::fromArray($insc['inscription']['inscriptionCoursSpecificity'] ?? []),
+            regularity: RegulariteInputDto::fromArray($insc['inscription']['regularity'] ?? []),
+            subvention: SubventionResponseDto::fromArray($insc['inscription']['subvention'] ?? []),
+            warning: $insc['inscription']['warning'] ?? null
         );
     }
 }

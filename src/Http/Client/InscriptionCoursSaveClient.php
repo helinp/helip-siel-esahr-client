@@ -10,7 +10,7 @@ use Helip\SielEsahrClient\Dto\InscriptionCoursSave\InscriptionCoursSaveRequestDt
 /**
  * Doc 4.8.1 Enregistrer un cours
  */
-final class InscriptionCoursSaveClient extends AbstractClient
+class InscriptionCoursSaveClient extends AbstractClient
 {
     public function save(
         string $accessToken,

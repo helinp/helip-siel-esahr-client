@@ -2,22 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Helip\SielEsahrClient\Dto\StudentAdd;
+namespace Helip\SielEsahrClient\Dto\Student;
 
 use Helip\SielEsahrClient\Contract\AbstractResponseDto;
-use Helip\SielEsahrClient\Dto\Student\StudentDetailResponseDto;
 use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
 use Helip\SielEsahrClient\ValueObject\IdEsahr;
 
 /**
- * Sauvegarder un élève 4.3.1 / Réponse
+ * Sauvegarder un élève 4.3.1 / Réponse (Copie)
  */
 final readonly class StudentDetailsResponseDto extends AbstractResponseDto
 {
     public function __construct(
         public ?IdEsahr $idEsahr,
-        public ?StudentDetailResponseDto $rnDetail,
-        public ?StudentDetailResponseDto $cfwbDetail,
+        public ?StudentDetailResponseDto $rnDetails,
+        public ?StudentDetailResponseDto $cfwbDetails,
     ) {
     }
 
@@ -29,8 +28,8 @@ final readonly class StudentDetailsResponseDto extends AbstractResponseDto
 
         return new self(
             idEsahr: isset($data['idEsahr']) ? new IdEsahr($data['idEsahr']) : null,
-            rnDetail: isset($data['rnDetail']) ? StudentDetailResponseDto::fromArray($data['rnDetail']) : null,
-            cfwbDetail: isset($data['cfwbDetail']) ? StudentDetailResponseDto::fromArray($data['cfwbDetail']) : null,
+            rnDetails: isset($data['rnDetails']) ? StudentDetailResponseDto::fromArray($data['rnDetails']) : null,
+            cfwbDetails: isset($data['cfwbDetails']) ? StudentDetailResponseDto::fromArray($data['cfwbDetails']) : null,
         );
     }
 }

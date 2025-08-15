@@ -26,10 +26,7 @@ final readonly class CoursListeItemResponseDto extends AbstractResponseDto
     {
         if (!isset($data['codeCours']) || !is_array($data['codeCours'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "codeCours" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "codeCours" key is missing or not an array.'
             );
         }
 

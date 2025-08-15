@@ -22,11 +22,11 @@ final readonly class InscriptionCoursSpecificityDto
     {
         return [
             'abandonDate' => $this->abandonDate?->format('Y-m-d'),
-            'group' => $this->group,
-            'timetable' => $this->timetable,
-            'professor' => $this->professor,
-            'impl' => $this->impl,
-            'success' => $this->success ? 'O' : 'N',
+            'group'       => $this->group,
+            'timetable'   => $this->timetable,
+            'professor'   => $this->professor,
+            'impl'        => $this->impl,
+            'success'     => $this->success ? 'O' : 'N',
         ];
     }
 
@@ -34,10 +34,10 @@ final readonly class InscriptionCoursSpecificityDto
     {
         return new self(
             abandonDate: isset($data['abandonDate']) ? DateTimeImmutable::createFromFormat('Y-m-d', $data['abandonDate']) : null,
-            group: $data['group'] ?? null,
+            group: $data['group']         ?? null,
             timetable: $data['timetable'] ?? null,
             professor: $data['professor'] ?? null,
-            impl: $data['impl'] ?? null,
+            impl: $data['impl']           ?? null,
             success: isset($data['success']) ? $data['success'] === 'O' : null,
         );
     }

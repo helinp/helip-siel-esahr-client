@@ -26,10 +26,7 @@ final readonly class NoModificationResponseDto extends AbstractResponseDto
     {
         if (!isset($data['type'], $data['title'], $data['status'], $data['detail'], $data['instance'], $data['id'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: required keys are missing.',
-                0,
-                null,
-                $data
+                'Invalid response format: required keys are missing.'
             );
         }
 

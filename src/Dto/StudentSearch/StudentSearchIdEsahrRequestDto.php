@@ -22,7 +22,7 @@ final readonly class StudentSearchIdEsahrRequestDto implements RequestDtoInterfa
     public function toArray(): array
     {
         return [
-            'idEsahr' => $this->idEsahr->value(),
+            'idEsahr'  => $this->idEsahr->value(),
             'fromDate' => $this->fromDate->format('Y-m-d'),
         ];
     }

@@ -24,9 +24,9 @@ final readonly class InscriptionCoursSaveRequestDto implements RequestDtoInterfa
     public function toArray(): array
     {
         return [
-            'idEsahr' => $this->idEsahr->value(),
-            'idEtab' => $this->idEtab,
-            'schoolYear' => $this->schoolYear,
+            'idEsahr'     => $this->idEsahr->value(),
+            'idEtab'      => $this->idEtab,
+            'schoolYear'  => $this->schoolYear,
             'inscription' => $this->inscription->toArray()
         ];
     }

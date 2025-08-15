@@ -8,16 +8,24 @@ use Helip\SielEsahrClient\Dto\InscriptionRegulariteDomaineSearch\InscriptionRegu
 use Helip\SielEsahrClient\Dto\InscriptionRegulariteDomaineSearch\InscriptionRegulariteDomaineMultipleResponseDto;
 
 /**
-
+ * 4.6.2 Inscription régularité domaine
  */
-final class InscriptionRegulariteDomaineSearchClient extends AbstractClient
+class InscriptionRegulariteDomaineSearchClient extends AbstractClient
 {
     public function search(
         string $accessToken,
         InscriptionRegulariteDomaineRequestDto $request
     ): InscriptionRegulariteDomaineMultipleResponseDto {
+
+        // Endpoint: {{baseUrl}}/inscriptionRegulariteDomaine?idEsahr=<string>&idEtab=<integer>&schoolYear=<integer>
+        $parameters = [
+            'idEsahr'    => $request->idEsahr->value(),
+            'idEtab'     => $request->idEtab,
+            'schoolYear' => $request->schoolYear,
+        ];
+
         $data = $this->esahrHttpClient->get(
-            'inscriptionRegulariteDomaine',
+            'inscriptionRegulariteDomaine' . '?' . http_build_query($parameters),
             $accessToken,
             $request->toArray()
         );

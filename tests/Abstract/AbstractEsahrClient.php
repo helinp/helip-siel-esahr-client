@@ -10,8 +10,8 @@ use Helip\SielEsahrClient\Http\Transport\EsahrHttpClient;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpClient\HttpClient;
 
-abstract class AbstractEsahrClient extends TestCase {
-
+abstract class AbstractEsahrClient extends TestCase
+{
     protected OAuthTokenProvider $tokenProvider;
     protected EsahrHttpClient $httpClient;
 
@@ -59,4 +59,3 @@ abstract class AbstractEsahrClient extends TestCase {
         return self::$cachedToken;
     }
 }
-

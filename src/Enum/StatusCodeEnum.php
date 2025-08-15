@@ -7,13 +7,13 @@ namespace Helip\SielEsahrClient\Enum;
 enum StatusCodeEnum: int
 {
     case CANCELLED = 0;
-    case ACTIVE = 1;
+    case ACTIVE    = 1;
 
     public function label(): string
     {
         return match ($this) {
             self::CANCELLED => 'Annulé',
-            self::ACTIVE => 'Actif',
+            self::ACTIVE    => 'Actif',
         };
     }
 }

@@ -9,9 +9,10 @@ composer.lock
 .phpunit.cache/*
 
 # PHPStan
-phpstan.neon
 phpstan.neon.dist
 /phpstan-result.cache
+/var
+
 
 # PHP CS Fixer
 .php-cs-fixer.cache
@@ -23,16 +24,14 @@ phpstan.neon.dist
 /report.html
 
 # Coverage
-/coverage/
+coverage.xml
+coverage/
 
 # Logs
 *.log
 
 # Dotenv
-.env
-.env.local
-.env.test
-.env.*.local
+.env.*
 
 # IDE / Editor
 .idea/

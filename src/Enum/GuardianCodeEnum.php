@@ -6,16 +6,16 @@ namespace Helip\SielEsahrClient\Enum;
 
 enum GuardianCodeEnum: string
 {
-    case OTHER = 'A';
+    case OTHER  = 'A';
     case PARENT = 'P';
-    case TUTOR = 'T';
+    case TUTOR  = 'T';
 
     public function label(): string
     {
-        return match($this) {
-            self::OTHER => 'Autre',
+        return match ($this) {
+            self::OTHER  => 'Autre',
             self::PARENT => 'Parent',
-            self::TUTOR => 'Tuteur',
+            self::TUTOR  => 'Tuteur',
         };
     }
 }

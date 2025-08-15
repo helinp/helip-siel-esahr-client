@@ -26,10 +26,7 @@ final readonly class CodeExemptionSearchItemResponseDto extends AbstractResponse
 
         if (!isset($data['exemption']) || !is_array($data['exemption'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "exemption" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "exemption" key is missing or not an array.'
             );
         }
 

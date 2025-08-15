@@ -10,7 +10,7 @@ use Helip\SielEsahrClient\Dto\InscriptionCoursUpdate\InscriptionCoursUpdateReque
 /**
  * Doc 4.8.2 Modifier un cours
  */
-final class InscriptionCoursUpdateClient extends AbstractClient
+class InscriptionCoursUpdateClient extends AbstractClient
 {
     public function update(
         string $accessToken,

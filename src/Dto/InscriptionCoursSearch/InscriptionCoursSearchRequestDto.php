@@ -24,9 +24,9 @@ final readonly class InscriptionCoursSearchRequestDto implements RequestDtoInter
     public function toArray(): array
     {
         return [
-            'idEsahr' => $this->idEsahr->value(),
-            'idEtab' => $this->idEtab,
-            'schoolYear' => $this->schoolYear,
+            'idEsahr'       => $this->idEsahr->value(),
+            'idEtab'        => $this->idEtab,
+            'schoolYear'    => $this->schoolYear,
             'situationDate' => $this->situationDate?->format('Y-m-d'),
         ];
     }

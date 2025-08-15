@@ -21,9 +21,9 @@ final readonly class CommuneSearchRequestDto implements RequestDtoInterface
     public function toArray(): array
     {
         return [
-            'nameCommune' => $this->nameCommune,
+            'nameCommune'  => $this->nameCommune,
             'nameLocality' => $this->nameLocality,
-            'postalCode' => $this->postalCode,
+            'postalCode'   => $this->postalCode,
         ];
     }
 }

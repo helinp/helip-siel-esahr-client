@@ -10,7 +10,7 @@ use Helip\SielEsahrClient\Dto\InscriptionDi\InscriptionDiUpdateRequestDto;
 /**
  * Doc 4.5.1 Modifier des droits d'inscriptions
  */
-final class DroitInscriptionUpdateClient extends AbstractClient
+class DroitInscriptionUpdateClient extends AbstractClient
 {
     public function update(
         string $accessToken,

@@ -39,10 +39,10 @@ final readonly class OrdreDiInputDto
     {
         return array_filter(
             [
-            'ordreDiFlag'    => $this->ordreDiFlag->value(),
-            'reasonOrdreDi'  => $this->reasonOrdreDi?->value(),
-            'reasonOther'    => $this->reasonOther,
-            'date'           => $this->date?->format('Y-m-d'),
+            'ordreDiFlag'   => $this->ordreDiFlag->value(),
+            'reasonOrdreDi' => $this->reasonOrdreDi?->value(),
+            'reasonOther'   => $this->reasonOther,
+            'date'          => $this->date?->format('Y-m-d'),
             ]
         );
     }

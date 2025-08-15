@@ -11,7 +11,6 @@ use Helip\SielEsahrClient\Contract\AbstractResponseDto;
  */
 final readonly class ValidationSearchMultipleResponseDto extends AbstractResponseDto
 {
-
     public function __construct(
         public array $items,
         public int $total

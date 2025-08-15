@@ -22,8 +22,8 @@ final readonly class InscriptionRegulariteDomaineRequestDto implements RequestDt
     public function toArray(): array
     {
         return [
-            'idEsahr' => $this->idEsahr->value(),
-            'idEtab' => $this->idEtab,
+            'idEsahr'    => $this->idEsahr->value(),
+            'idEtab'     => $this->idEtab,
             'schoolYear' => $this->schoolYear,
         ];
     }

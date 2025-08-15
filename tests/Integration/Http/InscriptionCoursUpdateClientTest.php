@@ -37,9 +37,9 @@ final class InscriptionCoursUpdateClientTest extends AbstractEsahrClient
             idEtab: 593,
             schoolYear: 2023,
             inscription: new InscriptionCoursRequestItemDto(
-                statusCode: StatusCodeEnum::ACTIVE->value,
+                statusCode: StatusCodeEnum::ACTIVE,
                 inscriptionCoursData: new InscriptionCoursDataDto(
-                    inscriptionDate: new DateTimeImmutable('2023-114434-78'),
+                    inscriptionDate: new DateTimeImmutable('2023-09-05'),
                     domaineCode: DomaineCodeEnum::MU,
                     coursCode: 1,
                     filiere: FiliereCodeEnum::FOR,

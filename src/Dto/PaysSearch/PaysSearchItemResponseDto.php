@@ -40,10 +40,7 @@ final readonly class PaysSearchItemResponseDto extends AbstractResponseDto
 
         if (!isset($data['country']) || !is_array($data['country'])) {
             throw new EsahrApiResponseException(
-                'Invalid response format: "country" key is missing or not an array.',
-                0,
-                null,
-                $data
+                'Invalid response format: "country" key is missing or not an array.'
             );
         }
 

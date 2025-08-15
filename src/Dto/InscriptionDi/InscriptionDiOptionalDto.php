@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Helip\SielEsahrClient\Dto\InscriptionDi;
 
 use Helip\SielEsahrClient\Contract\AbstractResponseDto;
-use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
 use Helip\SielEsahrClient\ValueObject\Indicator;
 use Helip\SielEsahrClient\ValueObject\IndicatorNA;
 
@@ -17,26 +16,15 @@ use Helip\SielEsahrClient\ValueObject\IndicatorNA;
 final readonly class InscriptionDiOptionalDto extends AbstractResponseDto
 {
     public function __construct(
-        public ?Indicator $payment,
+        public ?IndicatorNA $payment, // Note: Indiqué Indicator dans la doc, mais API retourne IndicatorNA
         public ?IndicatorNA $attestation,
     ) {
     }
 
     protected static function fromArrayInterne(array $data): static
     {
-        foreach (['payment', 'attestation'] as $key) {
-            if (isset($data[$key]) && !is_array($data[$key])) {
-                throw new EsahrApiResponseException(
-                    sprintf('Invalid response format: "%s" key is not an array.', $key),
-                    0,
-                    null,
-                    $data
-                );
-            }
-        }
-
         return new self(
-            payment: isset($data['payment']) ? new Indicator($data['payment']) : null,
+            payment: isset($data['payment']) ? new IndicatorNA($data['payment']) : null, // Note: Indiqué Indicator dans la doc, mais API retourne IndicatorNA
             attestation: isset($data['attestation']) ? new IndicatorNA($data['attestation']) : null
         );
     }
@@ -45,7 +33,7 @@ final readonly class InscriptionDiOptionalDto extends AbstractResponseDto
     {
         return array_filter(
             [
-            'payment' => $this->payment->value(),
+            'payment'     => $this->payment->value(),
             'attestation' => $this->attestation->value()
             ]
         );

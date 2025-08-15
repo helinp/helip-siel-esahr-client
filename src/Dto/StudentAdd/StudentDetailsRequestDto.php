@@ -12,6 +12,8 @@ use Helip\SielEsahrClient\Validator\NameValidator;
 
 /**
  * Sauvegarder un élève 4.3.1 / Modifier un élève 4.3.2
+ *
+ * @todo: Gérer le cas où le champ `birth` ne contient que l'année de naissance.
  */
 final readonly class StudentDetailsRequestDto implements RequestDtoInterface
 {
@@ -46,20 +48,20 @@ final readonly class StudentDetailsRequestDto implements RequestDtoInterface
     public function toArray(): array
     {
         return [
-            'ssin' => $this->ssin,
-            'lastName' => $this->lastName,
-            'firstName' => $this->firstName,
+            'ssin'            => $this->ssin,
+            'lastName'        => $this->lastName,
+            'firstName'       => $this->firstName,
             'otherFirstNames' => $this->otherFirstNames,
-            'genderCode' => $this->genderCode,
-            'birth' => $this->birth?->format('Y-m-d'),
-            'phoneNumber' => $this->phoneNumber,
-            'gsmNumber' => $this->gsmNumber,
-            'email' => $this->email,
-            'encodePar' => $this->encodePar,
-            'encodeParParam' => $this->encodeParParam,
-            'privateAddress' => $this->privateAddress?->toArray(),
-            'guardians' => array_map(
-                fn(GuardianDetailDto $g) => $g->toArray(),
+            'genderCode'      => $this->genderCode,
+            'birth'           => $this->birth?->format('Y-m-d'),
+            'phoneNumber'     => $this->phoneNumber,
+            'gsmNumber'       => $this->gsmNumber,
+            'email'           => $this->email,
+            'encodePar'       => $this->encodePar,
+            'encodeParParam'  => $this->encodeParParam,
+            'privateAddress'  => $this->privateAddress?->toArray(),
+            'guardians'       => array_map(
+                fn (GuardianDetailDto $g) => $g->toArray(),
                 $this->guardians ?? []
             ),
         ];

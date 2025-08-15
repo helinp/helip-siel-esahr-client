@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Helip\SielEsahrClient\Contract;
 
-use Helip\SielEsahrClient\Contract\ResponseDtoInterface;
 use InvalidArgumentException;
 use Throwable;
 
@@ -20,6 +19,11 @@ abstract readonly class AbstractResponseDto implements ResponseDtoInterface
                 previous: $e
             );
         }
+    }
+
+    public function toArray(): array
+    {
+        return (array) $this;
     }
 
     abstract protected static function fromArrayInterne(array $data): static;

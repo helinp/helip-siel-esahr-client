@@ -28,14 +28,14 @@ final readonly class GuardianDetailDto extends AbstractResponseDto
     protected static function fromArrayInterne(array $data): static
     {
         return new self(
-            lastName: $data['lastName'] ?? null,
+            lastName: $data['lastName']   ?? null,
             firstName: $data['firstName'] ?? null,
             guardianCode: isset($data['guardianCode']) && is_string($data['guardianCode'])
                 ? (new GuardianCode($data['guardianCode']))
                 : null,
             phoneNumber: $data['phoneNumber'] ?? null,
-            gsmNumber: $data['gsmNumber'] ?? null,
-            email: $data['mail'] ?? null,
+            gsmNumber: $data['gsmNumber']     ?? null,
+            email: $data['mail']              ?? null,
             privateAddress: isset($data['privateAddress']) && is_array($data['privateAddress'])
                 ? PrivateAddressDto::fromArray($data['privateAddress'])
                 : null,
@@ -46,13 +46,13 @@ final readonly class GuardianDetailDto extends AbstractResponseDto
     public function toArray(): array
     {
         return [
-            'lastName' => $this->lastName,
-            'firstName' => $this->firstName,
-            'guardianCode' => $this->guardianCode->value(),
-            'phoneNumber' => $this->phoneNumber,
-            'gsmNumber' => $this->gsmNumber,
-            'email' => $this->email,
-            'privateAddress' => $this->privateAddress?->toArray(),
+            'lastName'        => $this->lastName,
+            'firstName'       => $this->firstName,
+            'guardianCode'    => $this->guardianCode->value(),
+            'phoneNumber'     => $this->phoneNumber,
+            'gsmNumber'       => $this->gsmNumber,
+            'email'           => $this->email,
+            'privateAddress'  => $this->privateAddress?->toArray(),
             'sameAddressFlag' => $this->sameAddressFlag,
         ];
     }

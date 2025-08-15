@@ -11,7 +11,7 @@ enum SuccessFlagEnum: string
 
     public function label(): string
     {
-        return match($this) {
+        return match ($this) {
             self::O => 'Succès',
             self::N => 'Echec',
         };

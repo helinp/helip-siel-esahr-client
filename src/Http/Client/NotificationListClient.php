@@ -10,14 +10,21 @@ use Helip\SielEsahrClient\Dto\NotificationDetails\NotificationDetailsMultipleRes
 /**
  * Doc: 4.2 Obtenir des notifications
  */
-final class NotificationListClient extends AbstractClient
+class NotificationListClient extends AbstractClient
 {
     public function list(
         string $accessToken,
         NotificationDetailsRequestDto $request
     ): NotificationDetailsMultipleResponseDto {
+
+        // Endpoint: notifications?idEtab=1&dateFrom=2023-01-01'
+        $parameters = [
+            'idEtab'   => $request->idEtab,
+            'dateFrom' => $request->dateFrom->format('Y-m-d'),
+        ];
+
         $data = $this->esahrHttpClient->get(
-            'notifications',
+            'notifications' . '?' . http_build_query($parameters),
             $accessToken,
             $request->toArray()
         );
