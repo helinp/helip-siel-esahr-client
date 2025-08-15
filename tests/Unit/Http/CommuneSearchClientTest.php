@@ -56,11 +56,20 @@ final class CommuneSearchClientTest extends ClientTestAbstract
 
         $this->expectException(EsahrApiException::class);
 
-        // Délègue au test générique défini dans l’abstraite
-        $response = $this->getClientResponse(
-            testedMethodName: 'search',
-            arguments: [],
-            httpMethodName: 'get'
-        );
+        try {
+            $this->getClientResponse(
+                testedMethodName: 'search',
+                arguments: [],
+                httpMethodName: 'get'
+            );
+        } catch (EsahrApiException $e) {
+            // Vérification des champs
+            $this->assertSame(400, $e->problemDetails->status);
+            $this->assertSame('Invalid Request', $e->problemDetails->title);
+            $this->assertSame('One or more parameters are invalid.', $e->problemDetails->detail);
+            throw $e; // Rejette l'exception pour que le test la capture
+        }
+
+        $this->fail('Expected EsahrApiException not thrown');
     }
 }
