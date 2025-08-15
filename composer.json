@@ -36,7 +36,7 @@
     "cs-fix": "php-cs-fixer fix src",
     "psr12-check": "phpcs --standard=PSR12 --warning-severity=0 src tests",
     "psr12-fix": "phpcbf --standard=PSR12 src tests",
-    "stan": "phpstan analyse --no-progress --memory-limit=2G -c phpstan.neon src",
+    "stan": "phpstan analyse --no-progress --memory-limit=2G -c ./phpstan.neon src",
     "phpmd-text": "php -d error_reporting='E_ALL & ~E_DEPRECATED' vendor/bin/phpmd src,tests text phpmd.xml --minimumpriority 3",
     "phpmd-html": "mkdir -p build && php -d error_reporting='E_ALL & ~E_DEPRECATED' vendor/bin/phpmd src,tests html phpmd.xml --reportfile build/phpmd.html --minimumpriority 3",
     "phpcompat": "phpcs -p --standard=PHPCompatibility --runtime-set testVersion 8.2- src",
