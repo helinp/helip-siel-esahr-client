@@ -2,8 +2,7 @@
   "name": "helip/siel-esahr-client",
   "description": "Client for Siel ESAHR API (REST v1.5.18)",
   "type": "library",
-  "version": "1.0.0",
-  "license": "LGPL-3.0",
+  "license": "LGPL-3.0-or-later",
   "require": {
     "php": "^8.2",
     "helip/niss": "^2.0",
