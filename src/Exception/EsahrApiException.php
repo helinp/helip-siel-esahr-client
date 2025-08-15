@@ -32,7 +32,7 @@ final class EsahrApiException extends RuntimeException
             '[%d] %s%s%s',
             $pd->status,
             $pd->title ?? 'HTTP Error',
-            isset($pd->detail)   && $pd->detail     !== '' ? ' — ' . $pd->detail : '',
+            isset($pd->detail)   && $pd->detail   !== '' ? ' — ' . $pd->detail : '',
             isset($pd->instance) && $pd->instance !== '' ? ' (' . $pd->instance . ')' : ''
         );
 

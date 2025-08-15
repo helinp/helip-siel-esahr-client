@@ -25,7 +25,8 @@ phpstan.neon.dist
 /report.html
 
 # Coverage
-/coverage/
+coverage.xml
+coverage/
 
 # Logs
 *.log

@@ -40,7 +40,7 @@
     "phpmd-text": "php -d error_reporting='E_ALL & ~E_DEPRECATED' vendor/bin/phpmd src,tests text phpmd.xml --minimumpriority 3",
     "phpmd-html": "mkdir -p build && php -d error_reporting='E_ALL & ~E_DEPRECATED' vendor/bin/phpmd src,tests html phpmd.xml --reportfile build/phpmd.html --minimumpriority 3",
     "phpcompat": "phpcs -p --standard=PHPCompatibility --runtime-set testVersion 8.2- src",
-    "test": "phpunit --colors=always --log-junit build/junit.xml",
+    "test": "XDEBUG_MODE=coverage phpunit --colors=always --log-junit build/junit.xml",
     "coverage": "XDEBUG_MODE=coverage phpunit --colors=never --coverage-clover build/coverage.xml",
     "fix": [
       "@psr12-fix",
