@@ -5,18 +5,19 @@
   "version": "1.0.0",
   "license": "LGPL-3.0",
   "require": {
-    "php": "^8.1",
+    "php": "^8.2",
     "helip/niss": "^2.0",
     "symfony/http-client": "^6.0"
   },
   "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1",
     "friendsofphp/php-cs-fixer": "^3.45",
-    "phpcompatibility/php-compatibility": "^9.3",
+    "phpcompatibility/php-compatibility": "^10@dev",
     "phpmd/phpmd": "^2.15",
     "phpstan/phpstan": "^2.1",
     "phpstan/phpstan-symfony": "^2.0",
     "phpunit/phpunit": "^10",
-    "squizlabs/php_codesniffer": "^3.7",
+    "squizlabs/php_codesniffer": "^3",
     "vlucas/phpdotenv": "^5.5"
   },
   "autoload": {
@@ -36,9 +37,9 @@
     "psr12-check": "phpcs --standard=PSR12 --warning-severity=0 src tests",
     "psr12-fix": "phpcbf --standard=PSR12 src tests",
     "stan": "phpstan analyse --no-progress --memory-limit=2G -c phpstan.neon src",
-    "phpmd-text": "phpmd src,tests text phpmd.xml",
-    "phpmd-html": "phpmd src,tests html phpmd.xml --reportfile build/phpmd.html",
-    "phpcompat": "phpcs -p --standard=PHPCompatibility --runtime-set testVersion 8.1- src",
+    "phpmd-text": "php -d error_reporting='E_ALL & ~E_DEPRECATED' vendor/bin/phpmd src,tests text phpmd.xml --minimumpriority 3",
+    "phpmd-html": "mkdir -p build && php -d error_reporting='E_ALL & ~E_DEPRECATED' vendor/bin/phpmd src,tests html phpmd.xml --reportfile build/phpmd.html --minimumpriority 3",
+    "phpcompat": "phpcs -p --standard=PHPCompatibility --runtime-set testVersion 8.2- src",
     "test": "phpunit --colors=always --log-junit build/junit.xml",
     "coverage": "XDEBUG_MODE=coverage phpunit --colors=never --coverage-clover build/coverage.xml",
     "fix": [
@@ -57,7 +58,10 @@
   },
   "config": {
     "sort-packages": true,
-    "optimize-autoloader": true
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   },
   "minimum-stability": "stable",
   "prefer-stable": true,
