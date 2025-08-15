@@ -9,7 +9,6 @@ composer.lock
 .phpunit.cache/*
 
 # PHPStan
-phpstan.neon
 phpstan.neon.dist
 /phpstan-result.cache
 /var
