@@ -43,6 +43,12 @@ jobs:
       - name: Prepare build directories
         run: mkdir -p build var/phpstan
 
+      - name: Debug workspace
+        run: |
+          ls -R .
+          cat phpunit.xml || echo "phpunit.xml not found"
+          ls -R tests || echo "tests directory missing"
+
       - name: Run QA suite
         run: composer qa
 
