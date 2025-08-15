@@ -2,41 +2,45 @@
 <ruleset name="Helip Symfony Ruleset"
          xmlns="https://phpmd.org/ruleset/1.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="https://phpmd.org/ruleset/1.0.0
-                             https://phpmd.org/ruleset/1.0.0.xsd">
+         xsi:schemaLocation="https://phpmd.org/ruleset/1.0.0 https://phpmd.org/ruleset/1.0.0.xsd">
 
-    <description>PHPMD config adaptée à Symfony 6, PHP 8, DTOs et clients REST</description>
+    <description>PHPMD</description>
 
-    <!-- CodeSize : contrôle la taille des méthodes/classes -->
     <rule ref="rulesets/codesize.xml">
+        <properties>
+            <property name="minimumpriority" value="3"/>
+        </properties>
         <exclude name="TooManyMethods"/>
         <exclude name="TooManyPublicMethods"/>
         <exclude name="TooManyChildren"/>
-        <exclude name="TooManyParameters"/> <!-- Toléré pour les DTOs -->
+        <exclude name="TooManyParameters"/>
+        <!-- Exemple de seuil -->
+        <rule ref="rulesets/codesize.xml/ExcessiveMethodLength">
+            <properties>
+                <property name="minimum" value="50"/>
+            </properties>
+        </rule>
     </rule>
 
-    <!-- CleanCode : bonnes pratiques générales -->
     <rule ref="rulesets/cleancode.xml">
-        <exclude name="StaticAccess"/> <!-- OK pour fromArray() sur DTOs -->
-        <exclude name="LongVariable"/> <!-- DTOs explicites -->
-        <exclude name="LongClassName"/> <!-- Ex: InscriptionRegulariteDomaineResponseDto -->
+        <exclude name="StaticAccess"/>
+        <exclude name="LongVariable"/>
+        <exclude name="LongClassName"/>
     </rule>
 
-    <!-- Design : architecture, dépendances -->
     <rule ref="rulesets/design.xml">
-        <exclude name="CouplingBetweenObjects"/> <!-- autorisé pour les services regroupés -->
+        <exclude name="CouplingBetweenObjects"/>
         <exclude name="TooManyFields"/>
     </rule>
 
-    <!-- Code mort -->
     <rule ref="rulesets/unusedcode.xml" />
 
-    <!-- Nommage -->
     <rule ref="rulesets/naming.xml">
-        <exclude name="ShortVariable"/> <!-- autorise $id, $dt, etc. -->
+        <exclude name="ShortVariable"/>
     </rule>
 
-    <!-- Exclusions de dossiers -->
     <exclude-pattern>*/tests/*</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/var/*</exclude-pattern>
+    <exclude-pattern>*/build/*</exclude-pattern>
 </ruleset>
