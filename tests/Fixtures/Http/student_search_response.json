@@ -1,0 +1,141 @@
+{
+  "idEsahr": "123456-01",
+  "cfwbDetails": {
+    "ssin": "187851-06648",
+    "lastName": "<string>",
+    "firstName": "<string>",
+    "otherFirstNames": [
+      "<string>",
+      "<string>"
+    ],
+    "genderCode": "M",
+    "birth": "1495",
+    "phoneNumber": "<string>",
+    "gsmNumber": "<string>",
+    "email": "<string>",
+    "encodePar": "<string>",
+    "encodeParParam": "<string>",
+    "privateAddress": {
+      "addressStreet": "<string>",
+      "addressPostal": "<string>",
+      "addressCountry": "<string>",
+      "addressNumber": "123",
+      "addressBox": "<string>",
+      "addressCity": {
+        "placeCode": "<string>",
+        "placeText": "<string>"
+      }
+    },
+    "guardians": [
+      {
+        "lastName": "<string>",
+        "firstName": "<string>",
+        "guardianCode": "T",
+        "phoneNumber": "<string>",
+        "gsmNumber": "<string>",
+        "email": "<string>",
+        "privateAddress": {
+          "addressStreet": "<string>",
+          "addressPostal": "<string>",
+          "addressCountry": "<string>",
+          "addressNumber": "123",
+          "addressBox": "<string>",
+          "addressCity": {
+            "placeCode": "<string>",
+            "placeText": "<string>"
+          }
+        },
+        "sameAddressFlag": true
+      },
+      {
+        "lastName": "<string>",
+        "firstName": "<string>",
+        "guardianCode": "A",
+        "phoneNumber": "<string>",
+        "gsmNumber": "<string>",
+        "email": "<string>",
+        "privateAddress": {
+          "addressStreet": "<string>",
+          "addressPostal": "<string>",
+          "addressCountry": "<string>",
+          "addressNumber": "123",
+          "addressBox": "<string>",
+          "addressCity": {
+            "placeCode": "<string>",
+            "placeText": "<string>"
+          }
+        },
+        "sameAddressFlag": true
+      }
+    ]
+  },
+  "rnDetails": {
+    "ssin": "672256828-57",
+    "lastName": "<string>",
+    "firstName": "<string>",
+    "otherFirstNames": [
+      "<string>",
+      "<string>"
+    ],
+    "genderCode": "A",
+    "birth": "2688",
+    "phoneNumber": "<string>",
+    "gsmNumber": "<string>",
+    "email": "<string>",
+    "encodePar": "<string>",
+    "encodeParParam": "<string>",
+    "privateAddress": {
+      "addressStreet": "<string>",
+      "addressPostal": "<string>",
+      "addressCountry": "<string>",
+      "addressNumber": "123",
+      "addressBox": "<string>",
+      "addressCity": {
+        "placeCode": "<string>",
+        "placeText": "<string>"
+      }
+    },
+    "guardians": [
+      {
+        "lastName": "<string>",
+        "firstName": "<string>",
+        "guardianCode": "T",
+        "phoneNumber": "<string>",
+        "gsmNumber": "<string>",
+        "email": "<string>",
+        "privateAddress": {
+          "addressStreet": "<string>",
+          "addressPostal": "<string>",
+          "addressCountry": "<string>",
+          "addressNumber": "123",
+          "addressBox": "<string>",
+          "addressCity": {
+            "placeCode": "<string>",
+            "placeText": "<string>"
+          }
+        },
+        "sameAddressFlag": true
+      },
+      {
+        "lastName": "<string>",
+        "firstName": "<string>",
+        "guardianCode": "P",
+        "phoneNumber": "<string>",
+        "gsmNumber": "<string>",
+        "email": "<string>",
+        "privateAddress": {
+          "addressStreet": "<string>",
+          "addressPostal": "<string>",
+          "addressCountry": "<string>",
+          "addressNumber": "123",
+          "addressBox": "<string>",
+          "addressCity": {
+            "placeCode": "<string>",
+            "placeText": "<string>"
+          }
+        },
+        "sameAddressFlag": true
+      }
+    ]
+  }
+}

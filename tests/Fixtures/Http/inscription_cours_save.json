@@ -1,0 +1,40 @@
+{
+    "inscription": {
+        "idEsahr": "14434-78",
+        "schoolYear": 2023,
+        "idEtab": 593,
+        "inscription": {
+            "idInscr": 46201,
+            "statusCode": 1,
+            "inscriptionCoursData": {
+                "inscriptionDate": "2023-10-01",
+                "domaineCode": "MU",
+                "coursCode": 1,
+                "filiere": "FOR",
+                "annee": "FA1",
+                "periode": 1
+            },
+            "inscriptionCoursSpecificity": {
+                "abandonDate": null,
+                "group": null,
+                "timetable": null,
+                "professor": null,
+                "impl": null,
+                "success": "O"
+            },
+            "regularity": {
+                "regularityFlag": "O",
+                "reasonRegularity": null,
+                "reasonOther": null,
+                "date": null
+            },
+            "subvention": {
+                "subventionFlag": "N",
+                "reasonSubvention": 21,
+                "reasonOther": "Non suivi à la validation K0",
+                "date": "2025-05-08"
+            }
+        },
+        "warning": null
+    }
+}

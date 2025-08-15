@@ -1,0 +1,21 @@
+{
+    "inscription": {
+        "idEsahr": "34567-89",
+        "idEtab": 343,
+        "schoolYear": 2023,
+        "coDomaine": "APVE",
+        "filiere": "AUTRES",
+        "regularity": {
+            "regularityFlag": "N",
+            "reasonRegularity": 1,
+            "reasonOther": "<string>",
+            "date": "2023-09-01"
+        },
+        "subvention": {
+            "subventionFlag": "N",
+            "reasonSubvention": 2,
+            "reasonOther": "<string>",
+            "date": "2023-09-01"
+        }
+    }
+}

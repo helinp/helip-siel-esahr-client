@@ -10,15 +10,20 @@ use Helip\SielEsahrClient\Dto\SchoolPath\SchoolPathsResponseDto;
 /**
  * Doc 4.9.2 Lister le parcours scolaire d'un élève
  */
-final class SchoolPathListClient extends AbstractClient
+class SchoolPathListClient extends AbstractClient
 {
     public function list(
         string $accessToken,
         SchoolPathRequestDto $request
     ): SchoolPathsResponseDto {
 
+        // Endpoint: {{baseUrl}}/schoolpath?idEsahr=<string>
+        $parameters = [
+            'idEsahr' => $request->idEsahr->value(),
+        ];
+
         $data = $this->esahrHttpClient->get(
-            'schoolpath',
+            'schoolpath' . '?' . http_build_query($parameters),
             $accessToken,
             $request->toArray()
         );

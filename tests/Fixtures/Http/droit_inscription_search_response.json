@@ -1,0 +1,25 @@
+{
+    "inscription": {
+        "idEsahr": "14434-78",
+        "idEtab": 593,
+        "schoolYear": 2023,
+        "statusCode": 1,
+        "exemptionCode": 0,
+        "inscriptionDiOptional": {
+            "payment": "NA",
+            "attestation": "NA"
+        },
+        "annexeK1": {
+            "ordreDiFlag": "A",
+            "reasonOrdreDi": null,
+            "reasonOther": null,
+            "date": null
+        },
+        "comptabilitation": {
+            "comptabilisationFlag": "O",
+            "reasonComptabilisation": null,
+            "reasonOther": null,
+            "date": null
+        }
+    }
+}

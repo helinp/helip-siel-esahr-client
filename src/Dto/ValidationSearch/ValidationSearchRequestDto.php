@@ -10,15 +10,15 @@ use Helip\SielEsahrClient\ValueObject\IdEsahr;
 final readonly class ValidationSearchRequestDto implements RequestDtoInterface
 {
     public function __construct(
-        public IdEsahr $idEsahr,
         public int $schoolYear,
+        public ?int $idEtab,
     ) {
     }
 
     public function toArray(): array
     {
         return [
-            'idEsahr' => $this->idEsahr->value(),
+            'idEtab' => $this->idEtab,
             'schoolYear' => $this->schoolYear,
         ];
     }

@@ -12,6 +12,8 @@ use Helip\SielEsahrClient\Validator\NameValidator;
 
 /**
  * Sauvegarder un élève 4.3.1 / Modifier un élève 4.3.2
+ *
+ * @todo: Gérer le cas où le champ `birth` ne contient que l'année de naissance.
  */
 final readonly class StudentDetailsRequestDto implements RequestDtoInterface
 {
@@ -59,7 +61,7 @@ final readonly class StudentDetailsRequestDto implements RequestDtoInterface
             'encodeParParam' => $this->encodeParParam,
             'privateAddress' => $this->privateAddress?->toArray(),
             'guardians' => array_map(
-                fn(GuardianDetailDto $g) => $g->toArray(),
+                fn (GuardianDetailDto $g) => $g->toArray(),
                 $this->guardians ?? []
             ),
         ];

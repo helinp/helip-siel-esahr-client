@@ -1,0 +1,83 @@
+{
+    "items": [
+        {
+            "inscription": {
+                "idEsahr": "14434-78",
+                "idEtab": 47,
+                "schoolYear": 2021,
+                "inscription": {
+                    "idInscr": 14,
+                    "statusCode": 1,
+                    "inscriptionCoursData": {
+                        "inscriptionDate": "2021-09-10",
+                        "domaineCode": "MU",
+                        "coursCode": 9,
+                        "filiere": "PRE",
+                        "annee": "P1",
+                        "periode": 1
+                    },
+                    "inscriptionCoursSpecificity": {
+                        "abandonDate": null,
+                        "group": "",
+                        "timetable": "",
+                        "professor": "",
+                        "impl": "",
+                        "success": "N"
+                    },
+                    "regularity": {
+                        "regularityFlag": "O",
+                        "reasonRegularity": null,
+                        "reasonOther": "",
+                        "date": null
+                    },
+                    "subvention": {
+                        "subventionFlag": "N",
+                        "reasonSubvention": 11,
+                        "reasonOther": "Non suivi à la validation K0",
+                        "date": "2022-02-08"
+                    }
+                }
+            }
+        },
+        {
+            "inscription": {
+                "idEsahr": "14434-75",
+                "idEtab": 47,
+                "schoolYear": 2021,
+                "inscription": {
+                    "idInscr": 15,
+                    "statusCode": 1,
+                    "inscriptionCoursData": {
+                        "inscriptionDate": "2022-01-13",
+                        "domaineCode": "MU",
+                        "coursCode": 8,
+                        "filiere": "FOR",
+                        "annee": "F1",
+                        "periode": 1
+                    },
+                    "inscriptionCoursSpecificity": {
+                        "abandonDate": null,
+                        "group": "",
+                        "timetable": "",
+                        "professor": "",
+                        "impl": "",
+                        "success": "N"
+                    },
+                    "regularity": {
+                        "regularityFlag": "O",
+                        "reasonRegularity": null,
+                        "reasonOther": "",
+                        "date": null
+                    },
+                    "subvention": {
+                        "subventionFlag": "N",
+                        "reasonSubvention": 11,
+                        "reasonOther": "Non suivi à la validation K0",
+                        "date": "2022-01-13"
+                    }
+                }
+            }
+        }
+    ],
+    "total": 2
+}

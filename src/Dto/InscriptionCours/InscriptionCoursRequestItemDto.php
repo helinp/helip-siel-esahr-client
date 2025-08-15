@@ -8,6 +8,7 @@ use Helip\SielEsahrClient\Contract\RequestDtoInterface;
 use Helip\SielEsahrClient\Dto\InscriptionCours\InscriptionCoursDataDto;
 use Helip\SielEsahrClient\Dto\InscriptionCours\InscriptionCoursSpecificityDto;
 use Helip\SielEsahrClient\Dto\Common\RegulariteInputDto;
+use Helip\SielEsahrClient\Dto\Common\SubventionResponseDto;
 use Helip\SielEsahrClient\Enum\StatusCodeEnum;
 
 /**
@@ -21,7 +22,8 @@ final readonly class InscriptionCoursRequestItemDto implements RequestDtoInterfa
         public StatusCodeEnum $statusCode,
         public InscriptionCoursDataDto $inscriptionCoursData,
         public ?InscriptionCoursSpecificityDto $inscriptionCoursSpecificity,
-        public ?RegulariteInputDto $regularity
+        public ?RegulariteInputDto $regularity,
+        public ?SubventionResponseDto $subvention = null,
     ) {
     }
 
@@ -32,6 +34,7 @@ final readonly class InscriptionCoursRequestItemDto implements RequestDtoInterfa
             'inscriptionCoursData' => $this->inscriptionCoursData->toArray(),
             'inscriptionCoursSpecificity' => $this->inscriptionCoursSpecificity?->toArray(),
             'regularity' => $this->regularity?->toArray(),
+            'subvention' => $this->subvention?->toArray(),
         ];
     }
 }

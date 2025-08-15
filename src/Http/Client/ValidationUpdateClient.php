@@ -8,7 +8,7 @@ use DateTimeImmutable;
 use Helip\SielEsahrClient\Dto\ValidationUpdate\ValidationUpdateResponseDto;
 use Helip\SielEsahrClient\Dto\ValidationUpdate\ValidationUpdateRequestDto;
 
-final class ValidationUpdateClient extends AbstractClient
+class ValidationUpdateClient extends AbstractClient
 {
     public function update(
         string $accessToken,

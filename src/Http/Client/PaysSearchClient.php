@@ -10,14 +10,22 @@ use Helip\SielEsahrClient\Dto\PaysSearch\PaysSearchResponseDto;
 /**
  * Doc 4.11 Recherche des pays
  */
-final class PaysSearchClient extends AbstractClient
+class PaysSearchClient extends AbstractClient
 {
     public function search(
         string $accessToken,
         PaysSearchRequestDto $request,
     ): PaysSearchResponseDto {
+
+        // endpoint: 'country?name=Belgique'
+        $parameters = [
+            'name' => $request->name,
+        ];
+
+        $parameters = array_filter($parameters, static fn ($value) => $value !== null);
+
         $data = $this->esahrHttpClient->get(
-            'country',
+            'country' . '?' . http_build_query($parameters),
             $accessToken,
             $request->toArray()
         );

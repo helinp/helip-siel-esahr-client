@@ -8,6 +8,12 @@ use Helip\SielEsahrClient\Contract\AbstractResponseDto;
 
 /**
  * Représente une **collection de groupes** de notifications.
+ *
+ * ATTENTION: La structure de la réponse est différente entre
+ * la documentation et le YAML OpenAPI fournis par ETNIC.
+ * Ici, j'ai choisi de suivre la structure du YAML OpenAPI.
+ * Le test unitaire `NotificationListClientTest` est
+ * configuré pour vérifier cette structure.
  */
 final readonly class NotificationDetailsMultipleResponseDto extends AbstractResponseDto
 {
@@ -28,7 +34,7 @@ final readonly class NotificationDetailsMultipleResponseDto extends AbstractResp
 
         foreach ($data as $groupData) {
             $notifications = array_map(
-                static fn(array $item) => NotificationDetailsResponseDto::fromArray($item['notification']),
+                static fn (array $item) => NotificationDetailsResponseDto::fromArray($item['notification']),
                 $groupData['notifications'] ?? []
             );
 

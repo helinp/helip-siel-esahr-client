@@ -10,14 +10,24 @@ use Helip\SielEsahrClient\Dto\CommuneSearch\CommuneSearchRequestDto;
 /**
  * Doc 4.1 Recherche des communes
  */
-final class CommuneSearchClient extends AbstractClient
+class CommuneSearchClient extends AbstractClient
 {
     public function search(
         string $accessToken,
         CommuneSearchRequestDto $request,
     ): CommuneSearchResponseDto {
+
+        //commune?nameLocality=Bruxelles&postalCode=1190',
+        $parameters = [
+            'nameCommune' => $request->nameCommune ?? null,
+            'nameLocality' => $request->nameLocality ?? null,
+            'postalCode' => $request->postalCode ?? null,
+        ];
+
+        $parameters = array_filter($parameters, static fn ($value) => $value !== null);
+
         $data = $this->esahrHttpClient->get(
-            'commune',
+            'commune' . '?' . http_build_query($parameters),
             $accessToken,
             $request->toArray()
         );

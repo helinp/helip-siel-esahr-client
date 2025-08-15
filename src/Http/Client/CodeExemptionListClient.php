@@ -13,7 +13,7 @@ use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
 /**
  * Doc 4.2 Recherche des codes d'exemption (page 66)
  */
-final class CodeExemptionListClient extends AbstractClient
+class CodeExemptionListClient extends AbstractClient
 {
     public function list(
         string $accessToken

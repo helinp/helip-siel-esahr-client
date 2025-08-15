@@ -1,0 +1,16 @@
+{
+    "items": [
+        {
+            "country": {
+                "codeOnss": "150  ",
+                "dateStart": "1900-01-01",
+                "dateEnd": "9999-12-31",
+                "codeIso": "BE",
+                "codeIso3": "BEL",
+                "name": "BELGIQUE",
+                "longName": "Royaume de Belgique"
+            }
+        }
+    ],
+    "total": 1
+}

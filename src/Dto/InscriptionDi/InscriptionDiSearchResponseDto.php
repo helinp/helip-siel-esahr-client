@@ -21,7 +21,7 @@ final readonly class InscriptionDiSearchResponseDto extends AbstractResponseDto
         public int $schoolYear,
         public int $idEtab,
         public int $statusCode,
-        public int $inscriptionRight,
+        public int $exemptionCode, // 'InscriptionRight' dans la DOC Etnic
         public ?InscriptionDiOptionalDto $inscriptionDiOptional,
         public ?OrdreDiInputDto $ordreDi,
         public ?ComptabilisationDto $comptabilisation,
@@ -44,7 +44,7 @@ final readonly class InscriptionDiSearchResponseDto extends AbstractResponseDto
             schoolYear: $data['schoolYear'],
             idEtab: $data['idEtab'],
             statusCode: $data['statusCode'],
-            inscriptionRight: $data['inscriptionRight'],
+            exemptionCode: $data['exemptionCode'], // Anciennement 'InscriptionRight'
             inscriptionDiOptional: isset($data['inscriptionDiOptional']) ? InscriptionDiOptionalDto::fromArray($data['inscriptionDiOptional']) : null,
             ordreDi: isset($data['ordreDi']) ? OrdreDiInputDto::fromArray($data['ordreDi']) : null,
             comptabilisation: isset($data['comptabilisation']) ? ComptabilisationDto::fromArray($data['comptabilisation']) : null

@@ -26,7 +26,7 @@ final readonly class SchoolPathItemResponseDto extends AbstractResponseDto
         public int $coursCode,
         public FiliereCodeEnum $filiere,
         public string $annee, // Année de la formation
-        public string $periode, // Nombre de périodes suivies
+        public int $periode, // Nombre de périodes suivies
         public SuccessFlagEnum $success, // 'O' ou 'N'
     ) {
     }

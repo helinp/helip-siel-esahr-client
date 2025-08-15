@@ -22,5 +22,10 @@ abstract readonly class AbstractResponseDto implements ResponseDtoInterface
         }
     }
 
+    public function toArray(): array
+    {
+        return (array) $this;
+    }
+
     abstract protected static function fromArrayInterne(array $data): static;
 }

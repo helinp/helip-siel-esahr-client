@@ -1,0 +1,3885 @@
+{
+    "items": [
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "FOR",
+                "codeCours": 1,
+                "descrCourte": "Formation pluri. [APT]",
+                "descrLongue": "formation pluridisciplinaire [APT]",
+                "anneeList": "F1;F2;F3;F4;F5;F6;FA1;FA2"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "PRE",
+                "codeCours": 1,
+                "descrCourte": "Formation pluri. [APT]",
+                "descrLongue": "formation pluridisciplinaire [APT]",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "COMPL",
+                "codeCours": 100,
+                "descrCourte": "Orthophonie",
+                "descrLongue": "orthophonie",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "COMPL",
+                "codeCours": 101,
+                "descrCourte": "Atelier décla.",
+                "descrLongue": "atelier déclamation",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "COMPL",
+                "codeCours": 102,
+                "descrCourte": "Atelier théâtre",
+                "descrLongue": "atelier théâtre",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "COMPL",
+                "codeCours": 103,
+                "descrCourte": "Tech. du spectacle",
+                "descrLongue": "techniques du spectacle",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "COMPL",
+                "codeCours": 104,
+                "descrCourte": "Tech. corps voix",
+                "descrLongue": "techniques corps voix",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "COMPL",
+                "codeCours": 105,
+                "descrCourte": "Hist. litt. et théâtre",
+                "descrLongue": "histoire de la littérature et du théâtre",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "COMPL",
+                "codeCours": 106,
+                "descrCourte": "Expr. corporelle [APT]",
+                "descrLongue": "expression corporelle [APT]",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "COMPL",
+                "codeCours": 107,
+                "descrCourte": "Impro. théâtrale",
+                "descrLongue": "Improvisation théâtrale",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "FOR",
+                "codeCours": 2,
+                "descrCourte": "Déclamation",
+                "descrLongue": "déclamation",
+                "anneeList": "F1;F2;F3;F4;F5;F6;FA1;FA2"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "QUAL",
+                "codeCours": 2,
+                "descrCourte": "Déclamation",
+                "descrLongue": "déclamation",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "TRA",
+                "codeCours": 2,
+                "descrCourte": "Déclamation",
+                "descrLongue": "déclamation",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "FOR",
+                "codeCours": 3,
+                "descrCourte": "Théâtre",
+                "descrLongue": "théâtre",
+                "anneeList": "F1;F2;F3;F4;F5;F6;FA1;FA2"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "QUAL",
+                "codeCours": 3,
+                "descrCourte": "Théâtre",
+                "descrLongue": "théâtre",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "TRA",
+                "codeCours": 3,
+                "descrCourte": "Théâtre",
+                "descrLongue": "théâtre",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "FOR",
+                "codeCours": 4,
+                "descrCourte": "Eloquence",
+                "descrLongue": "eloquence",
+                "anneeList": "F1;F2;F3;F4;F5;F6;FA1;FA2"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "PRE",
+                "codeCours": 4,
+                "descrCourte": "Eloquence",
+                "descrLongue": "eloquence",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "QUAL",
+                "codeCours": 4,
+                "descrCourte": "Eloquence",
+                "descrLongue": "eloquence",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APT",
+                "codeFiliere": "TRA",
+                "codeCours": 4,
+                "descrCourte": "Eloquence",
+                "descrLongue": "eloquence",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "FOR",
+                "codeCours": 1,
+                "descrCourte": "Formation pluri. [APVE]",
+                "descrLongue": "formation pluridisciplinaire [APVE]",
+                "anneeList": "F1;F2;F3;FA1;FA2;FA3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "PRE",
+                "codeCours": 1,
+                "descrCourte": "Formation pluri. [APVE]",
+                "descrLongue": "formation pluridisciplinaire [APVE]",
+                "anneeList": "P1;P2;P3;P4;P5;P6;P7;P8;P9"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 1,
+                "descrCourte": "Formation pluri. [APVE]",
+                "descrLongue": "formation pluridisciplinaire [APVE]",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 1,
+                "descrCourte": "Formation pluri. [APVE]",
+                "descrLongue": "formation pluridisciplinaire [APVE]",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 10,
+                "descrCourte": "Illustration-BD",
+                "descrLongue": "recherches graphiques et picturales  illustration et bande dessinée",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 10,
+                "descrCourte": "Illustration-BD",
+                "descrLongue": "recherches graphiques et picturales  illustration et bande dessinée",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "COMPL",
+                "codeCours": 100,
+                "descrCourte": "Dessin d'architecture",
+                "descrLongue": "techniques artistiques  dessin d'architecture et maquettisme",
+                "anneeList": "A1;A2;A3;A4;A5;A6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "COMPL",
+                "codeCours": 101,
+                "descrCourte": "Dessin technique",
+                "descrLongue": "techniques artistiques  dessin technique",
+                "anneeList": "A1;A2;A3;A4;A5;A6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "COMPL",
+                "codeCours": 102,
+                "descrCourte": "Techno. Photo",
+                "descrLongue": "techniques artistiques  technologie de la photographie",
+                "anneeList": "A1;A2;A3;A4;A5;A6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "COMPL",
+                "codeCours": 103,
+                "descrCourte": "Techno. du verre",
+                "descrLongue": "techniques artistiques  technologie du verre",
+                "anneeList": "A1;A2;A3;A4;A5;A6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "COMPL",
+                "codeCours": 104,
+                "descrCourte": "Techno. des métaux",
+                "descrLongue": "techniques artistiques  technologie des métaux",
+                "anneeList": "A1;A2;A3;A4;A5;A6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "COMPL",
+                "codeCours": 105,
+                "descrCourte": "Techno. terre-émaux",
+                "descrLongue": "techniques artistiques  technologie de la terre et des émaux",
+                "anneeList": "A1;A2;A3;A4;A5;A6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "COMPL",
+                "codeCours": 106,
+                "descrCourte": "Hist. de l'art",
+                "descrLongue": "histoire de l'art et analyse esthétique",
+                "anneeList": "A1;A2;A3;A4;A5;A6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 11,
+                "descrCourte": "Publicité",
+                "descrLongue": "recherches graphiques et picturales  publicité et communication visuelle",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 11,
+                "descrCourte": "Publicité",
+                "descrLongue": "recherches graphiques et picturales  publicité et communication visuelle",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 12,
+                "descrCourte": "Arts numériques",
+                "descrLongue": "recherches graphiques et picturales  arts numériques",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 12,
+                "descrCourte": "Arts numériques",
+                "descrLongue": "recherches graphiques et picturales  arts numériques",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 13,
+                "descrCourte": "Typographie",
+                "descrLongue": "recherches graphiques et picturales  art du livre : typographie et étude de la lettre",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 13,
+                "descrCourte": "Typographie",
+                "descrLongue": "recherches graphiques et picturales  art du livre : typographie et étude de la lettre",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 14,
+                "descrCourte": "Gravure",
+                "descrLongue": "image imprimée  gravure",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 14,
+                "descrCourte": "Gravure",
+                "descrLongue": "image imprimée  gravure",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 15,
+                "descrCourte": "Lithographie",
+                "descrLongue": "image imprimée  lithographie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 15,
+                "descrCourte": "Lithographie",
+                "descrLongue": "image imprimée  lithographie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 16,
+                "descrCourte": "Sérigraphie",
+                "descrLongue": "image imprimée  sérigraphie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 16,
+                "descrCourte": "Sérigraphie",
+                "descrLongue": "image imprimée  sérigraphie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 17,
+                "descrCourte": "Photographie",
+                "descrLongue": "image imprimée  photographie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 17,
+                "descrCourte": "Photographie",
+                "descrLongue": "image imprimée  photographie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 18,
+                "descrCourte": "Cinéma d'animation",
+                "descrLongue": "image imprimée  cinéma d'animation",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 18,
+                "descrCourte": "Cinéma d'animation",
+                "descrLongue": "image imprimée  cinéma d'animation",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 19,
+                "descrCourte": "Cinégraphie",
+                "descrLongue": "image imprimée  cinégraphie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 19,
+                "descrCourte": "Cinégraphie",
+                "descrLongue": "image imprimée  cinégraphie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 2,
+                "descrCourte": "Ferronerie",
+                "descrLongue": "métiers d'art  ferronnerie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 2,
+                "descrCourte": "Ferronerie",
+                "descrLongue": "métiers d'art  ferronnerie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 20,
+                "descrCourte": "Infographie",
+                "descrLongue": "image imprimée  infographie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 20,
+                "descrCourte": "Infographie",
+                "descrLongue": "image imprimée  infographie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 21,
+                "descrCourte": "Vidéographie",
+                "descrLongue": "image imprimée  vidéographie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 21,
+                "descrCourte": "Vidéographie",
+                "descrLongue": "image imprimée  vidéographie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 22,
+                "descrCourte": "Ensemblier-décor.",
+                "descrLongue": "aménagement  ensemblier-décorateur / décoration",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 22,
+                "descrCourte": "Ensemblier-décor.",
+                "descrLongue": "aménagement  ensemblier-décorateur / décoration",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 23,
+                "descrCourte": "Design",
+                "descrLongue": "aménagement  design",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 23,
+                "descrCourte": "Design",
+                "descrLongue": "aménagement  design",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 24,
+                "descrCourte": "Scénographie",
+                "descrLongue": "aménagement  scénographie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 24,
+                "descrCourte": "Scénographie",
+                "descrLongue": "aménagement  scénographie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 25,
+                "descrCourte": "Création textile",
+                "descrLongue": "création textile",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 25,
+                "descrCourte": "Création textile",
+                "descrLongue": "création textile",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 26,
+                "descrCourte": "Arts monumentaux",
+                "descrLongue": "arts monumentaux",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 26,
+                "descrCourte": "Arts monumentaux",
+                "descrLongue": "arts monumentaux",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 27,
+                "descrCourte": "Sculpture",
+                "descrLongue": "volumes  sculpture",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 27,
+                "descrCourte": "Sculpture",
+                "descrLongue": "volumes  sculpture",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 28,
+                "descrCourte": "Céramique sculpt.",
+                "descrLongue": "volumes  céramique sculpturale",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 28,
+                "descrCourte": "Céramique sculpt.",
+                "descrLongue": "volumes  céramique sculpturale",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 29,
+                "descrCourte": "Poterie",
+                "descrLongue": "arts du feu  poterie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 29,
+                "descrCourte": "Poterie",
+                "descrLongue": "arts du feu  poterie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 3,
+                "descrCourte": "Ebénisterie",
+                "descrLongue": "métiers d'art  ébénisterie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 3,
+                "descrCourte": "Ebénisterie",
+                "descrLongue": "métiers d'art  ébénisterie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 30,
+                "descrCourte": "Céramique",
+                "descrLongue": "arts du feu  céramique",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 30,
+                "descrCourte": "Céramique",
+                "descrLongue": "arts du feu  céramique",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 31,
+                "descrCourte": "Métal",
+                "descrLongue": "arts du feu  métal",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 31,
+                "descrCourte": "Métal",
+                "descrLongue": "arts du feu  métal",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 32,
+                "descrCourte": "Art du verre",
+                "descrLongue": "arts du feu art du verre",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 32,
+                "descrCourte": "Art du verre",
+                "descrLongue": "arts du feu art du verre",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 33,
+                "descrCourte": "Stylisme",
+                "descrLongue": "stylisme, parures et masques",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 33,
+                "descrCourte": "Stylisme",
+                "descrLongue": "stylisme, parures et masques",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "FOR",
+                "codeCours": 34,
+                "descrCourte": "Prat. expérimentales",
+                "descrLongue": "pratiques expérimentales",
+                "anneeList": "F1;F2;F3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 34,
+                "descrCourte": "Prat. expérimentales",
+                "descrLongue": "pratiques expérimentales",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 34,
+                "descrCourte": "Prat. expérimentales",
+                "descrLongue": "pratiques expérimentales",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 4,
+                "descrCourte": "Reliure-dorure",
+                "descrLongue": "métiers d'art  art du livre : reliure-dorure",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 4,
+                "descrCourte": "Reliure-dorure",
+                "descrLongue": "métiers d'art  art du livre : reliure-dorure",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 5,
+                "descrCourte": "Joaillerie-bijouterie",
+                "descrLongue": "métiers d'art  joaillerie - bijouterie",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 5,
+                "descrCourte": "Joaillerie-bijouterie",
+                "descrLongue": "métiers d'art  joaillerie - bijouterie",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 6,
+                "descrCourte": "Restaur. d'œuvres",
+                "descrLongue": "métiers d'art  restauration d'oeuvres et d'objets d'art",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 6,
+                "descrCourte": "Restaur. d'œuvres",
+                "descrLongue": "métiers d'art  restauration d'oeuvres et d'objets d'art",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 7,
+                "descrCourte": "Vitrail",
+                "descrLongue": "métiers d'art  vitrail",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 7,
+                "descrCourte": "Vitrail",
+                "descrLongue": "métiers d'art  vitrail",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 8,
+                "descrCourte": "Dessin",
+                "descrLongue": "recherches graphiques et picturales  dessin",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 8,
+                "descrCourte": "Dessin",
+                "descrLongue": "recherches graphiques et picturales  dessin",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "QUAL",
+                "codeCours": 9,
+                "descrCourte": "Peinture",
+                "descrLongue": "recherches graphiques et picturales  peinture",
+                "anneeList": "Q1;Q2;Q3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "APVE",
+                "codeFiliere": "TRA",
+                "codeCours": 9,
+                "descrCourte": "Peinture",
+                "descrLongue": "recherches graphiques et picturales  peinture",
+                "anneeList": "T1;T2;T3;T4;T5;T6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "FOR",
+                "codeCours": 1,
+                "descrCourte": "Danse classique",
+                "descrLongue": "danse classique",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "PRE",
+                "codeCours": 1,
+                "descrCourte": "Danse classique",
+                "descrLongue": "danse classique",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "QUAL",
+                "codeCours": 1,
+                "descrCourte": "Danse classique",
+                "descrLongue": "danse classique",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;Q6;Q7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "TRA",
+                "codeCours": 1,
+                "descrCourte": "Danse classique",
+                "descrLongue": "danse classique",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7;T8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "COMPL",
+                "codeCours": 100,
+                "descrCourte": "Expr. chorégraphique",
+                "descrLongue": "danse classique, contemporaine ou jazz  expression chorégraphique",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "COMPL",
+                "codeCours": 101,
+                "descrCourte": "Barre au sol",
+                "descrLongue": "danse classique, contemporaine ou jazz  barre au sol",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "COMPL",
+                "codeCours": 102,
+                "descrCourte": "Danse pour garçons",
+                "descrLongue": "danse classique  danse pour les garçons",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "COMPL",
+                "codeCours": 103,
+                "descrCourte": "Répertoire",
+                "descrLongue": "danse classique, contemporaine ou jazz répertoire",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "COMPL",
+                "codeCours": 104,
+                "descrCourte": "Pointes",
+                "descrLongue": "danse classique  pointes",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "COMPL",
+                "codeCours": 105,
+                "descrCourte": "Etude du mouvement",
+                "descrLongue": "danse classique, contemporaine ou jazz  étude du mouvement",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "COMPL",
+                "codeCours": 106,
+                "descrCourte": "Hist. de la danse",
+                "descrLongue": "danse classique, contemporaine ou jazz  histoire de la danse",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "COMPL",
+                "codeCours": 107,
+                "descrCourte": "Claquettes",
+                "descrLongue": "danse jazz  claquettes",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "COMPL",
+                "codeCours": 108,
+                "descrCourte": "Danse traditionnelle",
+                "descrLongue": "danse traditionnelle",
+                "anneeList": "A1"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "FOR",
+                "codeCours": 2,
+                "descrCourte": "Danse contemp.",
+                "descrLongue": "danse contemporaine",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "PRE",
+                "codeCours": 2,
+                "descrCourte": "Danse contemp.",
+                "descrLongue": "danse contemporaine",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "QUAL",
+                "codeCours": 2,
+                "descrCourte": "Danse contemp.",
+                "descrLongue": "danse contemporaine",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;Q6;Q7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "TRA",
+                "codeCours": 2,
+                "descrCourte": "Danse contemp.",
+                "descrLongue": "danse contemporaine",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7;T8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "FOR",
+                "codeCours": 3,
+                "descrCourte": "Danse jazz",
+                "descrLongue": "danse jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "QUAL",
+                "codeCours": 3,
+                "descrCourte": "Danse jazz",
+                "descrLongue": "danse jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;Q6;Q7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "DA",
+                "codeFiliere": "TRA",
+                "codeCours": 3,
+                "descrCourte": "Danse jazz",
+                "descrLongue": "danse jazz",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7;T8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 1,
+                "descrCourte": "Accordéon chromat.",
+                "descrLongue": "formation instrumentale, accordéon chromatique",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 1,
+                "descrCourte": "Accordéon chromat.",
+                "descrLongue": "formation instrumentale, accordéon chromatique",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 1,
+                "descrCourte": "Accordéon chromat.",
+                "descrLongue": "formation instrumentale, accordéon chromatique",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 1,
+                "descrCourte": "Accordéon chromat.",
+                "descrLongue": "formation instrumentale, accordéon chromatique",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 10,
+                "descrCourte": "Cornemuse",
+                "descrLongue": "formation instrumentale, cornemuse",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 10,
+                "descrCourte": "Cornemuse",
+                "descrLongue": "formation instrumentale, cornemuse",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 10,
+                "descrCourte": "Cornemuse",
+                "descrLongue": "formation instrumentale, cornemuse",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 10,
+                "descrCourte": "Cornemuse",
+                "descrLongue": "formation instrumentale, cornemuse",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 100,
+                "descrCourte": "Chant d'ensemble",
+                "descrLongue": "chant d'ensemble",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 101,
+                "descrCourte": "Hist. de la musique",
+                "descrLongue": "histoire de la musique - analyse",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 102,
+                "descrCourte": "Ecriture musicale",
+                "descrLongue": "écriture musicale - analyse",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 103,
+                "descrCourte": "Formation jazz",
+                "descrLongue": "formation générale jazz",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 104,
+                "descrCourte": "Rythmique",
+                "descrLongue": "rythmique",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 105,
+                "descrCourte": "Expr. corporelle [M]",
+                "descrLongue": "expression corporelle [musique]",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 106,
+                "descrCourte": "Ens. instrumental",
+                "descrLongue": "ensemble instrumental",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 107,
+                "descrCourte": "Ensemble jazz",
+                "descrLongue": "ensemble jazz",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 108,
+                "descrCourte": "Mus. de chambre",
+                "descrLongue": "musique de chambre instrumentale",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 109,
+                "descrCourte": "Lecture-transposition",
+                "descrLongue": "lecture à vue - transposition",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 11,
+                "descrCourte": "Flûte à bec",
+                "descrLongue": "formation instrumentale, flûte à bec",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 11,
+                "descrCourte": "Flûte à bec",
+                "descrLongue": "formation instrumentale, flûte à bec",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 11,
+                "descrCourte": "Flûte à bec",
+                "descrLongue": "formation instrumentale, flûte à bec",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 11,
+                "descrCourte": "Flûte à bec",
+                "descrLongue": "formation instrumentale, flûte à bec",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 110,
+                "descrCourte": "Art lyrique",
+                "descrLongue": "art lyrique",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 111,
+                "descrCourte": "Mus. de chambre voc.",
+                "descrLongue": "musique de chambre vocale",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 112,
+                "descrCourte": "Claviers chanteurs",
+                "descrLongue": "claviers pour chanteurs",
+                "anneeList": "A1;A2;A3;A4;A5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 113,
+                "descrCourte": "Guitare d'accomp.",
+                "descrLongue": "guitare d'accompagnement",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 114,
+                "descrCourte": "Mus. électroacoust.",
+                "descrLongue": "musique électroacoustique",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 115,
+                "descrCourte": "Rythmes du monde",
+                "descrLongue": "pratique des rythmes musicaux du monde",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 116,
+                "descrCourte": "Improvisation",
+                "descrLongue": "Improvisation",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 117,
+                "descrCourte": "Instruments patr.",
+                "descrLongue": "instruments patrimoniaux",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 118,
+                "descrCourte": "Créat. mus. numérique",
+                "descrLongue": "création musicale numérique",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 12,
+                "descrCourte": "Flûte traversière",
+                "descrLongue": "formation instrumentale, flûte traversière",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 12,
+                "descrCourte": "Flûte traversière",
+                "descrLongue": "formation instrumentale, flûte traversière",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 12,
+                "descrCourte": "Flûte traversière",
+                "descrLongue": "formation instrumentale, flûte traversière",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 12,
+                "descrCourte": "Flûte traversière",
+                "descrLongue": "formation instrumentale, flûte traversière",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 13,
+                "descrCourte": "Flûte trav. baro. class.",
+                "descrLongue": "formation instrumentale, flûte traversière baroque et classique",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 13,
+                "descrCourte": "Flûte trav. baro. class.",
+                "descrLongue": "formation instrumentale, flûte traversière baroque et classique",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 13,
+                "descrCourte": "Flûte trav. baro. class.",
+                "descrLongue": "formation instrumentale, flûte traversière baroque et classique",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 13,
+                "descrCourte": "Flûte trav. baro. class.",
+                "descrLongue": "formation instrumentale, flûte traversière baroque et classique",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 14,
+                "descrCourte": "Guitare",
+                "descrLongue": "formation instrumentale, guitare",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 14,
+                "descrCourte": "Guitare",
+                "descrLongue": "formation instrumentale, guitare",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 14,
+                "descrCourte": "Guitare",
+                "descrLongue": "formation instrumentale, guitare",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 14,
+                "descrCourte": "Guitare",
+                "descrLongue": "formation instrumentale, guitare",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 15,
+                "descrCourte": "Harpe",
+                "descrLongue": "formation instrumentale, harpe",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 15,
+                "descrCourte": "Harpe",
+                "descrLongue": "formation instrumentale, harpe",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 15,
+                "descrCourte": "Harpe",
+                "descrLongue": "formation instrumentale, harpe",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 15,
+                "descrCourte": "Harpe",
+                "descrLongue": "formation instrumentale, harpe",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 16,
+                "descrCourte": "Hautbois",
+                "descrLongue": "formation instrumentale, hautbois",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 16,
+                "descrCourte": "Hautbois",
+                "descrLongue": "formation instrumentale, hautbois",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 16,
+                "descrCourte": "Hautbois",
+                "descrLongue": "formation instrumentale, hautbois",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 16,
+                "descrCourte": "Hautbois",
+                "descrLongue": "formation instrumentale, hautbois",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 17,
+                "descrCourte": "Hautbois baro. class.",
+                "descrLongue": "formation instrumentale, hautbois baroque et classique",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 17,
+                "descrCourte": "Hautbois baro. class.",
+                "descrLongue": "formation instrumentale, hautbois baroque et classique",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 17,
+                "descrCourte": "Hautbois baro. class.",
+                "descrLongue": "formation instrumentale, hautbois baroque et classique",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 17,
+                "descrCourte": "Hautbois baro. class.",
+                "descrLongue": "formation instrumentale, hautbois baroque et classique",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 18,
+                "descrCourte": "Luth",
+                "descrLongue": "formation instrumentale, luth",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 18,
+                "descrCourte": "Luth",
+                "descrLongue": "formation instrumentale, luth",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 18,
+                "descrCourte": "Luth",
+                "descrLongue": "formation instrumentale, luth",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 18,
+                "descrCourte": "Luth",
+                "descrLongue": "formation instrumentale, luth",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 19,
+                "descrCourte": "Mandoline",
+                "descrLongue": "formation instrumentale, mandoline",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 19,
+                "descrCourte": "Mandoline",
+                "descrLongue": "formation instrumentale, mandoline",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 19,
+                "descrCourte": "Mandoline",
+                "descrLongue": "formation instrumentale, mandoline",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 19,
+                "descrCourte": "Mandoline",
+                "descrLongue": "formation instrumentale, mandoline",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 2,
+                "descrCourte": "Alto",
+                "descrLongue": "formation instrumentale, alto",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 2,
+                "descrCourte": "Alto",
+                "descrLongue": "formation instrumentale, alto",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 2,
+                "descrCourte": "Alto",
+                "descrLongue": "formation instrumentale, alto",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 2,
+                "descrCourte": "Alto",
+                "descrLongue": "formation instrumentale, alto",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 20,
+                "descrCourte": "Musette",
+                "descrLongue": "formation instrumentale, musette",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 20,
+                "descrCourte": "Musette",
+                "descrLongue": "formation instrumentale, musette",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 20,
+                "descrCourte": "Musette",
+                "descrLongue": "formation instrumentale, musette",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 20,
+                "descrCourte": "Musette",
+                "descrLongue": "formation instrumentale, musette",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 21,
+                "descrCourte": "Orgue",
+                "descrLongue": "formation instrumentale, orgue",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 21,
+                "descrCourte": "Orgue",
+                "descrLongue": "formation instrumentale, orgue",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 21,
+                "descrCourte": "Orgue",
+                "descrLongue": "formation instrumentale, orgue",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 21,
+                "descrCourte": "Orgue",
+                "descrLongue": "formation instrumentale, orgue",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 22,
+                "descrCourte": "Percussions",
+                "descrLongue": "formation instrumentale, percussions",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 22,
+                "descrCourte": "Percussions",
+                "descrLongue": "formation instrumentale, percussions",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 22,
+                "descrCourte": "Percussions",
+                "descrLongue": "formation instrumentale, percussions",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 22,
+                "descrCourte": "Percussions",
+                "descrLongue": "formation instrumentale, percussions",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 23,
+                "descrCourte": "Piano",
+                "descrLongue": "formation instrumentale, piano",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 23,
+                "descrCourte": "Piano",
+                "descrLongue": "formation instrumentale, piano",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 23,
+                "descrCourte": "Piano",
+                "descrLongue": "formation instrumentale, piano",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 23,
+                "descrCourte": "Piano",
+                "descrLongue": "formation instrumentale, piano",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 24,
+                "descrCourte": "Pianoforte",
+                "descrLongue": "formation instrumentale, pianoforte",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 24,
+                "descrCourte": "Pianoforte",
+                "descrLongue": "formation instrumentale, pianoforte",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 24,
+                "descrCourte": "Pianoforte",
+                "descrLongue": "formation instrumentale, pianoforte",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 24,
+                "descrCourte": "Pianoforte",
+                "descrLongue": "formation instrumentale, pianoforte",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 25,
+                "descrCourte": "Saxophone",
+                "descrLongue": "formation instrumentale, saxophone",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 25,
+                "descrCourte": "Saxophone",
+                "descrLongue": "formation instrumentale, saxophone",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 25,
+                "descrCourte": "Saxophone",
+                "descrLongue": "formation instrumentale, saxophone",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 25,
+                "descrCourte": "Saxophone",
+                "descrLongue": "formation instrumentale, saxophone",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 26,
+                "descrCourte": "Trombone à coulisse",
+                "descrLongue": "formation instrumentale, trombone à coulisse",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 26,
+                "descrCourte": "Trombone à coulisse",
+                "descrLongue": "formation instrumentale, trombone à coulisse",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 26,
+                "descrCourte": "Trombone à coulisse",
+                "descrLongue": "formation instrumentale, trombone à coulisse",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 26,
+                "descrCourte": "Trombone à coulisse",
+                "descrLongue": "formation instrumentale, trombone à coulisse",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 27,
+                "descrCourte": "Trompette",
+                "descrLongue": "formation instrumentale, trompette",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 27,
+                "descrCourte": "Trompette",
+                "descrLongue": "formation instrumentale, trompette",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 27,
+                "descrCourte": "Trompette",
+                "descrLongue": "formation instrumentale, trompette",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 27,
+                "descrCourte": "Trompette",
+                "descrLongue": "formation instrumentale, trompette",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 28,
+                "descrCourte": "Trompette naturelle",
+                "descrLongue": "formation instrumentale, trompette naturelle",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 28,
+                "descrCourte": "Trompette naturelle",
+                "descrLongue": "formation instrumentale, trompette naturelle",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 28,
+                "descrCourte": "Trompette naturelle",
+                "descrLongue": "formation instrumentale, trompette naturelle",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 28,
+                "descrCourte": "Trompette naturelle",
+                "descrLongue": "formation instrumentale, trompette naturelle",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 29,
+                "descrCourte": "Tuba",
+                "descrLongue": "formation instrumentale, tuba",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 29,
+                "descrCourte": "Tuba",
+                "descrLongue": "formation instrumentale, tuba",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 29,
+                "descrCourte": "Tuba",
+                "descrLongue": "formation instrumentale, tuba",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 29,
+                "descrCourte": "Tuba",
+                "descrLongue": "formation instrumentale, tuba",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 3,
+                "descrCourte": "Basson",
+                "descrLongue": "formation instrumentale, basson",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 3,
+                "descrCourte": "Basson",
+                "descrLongue": "formation instrumentale, basson",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 3,
+                "descrCourte": "Basson",
+                "descrLongue": "formation instrumentale, basson",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 3,
+                "descrCourte": "Basson",
+                "descrLongue": "formation instrumentale, basson",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 30,
+                "descrCourte": "Viole de gambe",
+                "descrLongue": "formation instrumentale, viole de gambe",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 30,
+                "descrCourte": "Viole de gambe",
+                "descrLongue": "formation instrumentale, viole de gambe",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 30,
+                "descrCourte": "Viole de gambe",
+                "descrLongue": "formation instrumentale, viole de gambe",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 30,
+                "descrCourte": "Viole de gambe",
+                "descrLongue": "formation instrumentale, viole de gambe",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 31,
+                "descrCourte": "Violon",
+                "descrLongue": "formation instrumentale, violon",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 31,
+                "descrCourte": "Violon",
+                "descrLongue": "formation instrumentale, violon",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 31,
+                "descrCourte": "Violon",
+                "descrLongue": "formation instrumentale, violon",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 31,
+                "descrCourte": "Violon",
+                "descrLongue": "formation instrumentale, violon",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 32,
+                "descrCourte": "Violon baroque",
+                "descrLongue": "formation instrumentale, violon baroque",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 32,
+                "descrCourte": "Violon baroque",
+                "descrLongue": "formation instrumentale, violon baroque",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 32,
+                "descrCourte": "Violon baroque",
+                "descrLongue": "formation instrumentale, violon baroque",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 32,
+                "descrCourte": "Violon baroque",
+                "descrLongue": "formation instrumentale, violon baroque",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 33,
+                "descrCourte": "Violoncelle",
+                "descrLongue": "formation instrumentale, violoncelle",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 33,
+                "descrCourte": "Violoncelle",
+                "descrLongue": "formation instrumentale, violoncelle",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 33,
+                "descrCourte": "Violoncelle",
+                "descrLongue": "formation instrumentale, violoncelle",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 33,
+                "descrCourte": "Violoncelle",
+                "descrLongue": "formation instrumentale, violoncelle",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 34,
+                "descrCourte": "Violoncelle baroque",
+                "descrLongue": "formation instrumentale, violoncelle baroque",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 34,
+                "descrCourte": "Violoncelle baroque",
+                "descrLongue": "formation instrumentale, violoncelle baroque",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 34,
+                "descrCourte": "Violoncelle baroque",
+                "descrLongue": "formation instrumentale, violoncelle baroque",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 34,
+                "descrCourte": "Violoncelle baroque",
+                "descrLongue": "formation instrumentale, violoncelle baroque",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 35,
+                "descrCourte": "Accordéon jazz",
+                "descrLongue": "formation instrumentale, accordéon jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 35,
+                "descrCourte": "Accordéon jazz",
+                "descrLongue": "formation instrumentale, accordéon jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 35,
+                "descrCourte": "Accordéon jazz",
+                "descrLongue": "formation instrumentale, accordéon jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 36,
+                "descrCourte": "Alto jazz",
+                "descrLongue": "formation instrumentale, alto jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 36,
+                "descrCourte": "Alto jazz",
+                "descrLongue": "formation instrumentale, alto jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 36,
+                "descrCourte": "Alto jazz",
+                "descrLongue": "formation instrumentale, alto jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 37,
+                "descrCourte": "Batterie jazz",
+                "descrLongue": "formation instrumentale, batterie jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 37,
+                "descrCourte": "Batterie jazz",
+                "descrLongue": "formation instrumentale, batterie jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 37,
+                "descrCourte": "Batterie jazz",
+                "descrLongue": "formation instrumentale, batterie jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 38,
+                "descrCourte": "Clarinette jazz",
+                "descrLongue": "formation instrumentale, clarinette jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 38,
+                "descrCourte": "Clarinette jazz",
+                "descrLongue": "formation instrumentale, clarinette jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 38,
+                "descrCourte": "Clarinette jazz",
+                "descrLongue": "formation instrumentale, clarinette jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 39,
+                "descrCourte": "Claviers jazz",
+                "descrLongue": "formation instrumentale, claviers jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 39,
+                "descrCourte": "Claviers jazz",
+                "descrLongue": "formation instrumentale, claviers jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 39,
+                "descrCourte": "Claviers jazz",
+                "descrLongue": "formation instrumentale, claviers jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 4,
+                "descrCourte": "Basson baro. class.",
+                "descrLongue": "formation instrumentale, basson baroque et classique",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 4,
+                "descrCourte": "Basson baro. class.",
+                "descrLongue": "formation instrumentale, basson baroque et classique",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 4,
+                "descrCourte": "Basson baro. class.",
+                "descrLongue": "formation instrumentale, basson baroque et classique",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 4,
+                "descrCourte": "Basson baro. class.",
+                "descrLongue": "formation instrumentale, basson baroque et classique",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 40,
+                "descrCourte": "Contrebasse jazz",
+                "descrLongue": "formation instrumentale, contrebasse jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 40,
+                "descrCourte": "Contrebasse jazz",
+                "descrLongue": "formation instrumentale, contrebasse jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 40,
+                "descrCourte": "Contrebasse jazz",
+                "descrLongue": "formation instrumentale, contrebasse jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 41,
+                "descrCourte": "Cor jazz",
+                "descrLongue": "formation instrumentale, cor jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 41,
+                "descrCourte": "Cor jazz",
+                "descrLongue": "formation instrumentale, cor jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 41,
+                "descrCourte": "Cor jazz",
+                "descrLongue": "formation instrumentale, cor jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 42,
+                "descrCourte": "Flûte trav. jazz",
+                "descrLongue": "formation instrumentale jazz, flûte traversière jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 42,
+                "descrCourte": "Flûte trav. jazz",
+                "descrLongue": "formation instrumentale jazz, flûte traversière jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 42,
+                "descrCourte": "Flûte trav. jazz",
+                "descrLongue": "formation instrumentale jazz, flûte traversière jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 43,
+                "descrCourte": "Guitare jazz",
+                "descrLongue": "formation instrumentale, guitare jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 43,
+                "descrCourte": "Guitare jazz",
+                "descrLongue": "formation instrumentale, guitare jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 43,
+                "descrCourte": "Guitare jazz",
+                "descrLongue": "formation instrumentale, guitare jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 44,
+                "descrCourte": "Guitare basse jazz",
+                "descrLongue": "formation instrumentale, guitare basse jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 44,
+                "descrCourte": "Guitare basse jazz",
+                "descrLongue": "formation instrumentale, guitare basse jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 44,
+                "descrCourte": "Guitare basse jazz",
+                "descrLongue": "formation instrumentale, guitare basse jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 45,
+                "descrCourte": "Harmonica jazz",
+                "descrLongue": "formation instrumentale, harmonica jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 45,
+                "descrCourte": "Harmonica jazz",
+                "descrLongue": "formation instrumentale, harmonica jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 45,
+                "descrCourte": "Harmonica jazz",
+                "descrLongue": "formation instrumentale, harmonica jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 46,
+                "descrCourte": "Saxophone jazz",
+                "descrLongue": "formation instrumentale, saxophone jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 46,
+                "descrCourte": "Saxophone jazz",
+                "descrLongue": "formation instrumentale, saxophone jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 46,
+                "descrCourte": "Saxophone jazz",
+                "descrLongue": "formation instrumentale, saxophone jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 47,
+                "descrCourte": "Trombone jazz",
+                "descrLongue": "formation instrumentale, trombone jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 47,
+                "descrCourte": "Trombone jazz",
+                "descrLongue": "formation instrumentale, trombone jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 47,
+                "descrCourte": "Trombone jazz",
+                "descrLongue": "formation instrumentale, trombone jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 48,
+                "descrCourte": "Trompette jazz",
+                "descrLongue": "formation instrumentale, trompette jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 48,
+                "descrCourte": "Trompette jazz",
+                "descrLongue": "formation instrumentale, trompette jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 48,
+                "descrCourte": "Trompette jazz",
+                "descrLongue": "formation instrumentale, trompette jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 49,
+                "descrCourte": "Tuba jazz",
+                "descrLongue": "formation instrumentale, tuba jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 49,
+                "descrCourte": "Tuba jazz",
+                "descrLongue": "formation instrumentale, tuba jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 49,
+                "descrCourte": "Tuba jazz",
+                "descrLongue": "formation instrumentale, tuba jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 5,
+                "descrCourte": "Clarinette",
+                "descrLongue": "formation instrumentale, clarinette",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 5,
+                "descrCourte": "Clarinette",
+                "descrLongue": "formation instrumentale, clarinette",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 5,
+                "descrCourte": "Clarinette",
+                "descrLongue": "formation instrumentale, clarinette",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 5,
+                "descrCourte": "Clarinette",
+                "descrLongue": "formation instrumentale, clarinette",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 50,
+                "descrCourte": "Vibraphone jazz",
+                "descrLongue": "formation instrumentale, vibraphone jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 50,
+                "descrCourte": "Vibraphone jazz",
+                "descrLongue": "formation instrumentale, vibraphone jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 50,
+                "descrCourte": "Vibraphone jazz",
+                "descrLongue": "formation instrumentale, vibraphone jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 51,
+                "descrCourte": "Violon jazz",
+                "descrLongue": "formation instrumentale, violon jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 51,
+                "descrCourte": "Violon jazz",
+                "descrLongue": "formation instrumentale, violon jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 51,
+                "descrCourte": "Violon jazz",
+                "descrLongue": "formation instrumentale, violon jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 52,
+                "descrCourte": "Violoncelle jazz",
+                "descrLongue": "formation instrumentale, violoncelle jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 52,
+                "descrCourte": "Violoncelle jazz",
+                "descrLongue": "formation instrumentale, violoncelle jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 52,
+                "descrCourte": "Violoncelle jazz",
+                "descrLongue": "formation instrumentale, violoncelle jazz",
+                "anneeList": "T1;T2;T3;T4;T5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 53,
+                "descrCourte": "Chant",
+                "descrLongue": "chant",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 53,
+                "descrCourte": "Chant",
+                "descrLongue": "chant",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 53,
+                "descrCourte": "Chant",
+                "descrLongue": "chant",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 54,
+                "descrCourte": "Chant jazz",
+                "descrLongue": "chant jazz",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 54,
+                "descrCourte": "Chant jazz",
+                "descrLongue": "chant jazz",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 54,
+                "descrCourte": "Chant jazz",
+                "descrLongue": "chant jazz",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 55,
+                "descrCourte": "Formation musicale",
+                "descrLongue": "formation musicale",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 55,
+                "descrCourte": "Formation musicale",
+                "descrLongue": "formation musicale",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 55,
+                "descrCourte": "Formation musicale",
+                "descrLongue": "formation musicale",
+                "anneeList": "Q1;QA1"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 55,
+                "descrCourte": "Formation musicale",
+                "descrLongue": "formation musicale",
+                "anneeList": "T1;T2;T3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 56,
+                "descrCourte": "Chant pop",
+                "descrLongue": "chant pop",
+                "anneeList": "F1;F2;F3;F4;F5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 56,
+                "descrCourte": "Chant pop",
+                "descrLongue": "chant pop",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 56,
+                "descrCourte": "Chant pop",
+                "descrLongue": "chant pop",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 6,
+                "descrCourte": "Clavecin",
+                "descrLongue": "formation instrumentale, clavecin",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 6,
+                "descrCourte": "Clavecin",
+                "descrLongue": "formation instrumentale, clavecin",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 6,
+                "descrCourte": "Clavecin",
+                "descrLongue": "formation instrumentale, clavecin",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 6,
+                "descrCourte": "Clavecin",
+                "descrLongue": "formation instrumentale, clavecin",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 7,
+                "descrCourte": "Contrebasse",
+                "descrLongue": "formation instrumentale, contrebasse",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 7,
+                "descrCourte": "Contrebasse",
+                "descrLongue": "formation instrumentale, contrebasse",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 7,
+                "descrCourte": "Contrebasse",
+                "descrLongue": "formation instrumentale, contrebasse",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 7,
+                "descrCourte": "Contrebasse",
+                "descrLongue": "formation instrumentale, contrebasse",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 8,
+                "descrCourte": "Cor",
+                "descrLongue": "formation instrumentale, cor",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 8,
+                "descrCourte": "Cor",
+                "descrLongue": "formation instrumentale, cor",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 8,
+                "descrCourte": "Cor",
+                "descrLongue": "formation instrumentale, cor",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 8,
+                "descrCourte": "Cor",
+                "descrLongue": "formation instrumentale, cor",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 9,
+                "descrCourte": "Cor naturel",
+                "descrLongue": "formation instrumentale, cor naturel",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 9,
+                "descrCourte": "Cor naturel",
+                "descrLongue": "formation instrumentale, cor naturel",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 9,
+                "descrCourte": "Cor naturel",
+                "descrLongue": "formation instrumentale, cor naturel",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 9,
+                "descrCourte": "Cor naturel",
+                "descrLongue": "formation instrumentale, cor naturel",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 1,
+                "descrCourte": "Formation musicale [SG]",
+                "descrLongue": "formation musicale",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 1,
+                "descrCourte": "Formation musicale [SG]",
+                "descrLongue": "formation musicale",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 1,
+                "descrCourte": "Formation musicale [SG]",
+                "descrLongue": "formation musicale",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 1,
+                "descrCourte": "Formation musicale [SG]",
+                "descrLongue": "formation musicale",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 100,
+                "descrCourte": "Chant choral [SG]",
+                "descrLongue": "chant d'ensemble: chant choral",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 101,
+                "descrCourte": "Direction chants [SG]",
+                "descrLongue": "chant d'ensemble: direction de chants liturgiques",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 102,
+                "descrCourte": "Claviers chanteurs [SG]",
+                "descrLongue": "claviers pour chanteurs",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 103,
+                "descrCourte": "Analyse (écriture) [SG]",
+                "descrLongue": "écriture musicale-analyse: analyse musicale",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 104,
+                "descrCourte": "Ecriture musicale [SG]",
+                "descrLongue": "écriture musicale-analyse: écriture musicale",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 105,
+                "descrCourte": "Analyse (histoire) [SG]",
+                "descrLongue": "histoire de la musique-analyse: analyse musicale",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 106,
+                "descrCourte": "Histoire musique [SG]",
+                "descrLongue": "histoire de la musique-analyse: histoire de la musique",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 107,
+                "descrCourte": "Carillon [SG]",
+                "descrLongue": "instrument patrimonial: carillon",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 108,
+                "descrCourte": "Basse continue [SG]",
+                "descrLongue": "formation instrumentale, spécialité clavecin: basse continue et continuo",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 109,
+                "descrCourte": "Accomp. liturgique [SG]",
+                "descrLongue": "formation instrumentale, spécialité orgue: accompagnement liturgique",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 110,
+                "descrCourte": "Harmonie pratique [SG]",
+                "descrLongue": "formation instrumentale, spécialité orgue: harmonie pratique",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 111,
+                "descrCourte": "Improvisation [SG]",
+                "descrLongue": "formation instrumentale, spécialité orgue: improvisation",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 112,
+                "descrCourte": "Lecture vue-transposition [SG]",
+                "descrLongue": "lecture  à vue-transposition",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 113,
+                "descrCourte": "Musique chambre vocale [SG]",
+                "descrLongue": "musique de chambre vocale",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 2,
+                "descrCourte": "Clavecin [SG]",
+                "descrLongue": "formation instrumentale, instruments classiques, spécialités clavecin",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 2,
+                "descrCourte": "Clavecin [SG]",
+                "descrLongue": "formation instrumentale, instruments classiques, spécialités clavecin",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 2,
+                "descrCourte": "Clavecin [SG]",
+                "descrLongue": "formation instrumentale, instruments classiques, spécialités clavecin",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 2,
+                "descrCourte": "Clavecin [SG]",
+                "descrLongue": "formation instrumentale, instruments classiques, spécialités clavecin",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 3,
+                "descrCourte": "Orgue [SG]",
+                "descrLongue": "formation instrumentale, instruments classiques, spécialités orgue et claviers",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 3,
+                "descrCourte": "Orgue [SG]",
+                "descrLongue": "formation instrumentale, instruments classiques, spécialités orgue et claviers",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 3,
+                "descrCourte": "Orgue [SG]",
+                "descrLongue": "formation instrumentale, instruments classiques, spécialités orgue et claviers",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 3,
+                "descrCourte": "Orgue [SG]",
+                "descrLongue": "formation instrumentale, instruments classiques, spécialités orgue et claviers",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 4,
+                "descrCourte": "Chant [SG]",
+                "descrLongue": "formation vocale, chant et musique de chambre vocale",
+                "anneeList": "F1;F2;F3;F4;F5;FA1;FA2;FA3;FA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 4,
+                "descrCourte": "Chant [SG]",
+                "descrLongue": "formation vocale, chant et musique de chambre vocale",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 4,
+                "descrCourte": "Chant [SG]",
+                "descrLongue": "formation vocale, chant et musique de chambre vocale",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;QA1;QA2;QA3;QA4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 4,
+                "descrCourte": "Chant [SG]",
+                "descrLongue": "formation vocale, chant et musique de chambre vocale",
+                "anneeList": "T1;T2;T3;T4;T5;T6;T7"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 1,
+                "descrCourte": "Rythmique [D]",
+                "descrLongue": "rythmique",
+                "anneeList": "F1;F2;F3;F4;F5;F6;FA1;FA2;FA3;FA4;FA5;FA6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 1,
+                "descrCourte": "Rythmique [D]",
+                "descrLongue": "rythmique",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 1,
+                "descrCourte": "Rythmique [D]",
+                "descrLongue": "rythmique",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;Q6;QA1;QA2;QA3;QA4;QA5;QA6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 1,
+                "descrCourte": "Rythmique [D]",
+                "descrLongue": "rythmique",
+                "anneeList": "T1;T2;T3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 100,
+                "descrCourte": "Rythmique appliquée [D]",
+                "descrLongue": "rythmique, spécialité rythmique appliquée",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9;A10;A11;A12;A13"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 101,
+                "descrCourte": "Expr. corp. Appliquée [D]",
+                "descrLongue": "expression corporelle, spécialité expression corporelle appliquée",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9;A10;A11;A12;A13"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 102,
+                "descrCourte": "Expr. corp. Analytique [D]",
+                "descrLongue": "expression corporelle, spécialité expression corporelle analytique",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9;A10;A11;A12;A13"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 103,
+                "descrCourte": "Formation musicale [D]",
+                "descrLongue": "formation musicale",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9;A10"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 104,
+                "descrCourte": "Piano [D]",
+                "descrLongue": "formation instrumentale, instruments classiques, spécialité piano et claviers",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9;A10"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 105,
+                "descrCourte": "Percussions [D]",
+                "descrLongue": "formation instrumentale, instruments classiques, spécialité percussions",
+                "anneeList": "A1;A2;A3;A4;A5;A6;A7;A8;A9;A10"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 106,
+                "descrCourte": "Chant d'ensemble [D]",
+                "descrLongue": "chant d'ensemble",
+                "anneeList": "A1;A2;A3;A4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 107,
+                "descrCourte": "Hist. de la musique [D]",
+                "descrLongue": "histoire de la musique-analyse",
+                "anneeList": "A1;A2;A3;A4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 108,
+                "descrCourte": "Ecriture musicale [D]",
+                "descrLongue": "écriture musicale-analyse",
+                "anneeList": "A1;A2;A3;A4"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "COMPL",
+                "codeCours": 109,
+                "descrCourte": "Chant [D]",
+                "descrLongue": "formation vocale, chant et musique de chambre vocale",
+                "anneeList": "A1;A2;A3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "FOR",
+                "codeCours": 2,
+                "descrCourte": "Expr. corporelle [D]",
+                "descrLongue": "expression corporelle [musique]",
+                "anneeList": "F1;F2;F3;F4;F5;F6;FA1;FA2;FA3;FA4;FA5;FA6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "PRE",
+                "codeCours": 2,
+                "descrCourte": "Expr. corporelle [D]",
+                "descrLongue": "expression corporelle [musique]",
+                "anneeList": "P1;P2;P3"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "QUAL",
+                "codeCours": 2,
+                "descrCourte": "Expr. corporelle [D]",
+                "descrLongue": "expression corporelle [musique]",
+                "anneeList": "Q1;Q2;Q3;Q4;Q5;Q6;QA1;QA2;QA3;QA4;QA5;QA6"
+            }
+        },
+        {
+            "codeCours": {
+                "codeDomaine": "MU",
+                "codeFiliere": "TRA",
+                "codeCours": 2,
+                "descrCourte": "Expr. corporelle [D]",
+                "descrLongue": "expression corporelle [musique]",
+                "anneeList": "T1;T2;T3"
+            }
+        }
+    ],
+    "total": 388
+}

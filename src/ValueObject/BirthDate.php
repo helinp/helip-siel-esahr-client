@@ -19,4 +19,9 @@ final class BirthDate extends AbstractScalarValueObject
             throw new InvalidArgumentException("Invalid BirthDate format: '$value'");
         }
     }
+
+    public function format(): string
+    {
+        return $this->value;
+    }
 }

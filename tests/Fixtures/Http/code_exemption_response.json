@@ -1,0 +1,131 @@
+{
+    "items": [
+        {
+            "exemption": {
+                "code": "0",
+                "text": "Pas de réduction",
+                "longText": null
+            }
+        },
+        {
+            "exemption": {
+                "code": "1",
+                "text": "Etudiant Majeur (+18 ans)",
+                "longText": "Inscrit dans l’enseignement obligatoire, supérieur ou de promotion sociale organisé ou subventionné par la Communauté française"
+            }
+        },
+        {
+            "exemption": {
+                "code": "2",
+                "text": "Ens. Primaire (+ de 12 ans)",
+                "longText": "Plus de 12 ans et inscrit dans l’enseignement fondamental"
+            }
+        },
+        {
+            "exemption": {
+                "code": "3",
+                "text": "Chômeur",
+                "longText": "Chômeur complet indemnisé"
+            }
+        },
+        {
+            "exemption": {
+                "code": "4",
+                "text": "Charge chômeur-chef",
+                "longText": "A charge d’un chômeur complet indemnisé ayant le statut de chef de ménage reconnu par l’ONEM"
+            }
+        },
+        {
+            "exemption": {
+                "code": "5",
+                "text": "Revenu d'intégration",
+                "longText": "Bénéficiaire du revenu d'intégration"
+            }
+        },
+        {
+            "exemption": {
+                "code": "6",
+                "text": "Enfant - Revenu d'intégration",
+                "longText": "Bénéficiaire du revenu d’intégration et leurs enfants qui font partie du même ménage"
+            }
+        },
+        {
+            "exemption": {
+                "code": "7",
+                "text": "Handicapé",
+                "longText": "Bénéficiaire du statut de handicapé"
+            }
+        },
+        {
+            "exemption": {
+                "code": "8",
+                "text": "Enfant - Handicapé",
+                "longText": "Bénéficiaire du statut de handicapé et leurs enfants qui font partie du même ménage"
+            }
+        },
+        {
+            "exemption": {
+                "code": "9",
+                "text": "Demandeur d'emploi-stage",
+                "longText": "Demandeur d'emploi en période de stage d'insertion professionnelle"
+            }
+        },
+        {
+            "exemption": {
+                "code": "10",
+                "text": "Pensionné GRAPA",
+                "longText": "Pensionné(e) sous statut GRAPA"
+            }
+        },
+        {
+            "exemption": {
+                "code": "11",
+                "text": "3ème élève",
+                "longText": "Troisième élève et les élèves suivants d’une même famille inscrits dans un établissement de l'ESAHR (élève(s) le(s) moins âgé(s))"
+            }
+        },
+        {
+            "exemption": {
+                "code": "12",
+                "text": "Humanités artistiques",
+                "longText": "Inscrit en humanités artistiques dans l’ESAHR"
+            }
+        },
+        {
+            "exemption": {
+                "code": "13",
+                "text": "Secteur 10 Beaux-Arts",
+                "longText": "Inscrit dans l’enseignement secondaire artistique de transition ou qualification du secteur 10 : Beaux-Arts"
+            }
+        },
+        {
+            "exemption": {
+                "code": "14",
+                "text": "Secteur 6 Arts appliqués",
+                "longText": "Inscrit dans l’enseignement secondaire technique de transition ou de qualification ou dans l’enseignement prof. du secteur 6 : Arts appliqués"
+            }
+        },
+        {
+            "exemption": {
+                "code": "15",
+                "text": "Autre ESAHR",
+                "longText": "Autre ESAHR"
+            }
+        },
+        {
+            "exemption": {
+                "code": "16",
+                "text": "BIM",
+                "longText": "Bénéficiaire de l’intervention majorée (BIM)"
+            }
+        },
+        {
+            "exemption": {
+                "code": "17",
+                "text": "Carte Prof",
+                "longText": "Détenteurs de la Carte Prof."
+            }
+        }
+    ],
+    "total": 18
+}

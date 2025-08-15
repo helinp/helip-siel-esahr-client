@@ -1,0 +1,47 @@
+{
+    "items": [
+        {
+            "inscription": {
+                "idEsahr": "34567-89",
+                "idEtab": 343,
+                "schoolYear": 2023,
+                "coDomaine": "DA",
+                "filiere": "TRA",
+                "regularity": {
+                    "regularityFlag": "O",
+                    "reasonRegularity": 1,
+                    "reasonOther": "<string>",
+                    "date": "2023-09-01"
+                },
+                "subvention": {
+                    "subventionFlag": "O",
+                    "reasonSubvention": 1,
+                    "reasonOther": "<string>",
+                    "date": "2023-09-01"
+                }
+            }
+        },
+        {
+            "inscription": {
+                "idEsahr": "34567-89",
+                "idEtab": 343,
+                "schoolYear": 2023,
+                "coDomaine": "APT",
+                "filiere": "PRE",
+                "regularity": {
+                    "regularityFlag": "N",
+                    "reasonRegularity": 2,
+                    "reasonOther": "<string>",
+                    "date": "2023-09-01"
+                },
+                "subvention": {
+                    "subventionFlag": "O",
+                    "reasonSubvention": 1,
+                    "reasonOther": "<string>",
+                    "date": "2023-09-01"
+                }
+            }
+        }
+    ],
+    "total": 2
+}

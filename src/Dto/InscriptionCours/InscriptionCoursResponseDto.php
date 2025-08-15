@@ -18,8 +18,6 @@ final readonly class InscriptionCoursResponseDto extends AbstractResponseDto
         public IdEsahr $idEsahr,
         public int $idEtab,
         public int $schoolYear,
-        public int $idInscr,
-        public int $statusCode,
         public InscriptionCoursItemResponseDto $inscriptionCoursData,
     ) {
     }
@@ -35,12 +33,10 @@ final readonly class InscriptionCoursResponseDto extends AbstractResponseDto
         $data = $data['inscription'];
 
         return new self(
-            idEsahr: $data['idEsahr'],
+            idEsahr: new IdEsahr($data['idEsahr']),
             idEtab: $data['idEtab'],
             schoolYear: $data['schoolYear'],
-            idInscr: $data['idInscr'],
-            statusCode: $data['statusCode'],
-            inscriptionCoursData: InscriptionCoursItemResponseDto::fromArray($data['inscriptionCoursData']),
+            inscriptionCoursData: InscriptionCoursItemResponseDto::fromArray($data['inscription']),
         );
     }
 }

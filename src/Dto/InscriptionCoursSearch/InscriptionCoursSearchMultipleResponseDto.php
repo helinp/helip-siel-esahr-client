@@ -23,7 +23,7 @@ final readonly class InscriptionCoursSearchMultipleResponseDto extends AbstractR
     protected static function fromArrayInterne(array $data): static
     {
         $items = array_map(
-            static fn(array $entry) => InscriptionCoursSearchResponseDto::fromArray($entry),
+            static fn (array $entry) => InscriptionCoursSearchResponseDto::fromArray($entry),
             $data['items'] ?? []
         );
 

@@ -1,0 +1,25 @@
+{
+  "inscription": {
+    "idEsahr": "123456-01",
+    "idEtab": 32,
+    "schoolYear": 2025,
+    "statusCode": 1,
+    "exemptionCode": null,
+    "inscriptionDiOptional": {
+      "payment": "N",
+      "attestation": "N"
+    },
+    "annexeK1": {
+      "ordreDiFlag": "O",
+      "reasonOrdreDi": 1,
+      "reasonOther": 2,
+      "date": "2025-01-01"
+    },
+    "comptabilitation": {
+      "comptabilisationFlag": "N",
+      "reasonComptabilisation": 1,
+      "reasonOther": 1,
+      "date": "2025-01-01"
+    }
+  }
+}

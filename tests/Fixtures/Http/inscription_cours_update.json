@@ -1,0 +1,40 @@
+{
+  "inscription": {
+    "idEsahr": "15678-92",
+    "schoolYear": 2024,
+    "idEtab": 847,
+    "inscription": {
+      "statusCode": 2,
+      "idInscr": 52847,
+      "inscriptionCoursData": {
+        "inscriptionDate": "2024-03-15",
+        "domaineCode": "APVE",
+        "coursCode": 3,
+        "filiere": "AUTRES",
+        "annee": "FA6",
+        "periode": 2
+      },
+      "inscriptionCoursSpecificity": {
+        "abandonDate": "2024-11-20",
+        "group": "GRP-B",
+        "timetable": "MAT-EVE",
+        "professor": "Prof. Dubois",
+        "impl": "SITE-CENTRAL",
+        "success": "N"
+      },
+      "regularity": {
+        "regularityFlag": "N",
+        "reasonRegularity": 4,
+        "reasonOther": "Absences répétées non justifiées",
+        "date": "2024-12-01"
+      },
+      "subvention": {
+        "subventionFlag": "N",
+        "reasonSubvention": 18,
+        "reasonOther": "Critères d'éligibilité non remplis",
+        "date": "2024-04-10"
+      }
+    },
+    "warning": "Étudiant en situation d'échec - suivi renforcé requis"
+  }
+}
