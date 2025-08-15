@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace Helip\SielEsahrClient\Tests\Unit\Http;
 
-use DateTimeImmutable;
+use Helip\SielEsahrClient\Dto\Error\GenericApiErrorResponse;
 use Helip\SielEsahrClient\Dto\InscriptionDi\InscriptionDiInputDto;
 use Helip\SielEsahrClient\Dto\InscriptionDi\InscriptionDiUpdateRequestDto;
 use Helip\SielEsahrClient\Dto\InscriptionDi\InscriptionDiUpdateResponseDto;
 use Helip\SielEsahrClient\Enum\StatusCodeEnum;
+use Helip\SielEsahrClient\Exception\EsahrApiException;
 use Helip\SielEsahrClient\Http\Client\DroitInscriptionUpdateClient;
 use Helip\SielEsahrClient\ValueObject\IdEsahr;
 use Helip\SielEsahrClient\ValueObject\StatusCode;
@@ -33,20 +34,15 @@ final class DroitInscriptionUpdateClientTest extends ClientTestAbstract
         );
     }
 
-    public function setUp(): void
+    #[CoversMethod(DroitInscriptionUpdateClient::class, 'update')]
+    public function testUpdateResponseDTO(): void
     {
-        parent::setUp();
-
         $this->setUpTest(
             mockFileName: 'droit_inscription_update_response.json',
             clientClassName: DroitInscriptionUpdateClient::class,
             endpoint: 'inscriptionDi',
         );
-    }
 
-    #[CoversMethod(DroitInscriptionUpdateClient::class, 'update')]
-    public function testUpdateResponseDTO(): void
-    {
         // Délègue au test générique défini dans l’abstraite
         $response = $this->getClientResponse(
             testedMethodName: 'update',
@@ -55,6 +51,26 @@ final class DroitInscriptionUpdateClientTest extends ClientTestAbstract
         );
 
         $this->assertInstanceOf(InscriptionDiUpdateResponseDto::class, $response);
+    }
+
+    #[CoversMethod(DroitInscriptionUpdateClient::class, 'update')]
+    public function testUpdateErrorResponseDTOValues(): void
+    {
+
+        $this->setUpTest(
+            mockFileName: 'droit_inscription_update_error_response.json',
+            clientClassName: DroitInscriptionUpdateClient::class,
+            endpoint: 'inscriptionDi',
+        );
         
+        $this->expectException(EsahrApiException::class);
+
+        // Délègue au test générique défini dans l’abstraite
+        $response = $this->getClientResponse(
+            testedMethodName: 'update',
+            arguments: [], // Les arguments sont passés dans le mock
+            httpMethodName: 'put'
+        );
+
     }
 }

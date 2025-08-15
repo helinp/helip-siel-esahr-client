@@ -6,6 +6,7 @@ namespace Helip\SielEsahrClient\Tests\Unit\Http;
 
 use Helip\SielEsahrClient\Dto\CommuneSearch\CommuneSearchRequestDto;
 use Helip\SielEsahrClient\Dto\CommuneSearch\CommuneSearchResponseDto;
+use Helip\SielEsahrClient\Exception\EsahrApiException;
 use Helip\SielEsahrClient\Http\Client\CommuneSearchClient;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversMethod;
@@ -22,20 +23,16 @@ final class CommuneSearchClientTest extends ClientTestAbstract
         );
     }
 
-    public function setUp(): void
+    #[CoversMethod(CommuneSearchClient::class, 'search')]
+    public function testSearchResponseDTO(): void
     {
-        parent::setUp();
 
         $this->setUpTest(
             mockFileName: 'commune_search_response.json',
             clientClassName: CommuneSearchClient::class,
             endpoint: 'commune?nameLocality=Bruxelles&postalCode=1190',
         );
-    }
 
-    #[CoversMethod(CommuneSearchClient::class, 'search')]
-    public function testSearchResponseDTO(): void
-    {
         // Délègue au test générique défini dans l’abstraite
         $response = $this->getClientResponse(
             testedMethodName: 'search',
@@ -45,5 +42,25 @@ final class CommuneSearchClientTest extends ClientTestAbstract
 
         $this->assertInstanceOf(CommuneSearchResponseDto::class, $response);
         $this->assertSame(1, $response->total);
+    }
+
+    #[CoversMethod(CommuneSearchClient::class, 'search')]
+    public function testSearchErrorResponseDTO(): void
+    {
+
+        $this->setUpTest(
+            mockFileName: 'commune_search_error_response.json',
+            clientClassName: CommuneSearchClient::class,
+            endpoint: 'commune?nameLocality=Bruxelles&postalCode=1190',
+        );
+
+        $this->expectException(EsahrApiException::class);
+
+        // Délègue au test générique défini dans l’abstraite
+        $response = $this->getClientResponse(
+            testedMethodName: 'search',
+            arguments: [],
+            httpMethodName: 'get'
+        );
     }
 }

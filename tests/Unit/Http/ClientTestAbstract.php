@@ -6,6 +6,8 @@ namespace Helip\SielEsahrClient\Tests\Unit\Http;
 
 use Helip\SielEsahrClient\Contract\RequestDtoInterface;
 use Helip\SielEsahrClient\Contract\ResponseDtoInterface;
+use Helip\SielEsahrClient\Dto\Common\ErrorResponseDto;
+use Helip\SielEsahrClient\Exception\EsahrApiException;
 use Helip\SielEsahrClient\Http\Transport\EsahrHttpClientInterface;
 use PHPUnit\Framework\TestCase;
 
@@ -19,15 +21,18 @@ abstract class ClientTestAbstract extends TestCase
     private string $mockFileName;
     private string $clientClassName;
     private string $endpoint;
+    private int $expectedStatusCode = 200;
 
     protected function setUpTest(
         string $mockFileName,
         string $clientClassName,
-        string $endpoint
+        string $endpoint,
+        int $expectedStatusCode = 200
     ) {
         $this->mockFileName = $mockFileName;
         $this->clientClassName = $clientClassName;
         $this->endpoint = $endpoint;
+        $this->expectedStatusCode = $expectedStatusCode;
     }
 
     private function getJsonMock(): array
@@ -60,7 +65,7 @@ abstract class ClientTestAbstract extends TestCase
 
         // Mock du transport
         $mockTransport = $this->createMock(EsahrHttpClientInterface::class);
-        $mockTransport
+        $expectation = $mockTransport
             ->expects($this->once())
             ->method($httpMethodName)
             ->with(
@@ -70,6 +75,25 @@ abstract class ClientTestAbstract extends TestCase
             )
             ->willReturn($mockData);
 
+        // gestion des erreurs
+        // Décide erreur vs succès **à partir de la fixture**
+        $isProblem = (
+            (isset($mockData['status']) && (int)$mockData['status'] >= 400)
+            || isset($mockData['title'], $mockData['detail']) // signature Problem Details
+            || isset($mockData['type'])                       // signature Problem Details
+        );
+
+        if ($isProblem) {
+            // Le transport lève l'exception domaine attendue par ton code
+            $expectation->willThrowException(
+                new EsahrApiException(ErrorResponseDto::fromArray($mockData))
+            );
+        } else {
+            // Cas succès
+            $expectation->willReturn($mockData);
+        }
+
+
         // Client
         $stub = $this
             ->getMockBuilder($this->clientClassName)
@@ -77,7 +101,7 @@ abstract class ClientTestAbstract extends TestCase
             ->onlyMethods([]) // pas de méthode surchargée
             ->getMock();
 
-        if($arguments === []) {
+        if ($arguments === []) {
             $arguments = [$this->getRequestMock()];
         }
 
