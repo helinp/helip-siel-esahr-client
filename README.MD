@@ -133,28 +133,6 @@ export ESAHR_NAM_URL="..."
 > Ils sont marqués avec `@group integration` et peuvent être exclus ou isolés.
 
 ### Lancer tous les tests (unitaires + intégration)
-Je vois le problème : tu utilises quatre backticks \`\`\`\` pour fermer les blocs de code au lieu de trois \`\`\` dans plusieurs endroits, ce qui casse le rendu Markdown.
-
-Voici la version corrigée avec un usage propre des backticks et un style uniforme :
-
-### Prérequis
-- PHP 8.2+
-- Composer
-- Variables d’environnement ESAHR_* définies (pour les tests d’intégration) :
-
-
-```bash
-export ESAHR_CLIENT_ID="..."
-export ESAHR_CLIENT_SECRET="..."
-export ESAHR_USERNAME="..."
-export ESAHR_PASSWORD="..."
-export ESAHR_NAM_URL="..."
-```
-
-> ⚠️ Les tests d’intégration nécessitent un accès à un environnement ESAHR de recette ou un mock compatible.
-> Ils sont marqués avec `@group integration` et peuvent être exclus ou isolés.
-
-### Lancer tous les tests (unitaires + intégration)
 
 ```bash
 composer test
