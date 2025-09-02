@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Helip\SielEsahrClient\Dto\CommuneSearch;
+namespace Helip\SielEsahrClient\Dto\CodeExemptionSearch;
 
 use Helip\SielEsahrClient\Contract\RequestDtoInterface;
 

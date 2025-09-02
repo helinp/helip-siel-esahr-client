@@ -6,7 +6,7 @@ namespace Helip\SielEsahrClient\Tests\Unit\Http;
 
 use Helip\SielEsahrClient\Dto\CodeExemptionSearch\CodeExemptionSearchItemResponseDto;
 use Helip\SielEsahrClient\Dto\CodeExemptionSearch\CodeExemptionSearchResponseDto;
-use Helip\SielEsahrClient\Dto\CommuneSearch\CodeExemptionSearchRequestDto;
+use Helip\SielEsahrClient\Dto\CodeExemptionSearch\CodeExemptionSearchRequestDto;
 use Helip\SielEsahrClient\Http\Client\CodeExemptionListClient;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\CoversMethod;
@@ -26,7 +26,7 @@ final class CodeExemptionListClientTest extends ClientTestAbstract
         $this->setUpTest(
             mockFileName: 'code_exemption_response.json',
             clientClassName: CodeExemptionListClient::class,
-            endpoint: 'exemption_code',
+            endpoint: 'exemptionCode',
         );
     }
 
@@ -35,8 +35,8 @@ final class CodeExemptionListClientTest extends ClientTestAbstract
     {
         // Délègue au test générique défini dans l’abstraite
         $response = $this->getClientResponse(
-            testedMethodName: 'save',
-            httpMethodName: 'post'
+            testedMethodName: 'list',
+            httpMethodName: 'get'
         );
 
         $this->assertInstanceOf(CodeExemptionSearchResponseDto::class, $response);
