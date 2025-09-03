@@ -1,28 +1,22 @@
 [![CI](https://github.com/helinp/helip-siel-esahr-client/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/helinp/helip-siel-esahr-client/actions/workflows/ci.yml) [![Coverage Status](https://coveralls.io/repos/github/helinp/helip-siel-esahr-client/badge.svg)](https://coveralls.io/github/helinp/helip-siel-esahr-client) [![License](https://img.shields.io/badge/license-LGPL%20v3-blue.svg)](LICENSE)
 
-# ESAHR Client PHP
+# SIEL ESAHR Client PHP
 
-Bibliothèque PHP pour interagir avec l’API REST SIEL-ESAHR développée par l’ETNIC (Fédération Wallonie-Bruxelles).
-Elle fournit des clients HTTP et des DTO pour communiquer avec le service SIEL-ESAHR.
+Bibliothèque PHP pour interagir avec l’API REST SIEL-ESAHR développée par l’ETNIC (Fédération Wallonie-Bruxelles).  
+Elle fournit des clients HTTP, des DTO et une gestion de l’authentification OAuth2.
 
-> **Note :** Cette librairie est développée indépendamment de l’ETNIC.
-> Elle n’est pas un outil officiel et n’est pas supportée par l’ETNIC.
+> **Note :** Cette librairie est développée indépendamment de l’ETNIC.  
 > **Statut :** *Work In Progress* — API et implémentations susceptibles d’évoluer.
 
 ---
 
-## Installation
-
-```bash
-composer require helip/siel-esahr-client
-```
----
 ## Exemple d’utilisation
 
 ```php
 <?php
 
 use Helip\SielEsahrClient\Http\OAuth\OAuthTokenProvider;
+use Helip\SielEsahrClient\Http\OAuth\FileTokenStorage;
 use Helip\SielEsahrClient\Dto\OAuth\Credentials;
 use Helip\SielEsahrClient\Http\Client\StudentSearchClient;
 use Helip\SielEsahrClient\Http\Client\StudentSaveClient;
@@ -38,7 +32,7 @@ use Helip\SielEsahrClient\ValueObject\GuardianCode;
 use DateTimeImmutable;
 use Symfony\Component\HttpClient\HttpClient;
 
-// 1. Obtenir un jeton OAuth
+// 1. Définir les credentials
 $httpClient = HttpClient::create(['timeout' => 5]);
 $credentials = new Credentials(
     $_ENV['ESAHR_CLIENT_ID'],
@@ -46,13 +40,16 @@ $credentials = new Credentials(
     $_ENV['ESAHR_USERNAME'],
     $_ENV['ESAHR_PASSWORD'],
     $_ENV['ESAHR_NAM_URL'],
-    'profile',
-    'password'
 );
-$tokenProvider = new OAuthTokenProvider($httpClient, $credentials);
+
+// 2. Créer un stockage de jeton (ici fichier local, mais vous pouvez fournir le vôtre)
+$storage = new FileTokenStorage('/srv/monapp/tmp/token.json');
+
+// 3. Initialiser le provider OAuth
+$tokenProvider = new OAuthTokenProvider($httpClient, $credentials, $storage);
 $accessToken = $tokenProvider->getAccessToken();
 
-// 2. Rechercher un élève
+// 4. Rechercher un élève
 try {
     $studentSearch = new StudentSearchClient($httpClient);
     $student = $studentSearch->searchByEsahrId(
@@ -64,7 +61,7 @@ try {
     echo "Erreur recherche élève : {$e->problemDetails->title} - {$e->problemDetails->detail}\n";
 }
 
-// 3. Sauver un élève
+// 5. Sauver un élève
 try {
     $studentSave = new StudentSaveClient($httpClient);
     $newStudent = new StudentDetailsRequestDto(
@@ -81,7 +78,7 @@ try {
     echo "Erreur sauvegarde élève : {$e->problemDetails->title} - {$e->problemDetails->detail}\n";
 }
 
-// 4. Rechercher une commune
+// 6. Rechercher une commune
 try {
     $communeClient = new CommuneSearchClient($httpClient);
     $communes = $communeClient->search($accessToken, new CommuneSearchRequestDto('Bruxelles', '1190'));
@@ -91,20 +88,36 @@ try {
 } catch (EsahrApiException $e) {
     echo "Erreur recherche commune : {$e->problemDetails->title} - {$e->problemDetails->detail}\n";
 }
+```
 
+---
+
+## Gestion du stockage de jeton OAuth
+
+Le `OAuthTokenProvider` ne garde pas le jeton en mémoire entre deux instanciations.
+C’est pourquoi il délègue la persistance à une implémentation de `TokenStorageInterface` :
+
+```php
+interface TokenStorageInterface
+{
+    public function save(string $token, DateTimeImmutable $expiresAt): void;
+
+    /**
+     * @return array{token: string, expiresAt: DateTimeImmutable}|null
+     */
+    public function load(): ?array;
+}
 ```
 ---
+
 ## TODOs
 
 ### Tests
-- [ ] Couvrir plus amplement les réponses JSON (assertions sur les clés de la réponse)  
-- [ ] Couvrir l'ensemble du code (objectif : 100 % coverage PHPUnit)  
-- [ ] Réduire les tests d’intégration à un plan minimal (OAuth, GET simple, POST simple) et isoler via `@group integration`.  
+
+* [ ] Couvrir l'ensemble du code (objectif : 100 % coverage PHPUnit ^^)
+* [ ] Couvrir plus amplement les réponses JSON (assertions sur les clés de la réponse)
+* [ ] Réduire et consolider les tests d’intégration
 
 ### Fonctionnalités
-- [ ] Date de naissance élève — permettre la saisie d'une année seule (actuellement parsée comme un `DateTimeImmutable` complet).  
 
-### Améliorations
-- [ ] Ajouter un `Manager` pour simplifier l'utilisation.
-
-> ⚠️ Les tests d’intégration nécessitent un accès à un environnement ESAHR de recette ou un mock compatible.
+* [ ] Date de naissance élève — permettre la saisie d'une année seule (actuellement parsée comme un `DateTimeImmutable` complet).
