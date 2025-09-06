@@ -71,7 +71,7 @@ final class StudentSaveClientTest extends ClientTestAbstract
         );
 
         $this->assertInstanceOf(StudentDetailsResponseDto::class, $response);
-        $this->assertSame((new IdEsahr('123456-01'))->value(), $response->idEsahr->value());
+        $this->assertSame((new IdEsahr('00002-42'))->value(), $response->idEsahr->value());
 
         $cfwbDetails = $response->cfwbDetails;
         $this->assertInstanceOf(StudentDetailResponseDto::class, $cfwbDetails);

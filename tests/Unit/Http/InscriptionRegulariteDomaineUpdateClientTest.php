@@ -20,7 +20,7 @@ final class InscriptionRegulariteDomaineUpdateClientTest extends ClientTestAbstr
     protected function getRequestMock(): InscriptionRegulariteDomaineRequestDto
     {
         return new InscriptionRegulariteDomaineRequestDto(
-            idEsahr: new IdEsahr('15678-92'),
+            idEsahr: new IdEsahr('00007-47'),
             idEtab: 12345,
             schoolYear: 2023,
             coDomaine: DomaineCodeEnum::APVE,

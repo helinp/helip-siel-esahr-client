@@ -17,7 +17,7 @@ final class DroitInscriptionSearchClientTest extends ClientTestAbstract
     protected function getRequestMock(): InscriptionDiSearchRequestDto
     {
         return new InscriptionDiSearchRequestDto(
-            idEsahr: new IdEsahr('123456-01'),
+            idEsahr: new IdEsahr('00002-42'),
             etabResponsable: 123456,
             schoolYear: 2023,
         );
@@ -30,7 +30,7 @@ final class DroitInscriptionSearchClientTest extends ClientTestAbstract
         $this->setUpTest(
             mockFileName: 'droit_inscription_search_response.json',
             clientClassName: DroitInscriptionSearchClient::class,
-            endpoint: 'inscriptionDi?idEsahr=123456-01&idEtab=123456&schoolYear=2023',
+            endpoint: 'inscriptionDi?idEsahr=00002-42&idEtab=123456&schoolYear=2023',
         );
     }
 

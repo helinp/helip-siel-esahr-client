@@ -27,7 +27,7 @@ final class InscriptionCoursUpdateClientTest extends ClientTestAbstract
     protected function getRequestMock(): InscriptionCoursUpdateRequestDto
     {
         return new InscriptionCoursUpdateRequestDto(
-            idEsahr: new IdEsahr('15678-92'),
+            idEsahr: new IdEsahr('00007-47'),
             idEtab: 123,
             schoolYear: 2023,
             inscription: new InscriptionCoursRequestItemDto(
@@ -82,7 +82,7 @@ final class InscriptionCoursUpdateClientTest extends ClientTestAbstract
         );
 
         $this->assertInstanceOf(InscriptionCoursResponseDto::class, $response);
-        $this->assertEquals(new IdEsahr('15678-92'), $response->idEsahr);
+        $this->assertEquals(new IdEsahr('00007-47'), $response->idEsahr);
         $this->assertInstanceOf(InscriptionCoursItemResponseDto::class, $response->inscriptionCoursData);
 
         $coursData = $response->inscriptionCoursData;

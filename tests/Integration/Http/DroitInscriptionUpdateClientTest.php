@@ -29,7 +29,7 @@ final class DroitInscriptionUpdateClientTest extends AbstractEsahrClient
         $accessToken = $this->getAccessToken();
 
         $request = new InscriptionDiUpdateRequestDto(
-            idEsahr: new IdEsahr('14434-78'),
+            idEsahr: new IdEsahr('00001-41'),
             etabResponsable: 593,
             schoolYear: 2024,
             inscriptionDi: new InscriptionDiInputDto(

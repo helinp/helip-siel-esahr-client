@@ -26,7 +26,7 @@ final class IdEsahr extends AbstractScalarValueObject
 
         // Vérifie la clé de contrôle
         [$num, $key] = explode('-', $value);
-        $expected = self::calculateCheckDigit((int) $num);
+        $expected    = self::calculateCheckDigit((int) $num);
 
         if ((int) $key !== $expected) {
             throw new InvalidArgumentException(
@@ -43,7 +43,7 @@ final class IdEsahr extends AbstractScalarValueObject
      */
     public static function calculateCheckDigit(int $num): int
     {
-        $lastTwo = $num % 100;
+        $lastTwo = $num        % 100;
         return ($lastTwo + 40) % 97;
     }
 }
