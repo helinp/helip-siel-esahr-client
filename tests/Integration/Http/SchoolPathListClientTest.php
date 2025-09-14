@@ -25,7 +25,7 @@ final class SchoolPathListClientTest extends AbstractEsahrClient
         $accessToken = $this->getAccessToken();
 
         $request = new SchoolPathRequestDto(
-            idEsahr: new IdEsahr('00001-41'),
+            idEsahr: new IdEsahr('00001-01'),
         );
 
         $result = $this->client->list($accessToken, $request);

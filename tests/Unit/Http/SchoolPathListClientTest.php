@@ -17,7 +17,7 @@ final class SchoolPathListClientTest extends ClientTestAbstract
     protected function getRequestMock(): ?SchoolPathRequestDto
     {
         return new SchoolPathRequestDto(
-            idEsahr: new IdEsahr('00002-42')
+            idEsahr: new IdEsahr('00002-02')
         );
     }
 
@@ -27,7 +27,7 @@ final class SchoolPathListClientTest extends ClientTestAbstract
         $this->setUpTest(
             mockFileName: 'school_path_response.json',
             clientClassName: SchoolPathListClient::class,
-            endpoint: 'schoolpath?idEsahr=00002-42',
+            endpoint: 'schoolpath?idEsahr=00002-02',
         );
 
         // Délègue au test générique défini dans l’abstraite
@@ -37,6 +37,6 @@ final class SchoolPathListClientTest extends ClientTestAbstract
         );
 
         $this->assertInstanceOf(SchoolPathsResponseDto::class, $response);
-        $this->assertSame((new IdEsahr('00002-42'))->value(), $response->items[0]->idEsahr->value());
+        $this->assertSame((new IdEsahr('00002-02'))->value(), $response->items[0]->idEsahr->value());
     }
 }

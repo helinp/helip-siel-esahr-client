@@ -56,7 +56,7 @@ final class StudentUpdateClientTest extends ClientTestAbstract
         $this->setUpTest(
             mockFileName: 'student_add_response.json',
             clientClassName: StudentUpdateClient::class,
-            endpoint: 'students?idEsahr=00002-42',
+            endpoint: 'students?idEsahr=00002-02',
         );
     }
 
@@ -67,14 +67,14 @@ final class StudentUpdateClientTest extends ClientTestAbstract
         $response = $this->getClientResponse(
             testedMethodName: 'update',
             arguments: [
-                new IdEsahr('00002-42'),
+                new IdEsahr('00002-02'),
                 $this->getRequestMock()
             ],
             httpMethodName: 'put'
         );
 
         $this->assertInstanceOf(StudentDetailsResponseDto::class, $response);
-        $this->assertSame((new IdEsahr('00002-42'))->value(), $response->idEsahr->value());
+        $this->assertSame((new IdEsahr('00002-02'))->value(), $response->idEsahr->value());
 
         $cfwbDetails = $response->cfwbDetails;
         $this->assertInstanceOf(StudentDetailResponseDto::class, $cfwbDetails);

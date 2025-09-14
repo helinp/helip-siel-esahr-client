@@ -25,7 +25,7 @@ final class DroitInscriptionSearchClientTest extends AbstractEsahrClient
         $accessToken = $this->getAccessToken();
 
         $request = new InscriptionDiSearchRequestDto(
-            idEsahr: new IdEsahr('00001-41'),
+            idEsahr: new IdEsahr('00001-01'),
             etabResponsable: 593,
             schoolYear: 2024
         );

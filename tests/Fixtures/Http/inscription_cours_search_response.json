@@ -2,7 +2,7 @@
     "items": [
         {
             "inscription": {
-                "idEsahr": "00001-41",
+                "idEsahr": "00001-01",
                 "idEtab": 47,
                 "schoolYear": 2021,
                 "inscription": {
@@ -41,7 +41,7 @@
         },
         {
             "inscription": {
-                "idEsahr": "00003-43",
+                "idEsahr": "00003-03",
                 "idEtab": 47,
                 "schoolYear": 2021,
                 "inscription": {

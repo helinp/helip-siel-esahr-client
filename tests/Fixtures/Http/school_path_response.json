@@ -2,7 +2,7 @@
     "items": [
         {
             "schoolPath": {
-                "idEsahr": "00002-42",
+                "idEsahr": "00002-02",
                 "idEtab": 344,
                 "schoolYear": 2023,
                 "domaineCode": "DA",
@@ -15,7 +15,7 @@
         },
         {
             "schoolPath": {
-                "idEsahr": "00002-42",
+                "idEsahr": "00002-02",
                 "idEtab": 345,
                 "schoolYear": 2023,
                 "domaineCode": "DA",

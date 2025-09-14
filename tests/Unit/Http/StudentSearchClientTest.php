@@ -34,7 +34,7 @@ final class StudentSearchClientTest extends ClientTestAbstract
         $this->setUpTest(
             mockFileName: 'student_search_response.json',
             clientClassName: StudentSearchClient::class,
-            endpoint: 'students/00002-42?fromDate=2023-01-01',
+            endpoint: 'students/00002-02?fromDate=2023-01-01',
         );
 
         // Délègue au test générique défini dans l’abstraite
@@ -42,7 +42,7 @@ final class StudentSearchClientTest extends ClientTestAbstract
             testedMethodName: 'searchByEsahrId',
             arguments: [
                 new StudentSearchIdEsahrRequestDto(
-                    idEsahr: new IdEsahr('00002-42'),
+                    idEsahr: new IdEsahr('00002-02'),
                     fromDate: new DateTimeImmutable('2023-01-01')
                 )
             ],
@@ -50,7 +50,7 @@ final class StudentSearchClientTest extends ClientTestAbstract
         );
 
         $this->assertInstanceOf(StudentDetailsResponseDto::class, $response);
-        $this->assertSame((new IdEsahr('00002-42'))->value(), $response->idEsahr->value());
+        $this->assertSame((new IdEsahr('00002-02'))->value(), $response->idEsahr->value());
     }
 
     #[CoversMethod(StudentSearchClient::class, 'searchByCombination')]
@@ -78,6 +78,6 @@ final class StudentSearchClientTest extends ClientTestAbstract
         );
 
         $this->assertInstanceOf(StudentMultipleResponseDto::class, $response);
-        $this->assertSame((new IdEsahr('00002-42'))->value(), $response->items[0]->idEsahr->value());
+        $this->assertSame((new IdEsahr('00002-02'))->value(), $response->items[0]->idEsahr->value());
     }
 }

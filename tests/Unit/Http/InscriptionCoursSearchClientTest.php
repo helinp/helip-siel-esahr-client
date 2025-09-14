@@ -20,7 +20,7 @@ final class InscriptionCoursSearchClientTest extends ClientTestAbstract
     protected function getRequestMock(): InscriptionCoursSearchRequestDto
     {
         return new InscriptionCoursSearchRequestDto(
-            idEsahr: new IdEsahr('00007-47'),
+            idEsahr: new IdEsahr('00007-07'),
             idEtab: 12345,
             schoolYear: 2023,
             situationDate: new DateTimeImmutable('2023-09-01')
@@ -34,7 +34,7 @@ final class InscriptionCoursSearchClientTest extends ClientTestAbstract
         $this->setUpTest(
             mockFileName: 'inscription_cours_search_response.json',
             clientClassName: InscriptionCoursSearchClient::class,
-            endpoint: 'inscriptionCours?idEsahr=00007-47&idEtab=12345&schoolYear=2023&situationDate=2023-09-01',
+            endpoint: 'inscriptionCours?idEsahr=00007-07&idEtab=12345&schoolYear=2023&situationDate=2023-09-01',
         );
     }
 
@@ -52,7 +52,7 @@ final class InscriptionCoursSearchClientTest extends ClientTestAbstract
         $this->assertSame(2, $response->total);
 
         $this->assertInstanceOf(InscriptionCoursSearchResponseDto::class, $response->items[0]);
-        $this->assertSame('00001-41', $response->items[0]->idEsahr->value());
+        $this->assertSame('00001-01', $response->items[0]->idEsahr->value());
 
         $inscriptionCoursData = $response->items[0]->inscriptionCoursData;
         $this->assertInstanceOf(InscriptionCoursDataDto::class, $inscriptionCoursData);

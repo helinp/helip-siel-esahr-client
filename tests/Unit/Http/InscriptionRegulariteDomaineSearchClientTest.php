@@ -18,7 +18,7 @@ final class InscriptionRegulariteDomaineSearchClientTest extends ClientTestAbstr
     protected function getRequestMock(): InscriptionRegulariteDomaineRequestDto
     {
         return new InscriptionRegulariteDomaineRequestDto(
-            idEsahr: new IdEsahr('00007-47'),
+            idEsahr: new IdEsahr('00007-07'),
             idEtab: 12345,
             schoolYear: 2023
         );
@@ -31,7 +31,7 @@ final class InscriptionRegulariteDomaineSearchClientTest extends ClientTestAbstr
         $this->setUpTest(
             mockFileName: 'inscription_regularite_search_response.json',
             clientClassName: InscriptionRegulariteDomaineSearchClient::class,
-            endpoint: 'inscriptionRegulariteDomaine?idEsahr=00007-47&idEtab=12345&schoolYear=2023',
+            endpoint: 'inscriptionRegulariteDomaine?idEsahr=00007-07&idEtab=12345&schoolYear=2023',
         );
     }
 

@@ -32,7 +32,7 @@ final class InscriptionCoursSaveClientTest extends AbstractEsahrClient
         $accessToken = $this->getAccessToken();
 
         $request = new InscriptionCoursSaveRequestDto(
-            idEsahr: new IdEsahr('00001-41'),
+            idEsahr: new IdEsahr('00001-01'),
             idEtab: 593,
             schoolYear: 2023,
             inscription: new InscriptionCoursRequestItemDto(

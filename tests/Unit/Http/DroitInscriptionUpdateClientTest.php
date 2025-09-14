@@ -21,7 +21,7 @@ final class DroitInscriptionUpdateClientTest extends ClientTestAbstract
     protected function getRequestMock(): InscriptionDiUpdateRequestDto
     {
         return new InscriptionDiUpdateRequestDto(
-            idEsahr: new IdEsahr('00002-42'),
+            idEsahr: new IdEsahr('00002-02'),
             etabResponsable: 123456,
             schoolYear: 2023,
             inscriptionDi: new InscriptionDiInputDto(
