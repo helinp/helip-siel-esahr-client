@@ -32,7 +32,6 @@ final readonly class InscriptionCoursRequestItemDto implements RequestDtoInterfa
             'inscriptionCoursData'        => $this->inscriptionCoursData->toArray(),
             'inscriptionCoursSpecificity' => $this->inscriptionCoursSpecificity?->toArray(),
             'regularity'                  => $this->regularity?->toArray(),
-            'subvention'                  => $this->subvention?->toArray(),
         ];
     }
 }
