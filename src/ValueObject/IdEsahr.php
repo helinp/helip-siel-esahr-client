@@ -43,7 +43,6 @@ final class IdEsahr extends AbstractScalarValueObject
      */
     public static function calculateCheckDigit(int $num): int
     {
-        $lastTwo = $num        % 100;
-        return ($lastTwo + 40) % 97;
+        return $num % 97;
     }
 }
