@@ -3,6 +3,7 @@
 namespace Helip\SielEsahrClient\Http\OAuth;
 
 use DateTimeImmutable;
+use JsonException;
 
 /**
  * Stockage des tokens d'authentification dans un fichier.
@@ -26,7 +27,30 @@ final class FileTokenStorage implements TokenStorageInterface
             'expiresAt' => $expiresAt->getTimestamp(),
         ], JSON_THROW_ON_ERROR);
 
-        file_put_contents($this->path, $data, LOCK_EX);
+        $dir = \dirname($this->path);
+        if (!is_dir($dir) && !mkdir($dir, 0775, true) && !is_dir($dir)) {
+            throw new \RuntimeException(sprintf('Impossible de créer le répertoire "%s"', $dir));
+        }
+
+        $tmp = tempnam($dir, 'siel_token_');
+        if ($tmp === false) {
+            throw new \RuntimeException('Impossible de créer un fichier temporaire pour le token.');
+        }
+
+        // Écrit tout d’un bloc
+        if (file_put_contents($tmp, $data, LOCK_EX) === false) {
+            @unlink($tmp);
+            throw new \RuntimeException('Échec d\'écriture du token.');
+        }
+
+        // Permissions restrictives (token en clair)
+        @chmod($tmp, 0600);
+
+        // Swap atomique
+        if (!@rename($tmp, $this->path)) {
+            @unlink($tmp);
+            throw new \RuntimeException(sprintf('Impossible de déplacer le token vers "%s".', $this->path));
+        }
     }
 
     public function load(): ?array
@@ -35,20 +59,30 @@ final class FileTokenStorage implements TokenStorageInterface
             return null;
         }
 
-        $payload = file_get_contents($this->path);
-        if ($payload === false) {
+        $payload = @file_get_contents($this->path);
+        if ($payload === false || $payload === '') {
             return null;
         }
 
-        $decodedData = json_decode($payload, true, 512, JSON_THROW_ON_ERROR);
+        try {
+            /** @var array{token:mixed,expiresAt:mixed} $decodedData */
+            $decodedData = json_decode($payload, true, 512, JSON_THROW_ON_ERROR);
+        } catch (JsonException) {
+            return null; // Contenu corrompu/partiel
+        }
 
-        if (!isset($decodedData['token'], $decodedData['expiresAt'])) {
+        if (!\is_string($decodedData['token'] ?? null) || !\is_numeric($decodedData['expiresAt'] ?? null)) {
+            return null;
+        }
+
+        $expiresAtTs = (int) $decodedData['expiresAt'];
+        if ($expiresAtTs <= 0) {
             return null;
         }
 
         return [
             'token'     => $decodedData['token'],
-            'expiresAt' => (new DateTimeImmutable())->setTimestamp((int) $decodedData['expiresAt']),
+            'expiresAt' => (new DateTimeImmutable())->setTimestamp($expiresAtTs),
         ];
     }
 }
