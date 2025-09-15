@@ -4,6 +4,8 @@ namespace Helip\SielEsahrClient\Http\OAuth;
 
 use DateTimeImmutable;
 use JsonException;
+use RuntimeException;
+use Throwable;
 
 /**
  * Stockage des tokens d'authentification dans un fichier.
@@ -27,29 +29,37 @@ final class FileTokenStorage implements TokenStorageInterface
             'expiresAt' => $expiresAt->getTimestamp(),
         ], JSON_THROW_ON_ERROR);
 
-        $dir = \dirname($this->path);
+        $dir = dirname($this->path);
         if (!is_dir($dir) && !mkdir($dir, 0775, true) && !is_dir($dir)) {
-            throw new \RuntimeException(sprintf('Impossible de créer le répertoire "%s"', $dir));
+            throw new RuntimeException(sprintf('Impossible de créer le répertoire "%s"', $dir));
         }
 
         $tmp = tempnam($dir, 'siel_token_');
         if ($tmp === false) {
-            throw new \RuntimeException('Impossible de créer un fichier temporaire pour le token.');
+            throw new RuntimeException('Impossible de créer un fichier temporaire pour le token.');
         }
 
         // Écrit tout d’un bloc
         if (file_put_contents($tmp, $data, LOCK_EX) === false) {
-            @unlink($tmp);
-            throw new \RuntimeException('Échec d\'écriture du token.');
+            try {
+                unlink($tmp);
+            } catch (Throwable) {
+                // Rien à faire
+            }
+            throw new RuntimeException('Échec d\'écriture du token.');
         }
 
         // Permissions restrictives (token en clair)
-        @chmod($tmp, 0600);
+        try {
+            chmod($dir, 0775);
+        } catch (Throwable) {
+            // Rien à faire
+        }
 
         // Swap atomique
-        if (!@rename($tmp, $this->path)) {
-            @unlink($tmp);
-            throw new \RuntimeException(sprintf('Impossible de déplacer le token vers "%s".', $this->path));
+        if (!rename($tmp, $this->path)) {
+            unlink($tmp);
+            throw new RuntimeException(sprintf('Impossible de déplacer le token vers "%s".', $this->path));
         }
     }
 
@@ -59,7 +69,12 @@ final class FileTokenStorage implements TokenStorageInterface
             return null;
         }
 
-        $payload = @file_get_contents($this->path);
+        $payload = false;
+        try {
+            $payload = file_get_contents($this->path);
+        } catch (Throwable) {
+            // Rien à faire
+        }
         if ($payload === false || $payload === '') {
             return null;
         }
@@ -71,7 +86,7 @@ final class FileTokenStorage implements TokenStorageInterface
             return null; // Contenu corrompu/partiel
         }
 
-        if (!\is_string($decodedData['token'] ?? null) || !\is_numeric($decodedData['expiresAt'] ?? null)) {
+        if (!is_string($decodedData['token'] ?? null) || !is_numeric($decodedData['expiresAt'] ?? null)) {
             return null;
         }
 
