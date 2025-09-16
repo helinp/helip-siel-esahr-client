@@ -28,6 +28,6 @@ class InscriptionCoursUpdateClient extends AbstractClient
 
     private function getUri(int $idInscript): string
     {
-        return sprintf('inscriptionCours?idInscript=%d', $idInscript);
+        return sprintf('inscriptionCours?idInscr=%d', $idInscript);
     }
 }

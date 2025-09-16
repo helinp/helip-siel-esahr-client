@@ -64,7 +64,7 @@ final class InscriptionCoursUpdateClientTest extends ClientTestAbstract
         $this->setUpTest(
             mockFileName: 'inscription_cours_update.json',
             clientClassName: InscriptionCoursUpdateClient::class,
-            endpoint: 'inscriptionCours?idInscript=52847',
+            endpoint: 'inscriptionCours?idInscr=52847',
         );
     }
 
