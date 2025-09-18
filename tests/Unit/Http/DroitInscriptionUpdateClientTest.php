@@ -9,6 +9,7 @@ use Helip\SielEsahrClient\Dto\InscriptionDi\InscriptionDiUpdateRequestDto;
 use Helip\SielEsahrClient\Dto\InscriptionDi\InscriptionDiUpdateResponseDto;
 use Helip\SielEsahrClient\Enum\StatusCodeEnum;
 use Helip\SielEsahrClient\Exception\EsahrApiException;
+use Helip\SielEsahrClient\Exception\EsahrNoChangeResponseException;
 use Helip\SielEsahrClient\Http\Client\DroitInscriptionUpdateClient;
 use Helip\SielEsahrClient\ValueObject\IdEsahr;
 use Helip\SielEsahrClient\ValueObject\StatusCode;
@@ -78,5 +79,26 @@ final class DroitInscriptionUpdateClientTest extends ClientTestAbstract
         }
 
         $this->fail('Expected EsahrApiException not thrown');
+    }
+
+    #[CoversMethod(DroitInscriptionUpdateClient::class, 'update')]
+    public function testUpdateThrowsNoChangeException(): void
+    {
+        $this->setUpTest(
+            mockFileName: 'no_change_response.json',
+            clientClassName: DroitInscriptionUpdateClient::class,
+            endpoint: 'inscriptionDi',
+            expectedStatusCode: 200
+        );
+
+        // Le client wrappe l'exception -> on attend EsahrApiException (comme dans votre code original)
+        $this->expectException(EsahrNoChangeResponseException::class);
+        $this->expectExceptionMessage('No changes detected');
+
+        $this->getClientResponse(
+            testedMethodName: 'update',
+            arguments: [],
+            httpMethodName: 'put'
+        );
     }
 }
