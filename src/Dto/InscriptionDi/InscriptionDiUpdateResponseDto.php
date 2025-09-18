@@ -8,6 +8,8 @@ use Helip\SielEsahrClient\Contract\AbstractResponseDto;
 use Helip\SielEsahrClient\Dto\Common\ComptabilisationDto;
 use Helip\SielEsahrClient\Dto\Common\OrdreDiInputDto;
 use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
+use Helip\SielEsahrClient\Exception\EsahrNoChangeResponseException;
+use Helip\SielEsahrClient\Utils\SielResponseUtils;
 use Helip\SielEsahrClient\ValueObject\IdEsahr;
 
 /**
@@ -29,6 +31,19 @@ final readonly class InscriptionDiUpdateResponseDto extends AbstractResponseDto
 
     protected static function fromArrayInterne(array $data): static
     {
+        // Gestion du cas particulier “200 / no change” retourné par l’API SIEL-ESAHR
+        if (SielResponseUtils::isProblemDetails($data)) {
+            $data = SielResponseUtils::toProblemDetails($data);
+
+            throw new EsahrNoChangeResponseException(
+                $data['title'],
+                $data['detail'],
+                $data['status'],
+                $data['type'],
+                $data['instance'],
+                $data['id']
+            );
+        }
 
         if (!isset($data['inscription']) || !is_array($data['inscription'])) {
             throw new EsahrApiResponseException(

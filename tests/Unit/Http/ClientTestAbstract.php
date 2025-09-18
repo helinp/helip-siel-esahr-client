@@ -8,6 +8,7 @@ use Helip\SielEsahrClient\Contract\RequestDtoInterface;
 use Helip\SielEsahrClient\Contract\ResponseDtoInterface;
 use Helip\SielEsahrClient\Dto\Common\ErrorResponseDto;
 use Helip\SielEsahrClient\Exception\EsahrApiException;
+use Helip\SielEsahrClient\Exception\EsahrNoChangeResponseException;
 use Helip\SielEsahrClient\Http\Transport\EsahrHttpClientInterface;
 use PHPUnit\Framework\TestCase;
 
@@ -78,14 +79,24 @@ abstract class ClientTestAbstract extends TestCase
         // Décide erreur vs succès **à partir de la fixture**
         $isProblem = (
             (isset($mockData['status']) && (int)$mockData['status'] >= 400)
-            || isset($mockData['title'], $mockData['detail']) // signature Problem Details
-            || isset($mockData['type'])                       // signature Problem Details
+        );
+
+        $isNochanges = (
+            isset($mockData['status'], $mockData['title'], $mockData['detail'])
+            && (int)$mockData['status'] === 200
+            && $mockData['title'] === 'No modification'
+            && $mockData['detail'] === 'No changes detected'
         );
 
         if ($isProblem) {
             // Le transport lève l'exception domaine attendue par ton code
             $expectation->willThrowException(
                 new EsahrApiException(ErrorResponseDto::fromArray($mockData))
+            );
+        } elseif ($isNochanges) {
+            // Le transport lève l'exception domaine attendue par ton code
+            $expectation->willThrowException(
+                new EsahrNoChangeResponseException()
             );
         } else {
             // Cas succès
