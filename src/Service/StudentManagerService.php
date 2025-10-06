@@ -12,9 +12,11 @@ use Helip\SielEsahrClient\Exception\EsahrApiException;
 use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
 use Helip\SielEsahrClient\Http\Client\StudentSaveClient;
 use Helip\SielEsahrClient\Http\Client\StudentSearchClient;
+use Helip\SielEsahrClient\Http\Client\StudentUpdateClient;
 use Helip\SielEsahrClient\ValueObject\BirthDate;
 use Helip\SielEsahrClient\ValueObject\FirstName;
 use Helip\SielEsahrClient\ValueObject\GenderCode;
+use Helip\SielEsahrClient\ValueObject\IdEsahr;
 use Helip\SielEsahrClient\ValueObject\LastName;
 use Helip\SielEsahrClient\ValueObject\Ssin;
 use RuntimeException;
@@ -24,7 +26,8 @@ final class StudentManagerService
 {
     public function __construct(
         private StudentSearchClient $searchClient,
-        private StudentSaveClient $addClient
+        private StudentSaveClient $addClient,
+        private StudentUpdateClient $updateClient,
     ) {
     }
 
@@ -86,6 +89,18 @@ final class StudentManagerService
             throw $e;
         } catch (Throwable $e) {
             throw new RuntimeException('Erreur lors de la recherche ou de la création de l’élève : ' . $e->getMessage(), 0, $e);
+        }
+    }
+
+    public function update(
+        string $accessToken,
+        IdEsahr $idEsahr,
+        StudentDetailsRequestDto $studentDto
+    ): StudentDetailsResponseDto {
+        try {
+            return $this->updateClient->update($accessToken, $idEsahr, $studentDto);
+        } catch (Throwable $e) {
+            throw new RuntimeException('Erreur lors de la mise à jour de l’élève : ' . $e->getMessage(), 0, $e);
         }
     }
 
