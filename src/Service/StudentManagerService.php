@@ -97,11 +97,7 @@ final class StudentManagerService
         IdEsahr $idEsahr,
         StudentDetailsRequestDto $studentDto
     ): StudentDetailsResponseDto {
-        try {
-            return $this->updateClient->update($accessToken, $idEsahr, $studentDto);
-        } catch (Throwable $e) {
-            throw new RuntimeException('Erreur lors de la mise à jour de l’élève : ' . $e->getMessage(), 0, $e);
-        }
+        return $this->updateClient->update($accessToken, $idEsahr, $studentDto);
     }
 
     private function getSearchDtoFromStudentDetails(
