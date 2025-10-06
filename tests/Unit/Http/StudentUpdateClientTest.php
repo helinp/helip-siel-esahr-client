@@ -10,6 +10,7 @@ use Helip\SielEsahrClient\Dto\Student\StudentDetailResponseDto;
 use Helip\SielEsahrClient\Dto\StudentAdd\StudentDetailsRequestDto;
 use Helip\SielEsahrClient\Dto\Student\StudentDetailsResponseDto;
 use Helip\SielEsahrClient\Enum\GuardianCodeEnum;
+use Helip\SielEsahrClient\Exception\EsahrNoChangeResponseException;
 use Helip\SielEsahrClient\Http\Client\StudentUpdateClient;
 use Helip\SielEsahrClient\ValueObject\GuardianCode;
 use Helip\SielEsahrClient\ValueObject\IdEsahr;
@@ -85,5 +86,29 @@ final class StudentUpdateClientTest extends ClientTestAbstract
         $this->assertInstanceOf(StudentDetailResponseDto::class, $rnDetails);
         $this->assertSame('Dupont', $rnDetails->lastName);
         $this->assertSame('Jean', $rnDetails->firstName);
+    }
+
+    #[CoversMethod(StudentUpdateClient::class, 'update')]
+    public function testUpdateThrowsNoChangeException(): void
+    {
+        $this->setUpTest(
+            mockFileName: 'no_change_response.json',
+            clientClassName: StudentUpdateClient::class,
+            endpoint: 'students?idEsahr=00002-02',
+            expectedStatusCode: 200
+        );
+
+        // Le client wrappe l'exception -> on attend EsahrApiException (comme dans votre code original)
+        $this->expectException(EsahrNoChangeResponseException::class);
+        $this->expectExceptionMessage('No changes detected');
+
+        $this->getClientResponse(
+            testedMethodName: 'update',
+            arguments: [
+                new IdEsahr('00002-02'),
+                $this->getRequestMock(),
+            ],
+            httpMethodName: 'put'
+        );
     }
 }

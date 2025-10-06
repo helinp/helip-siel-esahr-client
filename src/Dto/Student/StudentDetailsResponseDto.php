@@ -6,6 +6,8 @@ namespace Helip\SielEsahrClient\Dto\Student;
 
 use Helip\SielEsahrClient\Contract\AbstractResponseDto;
 use Helip\SielEsahrClient\Exception\EsahrApiResponseException;
+use Helip\SielEsahrClient\Exception\EsahrNoChangeResponseException;
+use Helip\SielEsahrClient\Utils\SielResponseUtils;
 use Helip\SielEsahrClient\ValueObject\IdEsahr;
 
 /**
@@ -22,6 +24,19 @@ final readonly class StudentDetailsResponseDto extends AbstractResponseDto
 
     protected static function fromArrayInterne(array $data): static
     {
+        if (SielResponseUtils::isProblemDetails($data)) {
+            $data = SielResponseUtils::toProblemDetails($data);
+
+            throw new EsahrNoChangeResponseException(
+                $data['title'],
+                $data['detail'],
+                $data['status'],
+                $data['type'],
+                $data['instance'],
+                $data['id']
+            );
+        }
+
         if (!isset($data['idEsahr']) || !is_string($data['idEsahr'])) {
             throw new EsahrApiResponseException('Invalid response format: "idEsahr" key is missing or not a string.');
         }
