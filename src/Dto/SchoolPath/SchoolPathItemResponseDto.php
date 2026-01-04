@@ -28,6 +28,9 @@ final readonly class SchoolPathItemResponseDto extends AbstractResponseDto
         public string $annee, // Année de la formation
         public int $periode, // Nombre de périodes suivies
         public SuccessFlagEnum $success, // 'O' ou 'N'
+        public int $statusCode, // Type réel pas dans la doc 1.13.0
+        public int $idInscr, // Type réel pas dans la doc 1.13.0
+        public SuccessFlagEnum $k1k2Validated // Type réel pas dans la doc 1.13.0
     ) {
     }
 
@@ -52,6 +55,9 @@ final readonly class SchoolPathItemResponseDto extends AbstractResponseDto
             annee: $data['annee'],
             periode: $data['periode'],
             success: SuccessFlagEnum::from($data['success']),
+            statusCode: $data['statusCode'],
+            idInscr: $data['idInscr'],
+            k1k2Validated: SuccessFlagEnum::from($data['k1k2validated'])
         );
     }
 }

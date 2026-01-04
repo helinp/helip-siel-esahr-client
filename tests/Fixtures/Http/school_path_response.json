@@ -10,7 +10,10 @@
                 "filiere": "COMPL",
                 "annee": "P4",
                 "periode": 2,
-                "success": "O"
+                "success": "O",
+                "statusCode": 1,
+                "idInscr": 12345,
+                "k1k2validated": "O"
             }
         },
         {
@@ -23,7 +26,10 @@
                 "filiere": "QUAL",
                 "annee": "A5E",
                 "periode": 1,
-                "success": "O"
+                "success": "O",
+                "statusCode": 2,
+                "idInscr": 12346,
+                "k1k2validated": "N"
             }
         }
     ],
